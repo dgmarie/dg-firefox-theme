@@ -1,0 +1,25 @@
+@namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+@import 'accent-colors';
+
+@function toRGB($color) {
+    @return "rgba(" + red($color) + ", " + green($color) + ", " + blue($color)+ ", 0.5)";
+}
+
+$accent_color_rgb: toRGB($accent_color);
+
+/* Variables that start with --gnome- are added by me and are assigned
+ * to elements somewhere in this code. The rest of the variables are
+ * built-in in Firefox, so you need to add an !important if you wanna
+ * override them. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Accent */
+    --gnome-accent-bg: #{$accent_color};
+    --gnome-accent: #{$accent_color};
+
+    /* Entries */
+    --gnome-focused-urlbar-border-color: #{$accent_color_rgb}; /* Same as --gnome-accent but with opacity*/
+  }
+}
+
