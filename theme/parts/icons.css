@@ -43,7 +43,11 @@ button.close::before,
 #identity-icon,
 #permissions-granted-icon,
 #downloads-indicator-icon,
-.textbox-search-clear,
+.textbox-search-clear {
+	fill: var(--gnome-toolbar-icon-fill) !important;
+}
+
+/* Inactive toolbar icons color */
 .toolbarbutton-icon:-moz-window-inactive {
 	fill: var(--gnome-inactive-toolbar-icon-fill) !important;
 }
@@ -238,7 +242,7 @@ menuitem[type="radio"][checked="true"] {
 }
 menuitem[type="radio"] .menu-iconic-icon {
 	border-radius: 100%;
-	border: 1px solid var(--gnome-inactive-toolbar-icon-fill);
+	border: 1px solid var(--gnome-toolbar-icon-fill);
 }
 menuitem[type="radio"][disabled="true"] .menu-iconic-icon {
 	opacity: 0.5;
