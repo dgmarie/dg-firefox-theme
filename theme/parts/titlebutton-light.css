@@ -1,3 +1,6 @@
+:root[tabsintitlebar] #titlebar:-moz-window-inactive {
+  opacity: 0.5;
+}
 :root[tabsintitlebar] #titlebar .titlebar-close {
 	background: url("../mac-icons/titlebutton-close.svg") no-repeat;
 	background-size: contain;
