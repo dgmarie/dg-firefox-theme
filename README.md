@@ -43,6 +43,7 @@ Kinda crazy but I like the look of it. This theme is supposed to be used with [t
 1. Go to your profile folder. (Go to `about:support` in Firefox > Application Basics > Profile Directory > Open Directory)
 2. Remove `chrome` folder.
 
+## Required Firefox preferences
 We provide a **user.js** configuration file in `configuration/user.js` that enable some preferences required by this theme to work. 
 
 You should already have this file installed if you followed one of the installation methods, but in any case be sure this preferences are enabled under `about:config`:
