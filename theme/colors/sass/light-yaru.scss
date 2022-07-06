@@ -21,8 +21,9 @@ $accent_color_rgb: toRGB($accent_color);
   --gnome-accent: #{$accent_color};
 
   /* Toolbars */
-  --gnome-toolbar-background: #fafafa;
-  --gnome-inactive-toolbar-icon-fill: #000000;
+  --gnome-toolbar-background: #ebebeb;
+  --gnome-toolbar-icon-fill: #000000;
+  --gnome-inactive-toolbar-icon-fill: #6d6d6d;
 
   /* Menus */
   --gnome-menu-background: #fafafa;
