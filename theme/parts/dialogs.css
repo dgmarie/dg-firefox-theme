@@ -7,25 +7,29 @@ window {
 }
 
 /* Browser dialog prompts center */
-.content-prompt {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
+.dialogOverlay {
+    display: grid;
+	place-content: center;
+	 justify-content: center;
+	grid-auto-rows: min(90%, var(--doc-height-px));
+}
+.dialogOverlay[topmost="true"], #window-modal-dialog::backdrop {
+	background-color: rgba(0, 0, 0, .5) !important;
 }
 
 /* Dialog */
 .dialogBox {
-	border-radius: 9px !important;
+	border-radius: 12px !important;
 	margin-top: 0 !important;
 }
 
-dialog[subdialog] {
-	background: var(--gnome-popover-background) !important;
+window[role="dialog"] {
+	background: var(--gnome-toolbar-background) !important;
 	border: 0 !important;
-	box-shadow: var(--gnome-popover-shadow) !important;
+	box-shadow: var(--gnome-menu-shadow) !important;
 	padding: 0 !important;
 }
-dialog {
+dialog {	
 	padding: 0 !important;
 }
 
@@ -35,6 +39,9 @@ dialog {
 }
 #titleContainer {
 	justify-content: center !important;
+}
+.titleIcon {
+	background-color: transparent !important;
 }
 
 /* Buttons */

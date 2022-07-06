@@ -50,7 +50,6 @@
 #loginTextbox:-moz-window-inactive,
 #password1Textbox:-moz-window-inactive,
 .tabsFilter:-moz-window-inactive {
-	background: var(--gnome-inactive-entry-background) !important;
 	color: var(--gnome-inactive-entry-color) !important;
 }
 
@@ -108,7 +107,7 @@
 }
 #urlbar, #searchbar {
 	margin: 0 3px !important;
-	padding: 0 !important;
+	padding: 0 3px !important;
 }
 .searchbar-textbox {
 	border: 0 !important;
