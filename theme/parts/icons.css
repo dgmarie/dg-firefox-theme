@@ -44,11 +44,6 @@ button.close::before,
   -moz-context-properties: fill, fill-opacity;
 }
 
-/* Inactive toolbar icons color */
-.toolbarbutton-icon:-moz-window-inactive {
-	fill: var(--gnome-inactive-toolbar-icon-fill) !important;
-}
-
 /* Dimmed icons */
 #urlbar:not(.searchButton) > #urlbar-input-container > #identity-box[pageproxystate="invalid"] > #identity-icon,
 .searchbar-search-icon,

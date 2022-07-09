@@ -1,4 +1,4 @@
-:root[tabsintitlebar] #titlebar:-moz-window-inactive {
+:root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-button {
   opacity: 0.5;
 }
 :root[tabsintitlebar] #titlebar .titlebar-close {

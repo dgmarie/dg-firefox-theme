@@ -3,7 +3,7 @@
 @import 'accent-colors';
 
 @function toRGB($color) {
-    @return "rgba(" + red($color) + ", " + green($color) + ", " + blue($color)+ ", 0.5)";
+  @return "rgba(" + red($color) + ", " + green($color) + ", " + blue($color)+ ", 0.5)";
 }
 
 $accent_color_rgb: toRGB($accent_color);
@@ -13,38 +13,48 @@ $accent_color_rgb: toRGB($accent_color);
  * built-in in Firefox, so you need to add an !important if you wanna
  * override them. */
 @media (prefers-color-scheme: dark) {
-  :root {
-    /* Browser area before a page starts loading */
-    --gnome-browser-before-load-background: #292929;
+	:root {
+		/* Browser area before a page starts loading */
+		--gnome-browser-before-load-background: #292929;
+		--gnome-inactive-browser-before-load-background: #272727;
 
-    /* Accent */
-    --gnome-accent-bg: #{$accent_color};
-    --gnome-accent: #{$accent_color};
+		/* Accent */
+		--gnome-accent-bg: #{$accent_color};
+		--gnome-accent: #{$accent_color};
 
-    /* Toolbars */
-    --gnome-toolbar-background: #222222;
-    --gnome-toolbar-icon-fill: #ffffff;
-    --gnome-inactive-toolbar-icon-fill: #C1C1C1;
+		/* Toolbars */
+		--gnome-toolbar-background: #222222;
+		--gnome-toolbar-border-color: rgba(255, 255, 255, .16);
+		--gnome-toolbar-icon-fill: #ffffff;
+		--gnome-inactive-toolbar-background: #272727;
+		--gnome-inactive-toolbar-border-color: rgba(255, 255, 255, .32);
 
-    /* Menus */
-    --gnome-menu-background: #1d1d1d;
-    --gnome-menu-icon-background: #272727;
+		/* Menus */
+		--gnome-menu-background: #1d1d1d;
+		--gnome-menu-icon-background: #272727;
 
-    /* Header bar */
-    --gnome-headerbar-background: #222222;
+		/* Header bar */
+		--gnome-headerbar-background: #222222;
 
-    /* Buttons */
-    --gnome-button-destructive-action-background: #c7162b;
+		/* Buttons */
+		--gnome-button-destructive-action-background: #c7162b;
 
-    /* Entries */
-    --gnome-focused-urlbar-border-color: #{$accent_color_rgb}; /* Same as --gnome-accent but with opacity*/
-    --gnome-inactive-entry-background: #2f2f2f;
+		/* Entries */
+		--gnome-focused-urlbar-border-color: #{$accent_color_rgb}; /* Same as --gnome-accent but with opacity*/
+		--gnome-inactive-entry-background: #2f2f2f;
 
-    /* Tabs */
-    --gnome-tabbar-tab-background: #1b1b1b;
-    --gnome-tabbar-tab-hover-background: #222222;
-    --gnome-tabbar-tab-active-background: #222222;
-    --gnome-tabbar-tab-active-hover-background: #292929;
-  }
+		/* Sidebar */
+		--gnome-inactive-sidebar-background: #272727;
+
+		/* Tabs */
+		--gnome-tabbar-tab-background: #1b1b1b;
+		--gnome-tabbar-tab-hover-background: #222222;
+		--gnome-tabbar-tab-active-background: #222222;
+		--gnome-tabbar-tab-active-hover-background: #292929;
+		--gnome-inactive-tabbar-tab-background: #1f1f1f;
+		--gnome-inactive-tabbar-tab-hover-background: #262626;
+		--gnome-inactive-tabbar-tab-active-background: #272727;
+		--gnome-inactive-tabbar-tab-active-hover-background: #2d2d2d;
+	}
 }
 
