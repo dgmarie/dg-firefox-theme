@@ -45,6 +45,7 @@ button.close::before,
 #downloads-indicator-icon,
 .textbox-search-clear {
 	fill: var(--gnome-toolbar-icon-fill) !important;
+  -moz-context-properties: fill, fill-opacity;
 }
 
 /* Inactive toolbar icons color */
@@ -227,7 +228,17 @@ menuitem[type="checkbox"] {
 	list-style-image: none !important;
 }
 menuitem[type="checkbox"][checked="true"] {
-	list-style-image: url("../icons/select-symbolic.svg") !important;
+	list-style-image: url("../icons/checkbox-checked-symbolic.svg") !important;
+}
+menuitem[type="checkbox"] .menu-iconic-icon {
+  border-radius: 5px;
+	border: 2px solid var(--gnome-toolbar-border-color);
+	background-color: var(--gnome-menu-icon-background);
+}
+menuitem[type="checkbox"][checked="true"] .menu-iconic-icon {
+  border-radius: 5px;
+	border: 2px solid var(--gnome-accent);
+	background-color: var(--gnome-accent);
 }
 menuitem[type="checkbox"][disabled="true"] .menu-iconic-icon {
 	opacity: 0.5;
@@ -235,14 +246,20 @@ menuitem[type="checkbox"][disabled="true"] .menu-iconic-icon {
 
 /* Menu radio */
 menuitem[type="radio"] {
-	list-style-image: url("../icons/radio-symbolic.svg") !important;
+	list-style-image: none !important;
 }
 menuitem[type="radio"][checked="true"] {
 	list-style-image: url("../icons/radio-checked-symbolic.svg") !important;
 }
 menuitem[type="radio"] .menu-iconic-icon {
 	border-radius: 100%;
-	border: 1px solid var(--gnome-toolbar-icon-fill);
+	border: 2px solid var(--gnome-toolbar-border-color);
+	background-color: var(--gnome-menu-icon-background);
+}
+menuitem[type="radio"][checked="true"] .menu-iconic-icon {
+	border-radius: 100%;
+	border: 2px solid var(--gnome-accent);
+	background-color: var(--gnome-accent);
 }
 menuitem[type="radio"][disabled="true"] .menu-iconic-icon {
 	opacity: 0.5;

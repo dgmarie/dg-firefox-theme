@@ -12,7 +12,7 @@
 
 /* Buttons */
 menulist,
-#nav-bar toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton),
+#nav-bar toolbarbutton:not(#urlbar-zoom-button, .subviewbutton, #back-button, #forward-button),
 .subviewbutton.panel-subview-footer,
 .panel-footer button,
 #downloadsPanel-mainView .download-state .downloadButton,
@@ -68,7 +68,7 @@ button.close,
 }
 
 /* Buttons with margins */
-#nav-bar toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton),
+#nav-bar toolbarbutton:not(#urlbar-zoom-button, .subviewbutton, #back-button, #forward-button),
 .notification-button,
 .subviewbutton.panel-subview-footer:not(:only-of-type),
 .panel-footer button:not(:only-of-type) {
@@ -76,6 +76,31 @@ button.close,
 }
 .close-icon:not(.tab-close-button) {
 	margin-left: 6px !important;
+}
+
+/* Forward/back buttons */
+#nav-bar #back-button,
+#nav-bar #forward-button {
+	-moz-appearance: none !important;
+	background: var(--gnome-button-background) !important;
+	border-radius: 6px !important;
+	border: 0 !important;
+	height: 34px !important;
+	max-height: 34px !important;
+	min-height: 34px !important;
+	min-width: 34px !important;
+	color: var(--gnome-toolbar-color) !important;
+	outline: 0 !important;
+	font: menu !important;
+	-moz-box-align: center !important;
+}
+#nav-bar #back-button {
+	margin: 0 0 0 3px !important;
+	padding: 0 0 0 1px !important;
+}
+#nav-bar #forward-button {
+	margin: 0 3px 0 0 !important;
+	padding: 0 1px 0 0 !important;
 }
 
 /* Text buttons */

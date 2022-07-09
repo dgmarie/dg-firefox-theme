@@ -14,7 +14,7 @@
 /* Window buttons: at least 1 button */
 @media (-moz-gtk-csd-minimize-button), (-moz-gtk-csd-maximize-button), (-moz-gtk-csd-close-button) {
 	:root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
-		padding-right: 60px !important;
+		padding-right: 58px !important;
 	}
 }
 /* Window buttons: at least 2 buttons */
@@ -22,13 +22,13 @@
        (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-close-button),
        (-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button) {
 	:root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
-		padding-right: 70px !important;
+		padding-right: 68px !important;
 	}
 }
 /* Window buttons: 3 buttons */
 @media (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button) {
 	:root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
-		padding-right: 90px !important;
+		padding-right: 88px !important;
 	}
 }
 
@@ -40,15 +40,14 @@
 
 	/* Window buttons box */
 	:root[tabsintitlebar] #titlebar .titlebar-buttonbox-container {
-		padding: 0 2px 0 1px;
-		left: 8px;
+		left: 10px;
 		right: auto !important;
 	}
 
 	/* Window controls: at least 1 button */
 	@media (-moz-gtk-csd-minimize-button), (-moz-gtk-csd-maximize-button), (-moz-gtk-csd-close-button) {
 		:root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
-			padding-left: 60px !important;
+			padding-left: 58px !important;
 		}
 	}
 	/* Window controls: at least 2 buttons */
@@ -56,13 +55,13 @@
 				 (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-close-button),
 				 (-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button) {
 		:root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
-			padding-left: 70px !important;
+			padding-left: 68px !important;
 		}
 	}
 	/* Window controls: 3 buttons */
 	@media (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button) {
 		:root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
-			padding-left: 90px !important;
+			padding-left: 88px !important;
 		}
 	}
 }
@@ -105,7 +104,7 @@
 :root[tabsintitlebar] #titlebar-buttonbox-container,
 :root[tabsintitlebar][inFullscreen] #window-controls {
 	-moz-appearance: none !important;
-	padding: 0 1px 0 2px;
+	padding: 0;
 	position: absolute !important;
 	right: 8px;
 	top: 0;
