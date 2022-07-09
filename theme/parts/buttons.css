@@ -249,6 +249,13 @@ button.close:active,
 	opacity: .5 !important;
 }
 
+#nav-bar toolbarbutton:not(#urlbar-zoom-button)[disabled="true"]:-moz-window-inactive,
+#appMenu-popup .toolbaritem-combined-buttons toolbarbutton[disabled="true"]:-moz-window-inactive,
+#context-navigation menuitem[disabled="true"]:-moz-window-inactive,
+.dialog-button-box button[disabled="true"]:-moz-window-inactive {
+	opacity: 1 !important;
+}
+
 /* Inactive window buttons */
 #nav-bar toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton):-moz-window-inactive,
 .findbar-container toolbarbutton:-moz-window-inactive,
