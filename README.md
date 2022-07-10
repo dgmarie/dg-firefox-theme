@@ -128,6 +128,6 @@ See upstream [bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1408360).
 Icons might appear black where they should be white on some systems. I have no idea why, but you can adjust them directly in the `system-icons.css` file, look for `--gnome-icons-hack-filter` & `--gnome-window-icons-hack-filter` vars and play with css filters.
 
 # Credits
-[Yaru](https://github.com/ubuntu/yaru) [WhiteSur-firefox-theme](https://github.com/vinceliuice/WhiteSur-firefox-theme) and [WhiteSur-gtk-theme](https://github.com/vinceliuice/WhiteSur-gtk-theme)
+[Yaru](https://github.com/ubuntu/yaru), [WhiteSur-firefox-theme](https://github.com/vinceliuice/WhiteSur-firefox-theme) and [WhiteSur-gtk-theme](https://github.com/vinceliuice/WhiteSur-gtk-theme)
 
 The Yaru icon assets are licensed under the terms of the [Creative Commons Attribution-ShareAlike 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/).
