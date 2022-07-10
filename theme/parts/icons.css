@@ -279,10 +279,10 @@ button.close::before {
 
 /* Sound icons */
 .tab-icon-overlay[soundplaying] {
-    list-style-image: url("../icons/audio-playing-symbolic.svg") !important;
+    list-style-image: url("../icons/audio-speakers-symbolic.svg") !important;
 }
 .tab-icon-overlay[muted] {
-    list-style-image: url("../icons/audio-muted-symbolic.svg") !important;
+    list-style-image: url("../icons/audio-volume-muted-symbolic.svg") !important;
 }
 
 /* Private browsing button */
@@ -291,10 +291,10 @@ button.close::before {
 }
 /* Sidebar button */
 #sidebar-button:-moz-locale-dir(ltr):not([positionend])  .toolbarbutton-icon, #sidebar-button:-moz-locale-dir(rtl)[positionend]  .toolbarbutton-icon {
-	list-style-image: url("../icons/toggle-sidebar-symbolic.svg") !important;
+	list-style-image: url("../icons/sidebar-show-symbolic.svg") !important;
 }
 #sidebar-button .toolbarbutton-icon {
-	list-style-image: url("../icons/toggle-right-sidebar-symbolic.svg");
+	list-style-image: url("../icons/sidebar-show-right-symbolic.svg");
 }
 /* Back button */	
 #nav-bar #back-button,
@@ -327,7 +327,7 @@ button.close::before {
 /* Preferences button */
 #preferences-button,
 .search-setting-button-compact > .button-box > .button-icon {
-	list-style-image: url("../icons/settings-symbolic.svg") !important;
+	list-style-image: url("../icons/settings-app-symbolic.svg") !important;
 }
 /* Tabs sync */
 #sync-button,
@@ -446,22 +446,22 @@ button.close::before {
 /* Info */
 .panel-info-button > image,
 #identity-icon {
-	list-style-image: url("../icons/info-symbolic.svg") !important;
+	list-style-image: url("../icons/dialog-information-symbolic.svg") !important;
 }
 .tabbrowser-tab[image="chrome://global/skin/icons/info.svg"]:not([busy]):not([progress]) .tab-icon-stack::before {
 	content: "";
 	height: 16px;
 	width: 16px;
-	background-image: url("../icons/info-symbolic.svg") !important;
+	background-image: url("../icons/dialog-information-symbolic.svg") !important;
 }
 /* Password */
 #password-notification-icon {
-	list-style-image: url("../icons/key-symbolic.svg") !important;
+	list-style-image: url("../icons/dialog-password-symbolic.svg") !important;
 }
 
 /* Url Bar icons */
 #urlbar:not(.searchButton) > #urlbar-input-container > #identity-box[pageproxystate="invalid"] #identity-icon {
-    list-style-image: url("../icons/edit-find-symbolic.svg") !important;
+  list-style-image: url("../icons/edit-find-symbolic.svg") !important;
 }
 #urlbar-input-container[pageproxystate="valid"] > #tracking-protection-icon-container > #tracking-protection-icon-box > #tracking-protection-icon {
   list-style-image: url("../icons/security-high-symbolic.svg") !important;
@@ -474,27 +474,27 @@ button.close::before {
 }
 #identity-box[pageproxystate="valid"].verifiedDomain #identity-icon,
 #identity-box[pageproxystate="valid"].mixedActiveBlocked #identity-icon {
-  list-style-image: url("../icons/padlock-symbolic.svg") !important;
+  list-style-image: url("../icons/channel-secure-symbolic.svg") !important;
 }
 #identity-popup[connection^="secure"] .identity-popup-security-connection {
-	background-image: url("../icons/padlock-symbolic.svg") !important;
+	background-image: url("../icons/channel-secure-symbolic.svg") !important;
 }
 #identity-box[pageproxystate="valid"].notSecure #identity-icon,
 #identity-box[pageproxystate="valid"].mixedActiveContent #identity-icon,
 #identity-box[pageproxystate="valid"].httpsOnlyErrorPage #identity-icon {
-    list-style-image: url("../icons/padlock-insecure-symbolic.svg") !important;
+  list-style-image: url("../icons/channel-insecure-symbolic.svg") !important;
 }
 .identity-popup-security-connection {
-	background-image: url("../icons/padlock-insecure-symbolic.svg") !important;
+	background-image: url("../icons/channel-insecure-symbolic.svg") !important;
 }
 #permissions-granted-icon {
-    list-style-image: url("../icons/general-properties-symbolic.svg") !important;
+  list-style-image: url("../icons/tweaks-app-symbolic.svg") !important;
 }
 .popup-notification-icon[popupid="web-notifications"], .desktop-notification-icon {
-    list-style-image: url("../icons/message-symbolic.svg") !important;
+  list-style-image: url("../icons/chat-symbolic.svg") !important;
 }
-#reader-mode-button {
-	list-style-image: url("../icons/reader-mode-symbolic.svg") !important;
+#reader-mode-button-icon {
+	list-style-image: url("../icons/ebook-reader-app-symbolic.svg") !important;
 }
 .urlbar-icon {
 	margin: 2px 0 !important;
