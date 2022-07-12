@@ -1,0 +1,107 @@
+/* about:config */
+
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+@-moz-document url("about:config") {
+  :root {
+    --in-content-page-background: var(--gnome-settings-background) !important;
+    --in-content-page-color: var(--gnome-toolbar-color) !important;
+    --in-content-box-background: var(--gnome-menu-background) !important;
+    --in-content-box-background-odd: var(--gnome-menu-background) !important;
+    --in-content-box-border-color: var(--gnome-toolbar-border-color) !important;
+    --in-content-box-info-background: var(--gnome-settings-info-background) !important;
+    --in-content-border-color: var(--gnome-toolbar-border-color) !important;
+    --in-content-border-hover: var(--gnome-toolbar-border-color) !important;
+    --in-content-border-invalid: var(--gnome-button-destructive-action-background) !important;
+    --in-content-error-text-color: var(--gnome-button-destructive-action-background) !important;
+    --in-content-button-background: var(--gnome-button-background) !important;
+    --in-content-button-background-hover: var(--gnome-button-hover-background) !important;
+    --in-content-button-background-active: var(--gnome-button-active-background) !important;
+    --in-content-icon-color: var(--gnome-toolbar-icon-fill) !important;
+    --in-content-accent-color: var(--gnome-accent) !important;
+    --in-content-accent-color-active: var(--gnome-accent) !important;
+    --in-content-link-color: var(--gnome-accent) !important;
+    --in-content-link-color-hover: var(--gnome-accent) !important;
+    --in-content-link-color-active: var(--gnome-accent) !important;
+    --in-content-link-color-visited: var(--gnome-accent) !important;
+    --in-content-primary-button-text-color: #ffffff !important;
+    --in-content-primary-button-background: var(--gnome-accent) !important;
+    --in-content-primary-button-background-hover: var(--gnome-accent) !important;
+    --in-content-primary-button-background-active: var(--gnome-accent) !important;
+    --in-content-danger-button-background: var(--gnome-button-destructive-action-background) !important;
+    --in-content-danger-button-background-hover: var(--gnome-button-destructive-action-background) !important;
+    --in-content-danger-button-background-active: var(--gnome-button-destructive-action-background) !important;
+    --in-content-table-background: var(--gnome-menu-background) !important;
+    --dialog-warning-text-color: var(--gnome-button-destructive-action-background) !important;
+  }
+
+  /* Checkbox */
+  html|input[type="checkbox"] {
+    background-size: 12px !important;
+	  background-image: none !important;
+    border-radius: 5px !important;
+	  border: 2px solid var(--gnome-toolbar-border-color) !important;
+	  background-color: transparent !important;
+    transition: 200ms !important;
+  }
+  html|input[type="checkbox"] {
+    	background-image: url("../assets/adw-icons/check-symbolic.svg") !important;
+	  border-color: var(--gnome-accent) !important;
+	  background-color: var(--gnome-accent) !important;
+  }
+  html|input[type="checkbox"] {
+	  opacity: 0.5;
+	}
+
+	/* Buttons and boxes */
+  #prefs,
+  button,
+  html|select,
+  html|input[type="color"],
+  xul|menulist,
+	html|input:is([type="email"],
+	[type="tel"],
+	[type="text"],
+	[type="password"],
+	[type="url"],
+	[type="number"]),
+	html|textarea,
+	xul|search-textbox,
+	.web-appearance-choice {
+	  border-radius: 6px !important;
+	}
+
+	/* Icons color */
+  #about-config-search,
+  .button-toggle,
+  .button-edit,
+  .button-reset,
+  .button-delete {
+	  fill: var(--gnome-toolbar-icon-fill) !important;
+    -moz-context-properties: fill, fill-opacity;
+  }
+  .title {
+  	  fill: var(--gnome-warning-icon-fill) !important;
+  }
+  
+	/* Icons */
+	.title {
+    background-image: url("../assets/yaru-icons/warning-symbolic.svg") !important;
+	}
+  #about-config-search {
+    background-image: url("../assets/yaru-icons/edit-find-symbolic.svg") !important;
+  }
+  .button-toggle {
+    background-image: url("../assets/yaru-icons/edit-select-symbolic.svg") !important;
+  }
+  .button-edit {
+    background-image: url("../assets/yaru-icons/edit-symbolic.svg") !important;
+  }
+  .button-reset {
+    background-image: url("../assets/yaru-icons/edit-undo-symbolic.svg") !important;
+  }
+  .button-delete {
+    background-image: url("../assets/yaru-icons/user-trash-symbolic.svg") !important;
+  }
+}

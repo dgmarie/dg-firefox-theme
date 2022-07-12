@@ -3,119 +3,119 @@
   opacity: 0.5;
 }
 :root[tabsintitlebar] #titlebar .titlebar-close {
-	background: url("../mac-icons/titlebutton-close-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-close-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar .titlebar-max {
-	background: url("../mac-icons/titlebutton-maximize-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-maximize-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar .titlebar-min {
-	background: url("../mac-icons/titlebutton-minimize-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-minimize-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar .titlebar-restore,
 :root[tabsintitlebar][sizemode="maximized"] #titlebar .titlebar-max {
-	background: url("../mac-icons/titlebutton-maximize-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-maximize-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar .titlebar-close:hover {
-	background: url("../mac-icons/titlebutton-close-hover-inactive-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-close-hover-inactive-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar .titlebar-max:hover {
-	background: url("../mac-icons/titlebutton-maximize-hover-inactive-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-maximize-hover-inactive-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar .titlebar-min:hover {
-	background: url("../mac-icons/titlebutton-minimize-hover-inactive-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-minimize-hover-inactive-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar .titlebar-close:hover {
-	background: url("../mac-icons/titlebutton-close-hover-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-close-hover-dark.svg") no-repeat;
 	background-size: contain;
 	transition: background-size 300ms cubic-bezier(0.0, 0.0, 0.2, 1);
 }
 :root[tabsintitlebar] #titlebar .titlebar-max:hover {
-	background: url("../mac-icons/titlebutton-maximize-hover-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-maximize-hover-dark.svg") no-repeat;
 	background-size: contain;
 	transition: background-size 300ms cubic-bezier(0.0, 0.0, 0.2, 1);
 }
 :root[tabsintitlebar] #titlebar .titlebar-min:hover {
-	background: url("../mac-icons/titlebutton-minimize-hover-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-minimize-hover-dark.svg") no-repeat;
 	background-size: contain;
 	transition: background-size 300ms cubic-bezier(0.0, 0.0, 0.2, 1);
 }
 :root[tabsintitlebar] #titlebar .titlebar-restore:hover,
 :root[tabsintitlebar][sizemode="maximized"] #titlebar .titlebar-max:hover {
-	background: url("../mac-icons/titlebutton-restore-hover-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-restore-hover-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar .titlebar-close:active {
-	background: url("../mac-icons/titlebutton-close-active-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-close-active-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar .titlebar-max:active {
-	background: url("../mac-icons/titlebutton-maximize-active-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-maximize-active-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar .titlebar-min:active {
-	background: url("../mac-icons/titlebutton-minimize-active-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-minimize-active-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar .titlebar-restore:active,
 :root[tabsintitlebar][sizemode="maximized"] #titlebar .titlebar-max:active {
-	background: url("../mac-icons/titlebutton-restore-active-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-restore-active-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-close {
-	background: url("../mac-icons/titlebutton-close-backdrop-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-close-backdrop-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-max {
-	background: url("../mac-icons/titlebutton-maximize-backdrop-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-maximize-backdrop-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-min {
-	background: url("../mac-icons/titlebutton-minimize-backdrop-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-minimize-backdrop-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-restore,
 :root[tabsintitlebar][sizemode="maximized"] #titlebar:-moz-window-inactive .titlebar-max {
-	background: url("../mac-icons/titlebutton-restore-backdrop-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-restore-backdrop-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-close:hover {
-	background: url("../mac-icons/titlebutton-close-backdrop-hover-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-close-backdrop-hover-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-max:hover {
-	background: url("../mac-icons/titlebutton-maximize-backdrop-hover-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-maximize-backdrop-hover-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-min:hover {
-	background: url("../mac-icons/titlebutton-minimize-backdrop-hover-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-minimize-backdrop-hover-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-restore:hover,
 :root[tabsintitlebar][sizemode="maximized"] #titlebar:-moz-window-inactive .titlebar-max:hover {
-	background: url("../mac-icons/titlebutton-restore-backdrop-hover-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-restore-backdrop-hover-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar][inFullscreen] #window-controls .titlebar-restore {
-	background: url("../mac-icons/titlebutton-maximize-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-maximize-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar][inFullscreen] #window-controls .titlebar-restore:hover {
-	background: url("../mac-icons/titlebutton-restore-hover-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-restore-hover-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar][inFullscreen] #window-controls .titlebar-restore:active {
-	background: url("../mac-icons/titlebutton-restore-active-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-restore-active-dark.svg") no-repeat;
 	background-size: contain;
 }
 :root[tabsintitlebar][inFullscreen] #window-controls:-moz-window-inactive .titlebar-restore {
-	background: url("../mac-icons/titlebutton-restore-backdrop-dark.svg") no-repeat;
+	background: url("../assets/mac-icons/titlebutton-restore-backdrop-dark.svg") no-repeat;
 	background-size: contain;
 }
 }

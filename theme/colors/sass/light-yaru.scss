@@ -3,7 +3,7 @@
 @import 'accent-colors';
 
 @function toRGB($color) {
-  @return "rgba(" + red($color) + ", " + green($color) + ", " + blue($color)+ ", 0.5)";
+  @return red($color) + ", " + green($color) + ", " + blue($color);
 }
 
 $accent_color_rgb: toRGB($accent_color);
@@ -39,8 +39,18 @@ $accent_color_rgb: toRGB($accent_color);
 	--gnome-button-destructive-action-background: #c7162b;
 
 	/* Entries */
-	--gnome-focused-urlbar-border-color: #{$accent_color_rgb}; /* Same as --gnome-accent but with opacity*/
+	--gnome-focused-urlbar-border-color: rgba(#{$accent_color_rgb}, 0.5); /* Same as --gnome-accent but with opacity*/
 	--gnome-inactive-entry-background: #f1f1f1;
+
+	/* Sidebar */
+	--gnome-inactive-sidebar-background: #fafafa;
+
+	/* Settings */
+	--gnome-settings-background: #fafafa;
+	--gnome-settings-info-background: rgba(#{$accent_color_rgb}, 0.1); /* Same as --gnome-accent but with opacity*/
+
+	/* Advanced Preferences */
+	--gnome-warning-icon-fill: #F99B11;
 
 	/* Tabs */
 	--gnome-tabbar-tab-background: #e1e1e1;

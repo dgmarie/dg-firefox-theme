@@ -1,0 +1,139 @@
+/* about:addons */
+
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+@-moz-document url("about:addons") {
+  :root {
+    --in-content-page-background: var(--gnome-settings-background) !important;
+    --in-content-page-color: var(--gnome-toolbar-color) !important;
+    --in-content-box-background: var(--gnome-menu-background) !important;
+    --in-content-box-background-odd: var(--gnome-menu-background) !important;
+    --in-content-box-border-color: var(--gnome-toolbar-border-color) !important;
+    --in-content-box-info-background: var(--gnome-settings-info-background) !important;
+    --in-content-border-color: var(--gnome-toolbar-border-color) !important;
+    --in-content-border-hover: var(--gnome-toolbar-border-color) !important;
+    --in-content-border-invalid: var(--gnome-button-destructive-action-background) !important;
+    --in-content-error-text-color: var(--gnome-button-destructive-action-background) !important;
+    --in-content-button-background: var(--gnome-button-background) !important;
+    --in-content-button-background-hover: var(--gnome-button-hover-background) !important;
+    --in-content-button-background-active: var(--gnome-button-active-background) !important;
+    --in-content-icon-color: var(--gnome-toolbar-icon-fill) !important;
+    --in-content-accent-color: var(--gnome-accent) !important;
+    --in-content-accent-color-active: var(--gnome-accent) !important;
+    --in-content-link-color: var(--gnome-accent) !important;
+    --in-content-link-color-hover: var(--gnome-accent) !important;
+    --in-content-link-color-active: var(--gnome-accent) !important;
+    --in-content-link-color-visited: var(--gnome-accent) !important;
+    --in-content-primary-button-text-color: #ffffff !important;
+    --in-content-primary-button-background: var(--gnome-accent) !important;
+    --in-content-primary-button-background-hover: var(--gnome-accent) !important;
+    --in-content-primary-button-background-active: var(--gnome-accent) !important;
+    --in-content-danger-button-background: var(--gnome-button-destructive-action-background) !important;
+    --in-content-danger-button-background-hover: var(--gnome-button-destructive-action-background) !important;
+    --in-content-danger-button-background-active: var(--gnome-button-destructive-action-background) !important;
+    --in-content-table-background: var(--gnome-menu-background) !important;
+    --dialog-warning-text-color: var(--gnome-button-destructive-action-background) !important;
+  }
+
+	/* Buttons and boxes */
+	#categories > .category,
+	button,
+	html|select,
+	html|input[type="color"],
+	xul|menulist,
+	html|input:is([type="email"],
+	[type="tel"],
+	[type="text"],
+	[type="password"],
+	[type="url"],
+	[type="number"]),
+	html|textarea,
+	xul|search-textbox,
+  .card,
+  .container {
+	  border-radius: 6px !important;
+	}
+	.card-heading-image {
+	  border-top-left-radius: 6px !important;
+	  border-top-right-radius: 6px !important;
+	}
+  #categories > .category[selected],
+  #categories > .category.selected {
+    background-color: var(--in-content-button-background) !important;
+    color: var(--in-content-page-color) !important;
+  }
+  #categories > .category[selected]:hover,
+  #categories > .category.selected:hover {
+    background-color: var(--in-content-button-background-hover) !important;
+  }
+
+	/* Toggle */
+  input[type="checkbox"].toggle-button {
+    --button-height: 20px !important;
+    --button-half-height: 10px !important;
+    --button-width: 37px !important;
+    --button-border-width: 0px !important;
+    --dot-size: 16px !important;
+    --dot-margin: 2px !important;
+    --dot-transform-x: 17px !important;
+  }
+
+	/* Icons color */
+	#category-home > .category-icon,
+  .page-options-menu > .more-options-button,
+  .more-options-button,
+  .category[name="discover"],
+  .category[name="extension"],
+	.category[name="theme"],
+	.category[name="plugin"],
+	.category[name="locale"],
+	#preferencesButton > .sidebar-footer-icon,
+  	#help-button > .sidebar-footer-icon {
+	  fill: var(--gnome-toolbar-icon-fill) !important;
+    -moz-context-properties: fill, fill-opacity;
+  }
+  
+	/* Icons */
+	:host([searchbutton]) .textbox-search-icon {
+	  list-style-image: url("../assets/yaru-icons/edit-find-symbolic.svg") !important;
+  }
+	#category-home > .category-icon {
+		list-style-image: url("../assets/yaru-icons/user-home-symbolic.svg") !important;
+	}
+	.page-options-menu > .more-options-button {
+	  background-image: url("../assets/yaru-icons/settings-app-symbolic.svg") !important;
+	}
+	.more-options-button {
+	  background-image: url("../assets/yaru-icons/view-more-horizontal-symbolic.svg") !important;
+	}
+	.category[name="discover"] {
+	  background-image: url("../assets/yaru-icons/non-starred-symbolic.svg") !important;
+	}
+	.category[name="extension"] {
+	  background-image: url("../assets/yaru-icons/application-x-addon-symbolic.svg") !important;
+	}
+	.category[name="theme"] {
+	  background-image: url("../assets/yaru-icons/preferences-desktop-appearance-symbolic.svg") !important;
+	}
+	.category[name="plugin"] {
+	  background-image: url("../assets/yaru-icons/applications-electronics-symbolic.svg") !important;
+	}
+	.category[name="locale"] {
+	  background-image: url("../assets/yaru-icons/preferences-desktop-locale-symbolic.svg") !important;
+	}
+	#preferencesButton > .sidebar-footer-icon {
+	  padding: 0 0 16px 16px;
+	  background-size: 16px !important;
+	  background-image: url("../assets/yaru-icons/settings-app-symbolic.svg") !important;
+	  width: 0px !important;
+	  height: 0px !important;
+	}
+  	#help-button > .sidebar-footer-icon {
+	  padding: 0 0 16px 16px;
+	  background-size: 16px !important;
+	  background-image: url("../assets/yaru-icons/help-app-symbolic.svg") !important;
+	  width: 0px !important;
+	  height: 0px !important;
+	}
+}

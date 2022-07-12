@@ -17,7 +17,7 @@
 
 /* Add private window headerbar indicator */
 :root[privatebrowsingmode="temporary"] #nav-bar toolbarspring:first-of-type:before {
-	background: url("../icons/eye-not-looking-symbolic.svg") no-repeat;
+	background: url("../assets/yaru-icons/eye-not-looking-symbolic.svg") no-repeat;
 	background-size: 64px 64px;
 	content: "";
 	display: block;	

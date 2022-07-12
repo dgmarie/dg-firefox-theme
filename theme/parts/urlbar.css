@@ -39,9 +39,9 @@ toolbarspring {
 	color: var(--gnome-toolbar-color) !important;
 	margin: 11px 0 0 0 !important;
 	width: 100% !important;
-    position: absolute !important;
-    box-shadow: var(--gnome-menu-shadow) !important;
-    border-radius: 12px !important;
+  position: absolute !important;
+  box-shadow: var(--gnome-menu-shadow) !important;
+  border-radius: 12px !important;
 }
 
 /* Search bar result */

@@ -233,7 +233,7 @@ tab {
 	--gnome-fill-icon: red !important;
 }
 .tab-close-button {
-	list-style-image: url("../icons/window-close-symbolic.svg") !important;
+	list-style-image: url("../assets/yaru-icons/window-close-symbolic.svg") !important;
 	fill: var(--gnome-toolbar-color) !important;
 	fill-opacity: 1 !important;
 	-moz-context-properties: fill, fill-opacity !important;
@@ -413,7 +413,7 @@ tab {
 /* Tab spinner */
 .tab-throbber::before {
 	animation: gnome-spinner 1s linear infinite !important;
-	background-image: url("../icons/process-working-symbolic.svg") !important;
+	background-image: url("../assets/yaru-icons/process-working-symbolic.svg") !important;
 	width: 16px !important;
 	opacity: 1 !important;
 }

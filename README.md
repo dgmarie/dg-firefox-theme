@@ -88,12 +88,6 @@ Optional features can be enabled by creating new `boolean` preferences in `about
 
 	Add more contrast to the active tab.
 
-- **System icons** `gnomeTheme.systemIcons`
-
-	Use system theme icons instead of Adwaita icons included by theme.
-
-	> **Note:** This feature has a [known color bug](#icons-color-broken-with-system-icons).
-
 - **Symbolic tab icons** `gnomeTheme.symbolicTabIcons`
 
 	Make all tab icons look kinda like symbolic icons.
@@ -123,9 +117,6 @@ See upstream [bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1408360).
 2. Type `mozilla.widget.use-argb-visuals`
 3. Set it as a `boolean` and click on the add button
 4. Now restart Firefox, and it should look good!
-
-### Icons color broken with System icons
-Icons might appear black where they should be white on some systems. I have no idea why, but you can adjust them directly in the `system-icons.css` file, look for `--gnome-icons-hack-filter` & `--gnome-window-icons-hack-filter` vars and play with css filters.
 
 # Credits
 [Yaru](https://github.com/ubuntu/yaru), [WhiteSur-firefox-theme](https://github.com/vinceliuice/WhiteSur-firefox-theme) and [WhiteSur-gtk-theme](https://github.com/vinceliuice/WhiteSur-gtk-theme)

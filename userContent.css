@@ -1,7 +1,10 @@
 @import "theme/colors/light.css";
 @import "theme/colors/dark.css";
 
+@import "theme/pages/addons.css";
+@import "theme/pages/advancedpreferences.css";
 @import "theme/pages/newtab.css";
 @import "theme/pages/privatebrowsing.css";
+@import "theme/pages/settings.css";
 
 @import "theme/parts/video-player.css";
