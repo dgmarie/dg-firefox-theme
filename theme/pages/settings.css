@@ -3,7 +3,13 @@
 @namespace html "http://www.w3.org/1999/xhtml";
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
-@-moz-document url("about:preferences") {
+@-moz-document url("about:preferences"),
+url("about:preferences#general"),
+url("about:preferences#home"),
+url("about:preferences#search"),
+url("about:preferences#privacy"),
+url("about:preferences#sync"),
+url("about:preferences#moreFromMozilla") {
   :root {
     --in-content-page-background: var(--gnome-settings-background) !important;
     --in-content-page-color: var(--gnome-toolbar-color) !important;
