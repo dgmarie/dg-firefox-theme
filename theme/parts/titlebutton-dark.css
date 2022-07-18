@@ -1,6 +1,6 @@
 @media (prefers-color-scheme: dark) {
 :root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-button {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 :root[tabsintitlebar] #titlebar .titlebar-close {
 	background: url("../assets/mac-icons/titlebutton-close-dark.svg") no-repeat;

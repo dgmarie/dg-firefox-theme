@@ -97,6 +97,12 @@ tab > stack {
 #tabbrowser-tabs[movingtab=true] .tabbrowser-tab[selected=true] {
 	border-left: 1px solid var(--gnome-tabbar-tab-border-color) !important;
 }
+#TabsToolbar:-moz-window-inactive,
+#tabbrowser-tabs:-moz-window-inactive,
+.tabbrowser-tab:-moz-window-inactive,
+#TabsToolbar .toolbarbutton-1:not(#hack):-moz-window-inactive {
+  border-color: var(--gnome-inactive-toolbar-border-color) !important;
+}
 
 /* Tab labels */
 tab {
@@ -322,7 +328,6 @@ tab {
 }
 .tab-background[selected=true]:-moz-window-inactive {
 	background-color: var(--gnome-inactive-tabbar-tab-active-background) !important;
-	border-bottom-color: var(--gnome-tabbar-tab-border-color) !important; 
 }
 
 /* Tab hover */

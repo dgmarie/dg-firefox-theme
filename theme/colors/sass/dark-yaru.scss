@@ -27,7 +27,7 @@ $accent_color_rgb: toRGB($accent_color);
 		--gnome-toolbar-border-color: rgba(255, 255, 255, .15);
 		--gnome-toolbar-icon-fill: #ffffff;
 		--gnome-inactive-toolbar-background: #272727;
-		--gnome-inactive-toolbar-border-color: rgba(255, 255, 255, .15);
+		--gnome-inactive-toolbar-border-color: #484848;
 
 		/* Menus */
 		--gnome-menu-background: #1d1d1d;
@@ -42,8 +42,10 @@ $accent_color_rgb: toRGB($accent_color);
 		--gnome-button-destructive-action-background: #c7162b;
 
 		/* Entries */
+		--gnome-entry-background: rgba(255, 255, 255, .1);
+		--gnome-inactive-entry-background: rgba(255, 255, 255, .05);
 		--gnome-focused-urlbar-border-color: rgba(#{$accent_color_rgb}, 0.5); /* Same as --gnome-accent but with opacity*/
-		--gnome-inactive-entry-background: #2f2f2f;
+		--gnome-inactive-entry-color: #ffffff;
 		--gnome-urlbar-results-color: #262626;
 
 		/* Sidebar */
