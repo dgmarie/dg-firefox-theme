@@ -83,8 +83,8 @@ button.close,
 #nav-bar #forward-button {
 	-moz-appearance: none !important;
 	background: var(--gnome-button-background) !important;
-	border-radius: 6px !important;
 	border: 0 !important;
+	border-radius: 0 !important;
 	height: 34px !important;
 	max-height: 34px !important;
 	min-height: 34px !important;
@@ -95,12 +95,16 @@ button.close,
 	-moz-box-align: center !important;
 }
 #nav-bar #back-button {
+	border-top-left-radius: 6px !important;
+	border-bottom-left-radius: 6px !important;
 	margin: 0 0 0 3px !important;
-	padding: 0 0 0 1px !important;
+	padding: 0 0 0 1px!important;
 }
 #nav-bar #forward-button {
+	border-top-right-radius: 6px !important;
+	border-bottom-right-radius: 6px !important;
 	margin: 0 3px 0 0 !important;
-	padding: 0 1px 0 0 !important;
+  padding: 0 1px 0 0 !important;
 }
 
 /* Text buttons */

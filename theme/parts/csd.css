@@ -14,7 +14,7 @@
 /* Window buttons: at least 1 button */
 @media (-moz-gtk-csd-minimize-button), (-moz-gtk-csd-maximize-button), (-moz-gtk-csd-close-button) {
 	:root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
-		padding-right: 58px !important;
+		padding-right: 60px !important;
 	}
 }
 /* Window buttons: at least 2 buttons */
@@ -22,13 +22,13 @@
        (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-close-button),
        (-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button) {
 	:root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
-		padding-right: 68px !important;
+		padding-right: 70px !important;
 	}
 }
 /* Window buttons: 3 buttons */
 @media (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button) {
 	:root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
-		padding-right: 88px !important;
+		padding-right: 90px !important;
 	}
 }
 
@@ -47,7 +47,7 @@
 	/* Window controls: at least 1 button */
 	@media (-moz-gtk-csd-minimize-button), (-moz-gtk-csd-maximize-button), (-moz-gtk-csd-close-button) {
 		:root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
-			padding-left: 58px !important;
+			padding-left: 60px !important;
 		}
 	}
 	/* Window controls: at least 2 buttons */
@@ -55,13 +55,13 @@
 				 (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-close-button),
 				 (-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button) {
 		:root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
-			padding-left: 68px !important;
+			padding-left: 70px !important;
 		}
 	}
 	/* Window controls: 3 buttons */
 	@media (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button) {
 		:root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
-			padding-left: 88px !important;
+			padding-left: 90px !important;
 		}
 	}
 }
