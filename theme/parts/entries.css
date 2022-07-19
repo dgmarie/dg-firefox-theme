@@ -52,6 +52,7 @@
 .tabsFilter:-moz-window-inactive {
 	background: var(--gnome-inactive-entry-background) !important;
 	color: var(--gnome-inactive-entry-color) !important;
+	transition: 200ms ease-out;
 }
 
 /* Entries combined */

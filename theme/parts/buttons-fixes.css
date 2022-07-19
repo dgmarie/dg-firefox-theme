@@ -67,11 +67,13 @@
 :root:-moz-window-inactive[customizing] #nav-bar #edit-controls toolbarbutton {
 	background-image: var(--gnome-inactive-button-background);
 	box-shadow: var(--gnome-inactive-button-box-shadow);
+	transition: 200ms ease-out;
 }
 /* Glitch customizing: Reload and Cut / Copy / Paste buttons' icons */
 :root:-moz-window-inactive[customizing] #nav-bar #stop-reload-button image.toolbarbutton-icon,
 :root:-moz-window-inactive[customizing] #nav-bar #edit-controls image.toolbarbutton-icon {
-	opacity: .7 !important;
+	opacity: .5 !important;
+	transition: 200ms ease-out;
 }
 
 /* Glitch: Overflow and Burger buttons

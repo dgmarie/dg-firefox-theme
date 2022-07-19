@@ -25,6 +25,7 @@
 
 #TabsToolbar:-moz-window-inactive {
 	background-color: var(--gnome-inactive-tabbar-tab-background) !important;
+	transition: 200ms ease-out;
 }
 
 tab > stack {
@@ -102,6 +103,7 @@ tab > stack {
 .tabbrowser-tab:-moz-window-inactive,
 #TabsToolbar .toolbarbutton-1:not(#hack):-moz-window-inactive {
   border-color: var(--gnome-inactive-toolbar-border-color) !important;
+  transition: 200ms ease-out;
 }
 
 /* Tab labels */
@@ -328,6 +330,7 @@ tab {
 }
 .tab-background[selected=true]:-moz-window-inactive {
 	background-color: var(--gnome-inactive-tabbar-tab-active-background) !important;
+	transition: 200ms ease-out;
 }
 
 /* Tab hover */
@@ -336,6 +339,7 @@ tab {
 }
 .tabbrowser-tab:hover > .tab-stack > .tab-background[selected=true]:-moz-window-inactive {
 	background-color: var(--gnome-inactive-tabbar-tab-active-hover-background) !important;
+	transition: 200ms ease-out;
 }
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]),
 #TabsToolbar[brighttext] > #tabbrowser-tabs > .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]),
@@ -349,6 +353,7 @@ tab {
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]):-moz-window-inactive {
 	background-color: var(--gnome-inactive-tabbar-tab-hover-background) !important;
 	border-image: none !important;
+	transition: 200ms ease-out;
 }
 
 /* Full width tabs */

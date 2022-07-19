@@ -258,6 +258,7 @@ button.close:active,
 #context-navigation menuitem[disabled="true"]:-moz-window-inactive,
 .dialog-button-box button[disabled="true"]:-moz-window-inactive {
 	opacity: 1 !important;
+	transition: 200ms ease-out;
 }
 
 /* Inactive window buttons */
@@ -269,6 +270,7 @@ button.close:active,
 	background: var(--gnome-inactive-button-background) !important;
 	box-shadow: var(--gnome-inactive-button-box-shadow) !important;
 	border-color: var(--gnome-inactive-button-border-color) !important;
+	transition: 200ms ease-out;
 }
 
 /* Circle buttons */
