@@ -35,7 +35,7 @@
 /* Left window buttons */
 @media (-moz-gtk-csd-reversed-placement) {
 	:root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
-		padding-right: 3px !important;
+		padding-right: 2px !important;
 	}
 
 	/* Window buttons box */
@@ -106,7 +106,7 @@
 	-moz-appearance: none !important;
 	padding: 0;
 	position: absolute !important;
-	right: 8px;
+	right: 10px;
 	top: 0;
 	display: block !important;
 }
@@ -121,7 +121,7 @@
 	border: none !important;
 	border-radius: 100% !important;
 	height: 16px;
-	margin: 15px 4px !important;
+	margin: 14px 4px 15px !important;
 	padding: 0 !important;
 	width: 16px;
 }
