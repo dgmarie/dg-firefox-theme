@@ -16,7 +16,7 @@ $accent_color_rgb: toRGB($accent_color);
 	:root {
 		/* Browser area before a page starts loading */
 		--gnome-browser-before-load-background: #292929;
-		--gnome-inactive-browser-before-load-background: #272727;
+		--gnome-inactive-browser-before-load-background: #2c2c2c;
 
 		/* Accent */
 		--gnome-accent-bg: #{$accent_color};
@@ -26,13 +26,13 @@ $accent_color_rgb: toRGB($accent_color);
 		--gnome-toolbar-background: #222222;
 		--gnome-toolbar-border-color: rgba(255, 255, 255, .15);
 		--gnome-toolbar-icon-fill: #ffffff;
-		--gnome-inactive-toolbar-background: #272727;
-		--gnome-inactive-toolbar-border-color: #484848;
+		--gnome-inactive-toolbar-background: #2c2c2c;
+		--gnome-inactive-toolbar-border-color: #4c4c4c;
 
 		/* Menus */
 		--gnome-menu-background: #1d1d1d;
 		--gnome-menu-border-color: rgba(255, 255, 255, .15);
-		--gnome-menu-icon-background: #272727;
+		--gnome-menu-icon-background: #2c2c2c;
 		--gnome-menu-separator-color: #4b4b4b;
 
 		/* Header bar */
@@ -49,10 +49,10 @@ $accent_color_rgb: toRGB($accent_color);
 		--gnome-urlbar-results-color: #262626;
 
 		/* Sidebar */
-		--gnome-inactive-sidebar-background: #272727;
+		--gnome-inactive-sidebar-background: #2c2c2c;
 
 		/* Settings */
-		--gnome-settings-background: #272727;
+		--gnome-settings-background: #2c2c2c;
 		--gnome-settings-info-background: rgba(#{$accent_color_rgb}, 0.1); /* Same as --gnome-accent but with opacity*/
 
 		/* Advanced Preferences */
@@ -63,10 +63,10 @@ $accent_color_rgb: toRGB($accent_color);
 		--gnome-tabbar-tab-hover-background: #222222;
 		--gnome-tabbar-tab-active-background: #222222;
 		--gnome-tabbar-tab-active-hover-background: #292929;
-		--gnome-inactive-tabbar-tab-background: #1f1f1f;
-		--gnome-inactive-tabbar-tab-hover-background: #262626;
-		--gnome-inactive-tabbar-tab-active-background: #272727;
-		--gnome-inactive-tabbar-tab-active-hover-background: #2d2d2d;
+		--gnome-inactive-tabbar-tab-background: #222222;
+		--gnome-inactive-tabbar-tab-hover-background: #292929;
+		--gnome-inactive-tabbar-tab-active-background: #2c2c2c;
+		--gnome-inactive-tabbar-tab-active-hover-background: #323232;
 	}
 }
 
