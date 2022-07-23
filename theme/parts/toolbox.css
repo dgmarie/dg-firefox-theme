@@ -9,26 +9,25 @@
 
 /* Toolbox colors */
 #navigator-toolbox {
-  border: 0 !important;
+  border: none !important;
   background: none !important;
 }
 
 #nav-bar, #PersonalToolbar, #toolbar-menubar, #TabsToolbar, findbar {
-  border: 0 !important;
   background: var(--gnome-toolbar-background) !important;
 }
-findbar {
+findbar, #toolbar-menubar, #PersonalToolbar, #TabsToolbar {
+  border-bottom: none !important;
   border-top: 1px solid var(--gnome-toolbar-border-color) !important;
 }
-#toolbar-menubar, #PersonalToolbar, #TabsToolbar{
-  border-top: 1px solid var(--gnome-toolbar-border-color) !important;
-}
+findbar:-moz-window-inactive,
 #toolbar-menubar:-moz-window-inactive,
 #nav-bar:-moz-window-inactive,
 #PersonalToolbar:-moz-window-inactive {
   background: var(--gnome-inactive-toolbar-background) !important;
 }
 
+findbar:-moz-window-inactive,
 #toolbar-menubar:-moz-window-inactive,
 #PersonalToolbar:-moz-window-inactive {
   border-color: var(--gnome-inactive-toolbar-border-color) !important;
@@ -106,6 +105,10 @@ findbar:-moz-window-inactive description,
   padding: 6px !important;
   border-radius: 0 !important;
 }
+.notificationbox-stack:-moz-window-inactive,
+.container.infobar:-moz-window-inactive {
+  background: var(--gnome-inactive-toolbar-background) !important;
+}
 .container.infobar::before {
   display: none !important;
 }
@@ -115,14 +118,14 @@ findbar:-moz-window-inactive description,
   width: 16px !important;
 }
 .notificationbox-stack notification-message[type="warning"] {
-  background: #ffe900 !important;  
+  background: #F99B11 !important;  
 }
 .notificationbox-stack notification-message[type="critical"] {
-  background: #d70022 !important;
+  background: #c7162b !important;
 }
 
 .notificationbox-stack[notificationside="top"] notification-message {
-  border-bottom: 1px solid var(--gnome-toolbar-border-color) !important;
+  border-top: 1px solid var(--gnome-toolbar-border-color) !important;
 }
 .notificationbox-stack[notificationside="bottom"] notification-message {
   border-top: 1px solid var(--gnome-toolbar-border-color) !important;

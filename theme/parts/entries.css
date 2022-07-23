@@ -109,7 +109,7 @@
 }
 #urlbar, #searchbar {
   margin: 0 !important;
-  padding: 0 !important;
+  padding: 0 4px !important;
 }
 .searchbar-textbox {
   border: 0 !important;

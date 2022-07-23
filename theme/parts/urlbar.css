@@ -159,9 +159,6 @@ toolbarspring {
 }
 
 /* Firefox identity box */
-#identity-box {
-  margin-inline: var(--identity-box-margin-inline);
-}
 #identity-box[pageproxystate="valid"].notSecureText > .identity-box-button,
 #identity-box[pageproxystate="valid"].chromeUI > .identity-box-button,
 #identity-box[pageproxystate="valid"].extensionPage > .identity-box-button,
