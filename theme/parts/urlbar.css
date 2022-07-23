@@ -34,7 +34,7 @@ toolbarspring {
 }
 
 #urlbar #urlbar-input-container {
-  padding: 0 !important;
+  padding: 0 4px !important;
 }
 
 #urlbar .urlbar-input-box:-moz-window-inactive {
