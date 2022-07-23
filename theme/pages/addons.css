@@ -36,28 +36,28 @@
     --dialog-warning-text-color: var(--gnome-button-destructive-action-background) !important;
   }
 
-	/* Buttons and boxes */
-	#categories > .category,
-	button,
-	html|select,
-	html|input[type="color"],
-	xul|menulist,
-	html|input:is([type="email"],
-	[type="tel"],
-	[type="text"],
-	[type="password"],
-	[type="url"],
-	[type="number"]),
-	html|textarea,
-	xul|search-textbox,
+  /* Buttons and boxes */
+  #categories > .category,
+  button,
+  html|select,
+  html|input[type="color"],
+  xul|menulist,
+  html|input:is([type="email"],
+  [type="tel"],
+  [type="text"],
+  [type="password"],
+  [type="url"],
+  [type="number"]),
+  html|textarea,
+  xul|search-textbox,
   .card,
   .container {
-	  border-radius: 6px !important;
-	}
-	.card-heading-image {
-	  border-top-left-radius: 6px !important;
-	  border-top-right-radius: 6px !important;
-	}
+    border-radius: 6px !important;
+  }
+  .card-heading-image {
+    border-top-left-radius: 6px !important;
+    border-top-right-radius: 6px !important;
+  }
   #categories > .category[selected],
   #categories > .category.selected {
     background-color: var(--in-content-button-background) !important;
@@ -68,7 +68,7 @@
     background-color: var(--in-content-button-background-hover) !important;
   }
 
-	/* Toggle */
+  /* Toggle */
   input[type="checkbox"].toggle-button {
     --button-height: 20px !important;
     --button-half-height: 10px !important;
@@ -79,61 +79,61 @@
     --dot-transform-x: 17px !important;
   }
 
-	/* Icons color */
-	#category-home > .category-icon,
+  /* Icons color */
+  #category-home > .category-icon,
   .page-options-menu > .more-options-button,
   .more-options-button,
   .category[name="discover"],
   .category[name="extension"],
-	.category[name="theme"],
-	.category[name="plugin"],
-	.category[name="locale"],
-	#preferencesButton > .sidebar-footer-icon,
-  	#help-button > .sidebar-footer-icon {
-	  fill: var(--gnome-toolbar-icon-fill) !important;
+  .category[name="theme"],
+  .category[name="plugin"],
+  .category[name="locale"],
+  #preferencesButton > .sidebar-footer-icon,
+    #help-button > .sidebar-footer-icon {
+    fill: var(--gnome-toolbar-icon-fill) !important;
     -moz-context-properties: fill, fill-opacity;
   }
   
-	/* Icons */
-	:host([searchbutton]) .textbox-search-icon {
-	  list-style-image: url("../assets/yaru-icons/edit-find-symbolic.svg") !important;
+  /* Icons */
+  :host([searchbutton]) .textbox-search-icon {
+    list-style-image: url("../assets/yaru-icons/edit-find-symbolic.svg") !important;
   }
-	#category-home > .category-icon {
-		list-style-image: url("../assets/yaru-icons/user-home-symbolic.svg") !important;
-	}
-	.page-options-menu > .more-options-button {
-	  background-image: url("../assets/yaru-icons/settings-app-symbolic.svg") !important;
-	}
-	.more-options-button {
-	  background-image: url("../assets/yaru-icons/view-more-horizontal-symbolic.svg") !important;
-	}
-	.category[name="discover"] {
-	  background-image: url("../assets/yaru-icons/non-starred-symbolic.svg") !important;
-	}
-	.category[name="extension"] {
-	  background-image: url("../assets/yaru-icons/application-x-addon-symbolic.svg") !important;
-	}
-	.category[name="theme"] {
-	  background-image: url("../assets/yaru-icons/preferences-desktop-appearance-symbolic.svg") !important;
-	}
-	.category[name="plugin"] {
-	  background-image: url("../assets/yaru-icons/applications-electronics-symbolic.svg") !important;
-	}
-	.category[name="locale"] {
-	  background-image: url("../assets/yaru-icons/preferences-desktop-locale-symbolic.svg") !important;
-	}
-	#preferencesButton > .sidebar-footer-icon {
-	  padding: 0 0 16px 16px;
-	  background-size: 16px !important;
-	  background-image: url("../assets/yaru-icons/settings-app-symbolic.svg") !important;
-	  width: 0px !important;
-	  height: 0px !important;
-	}
-  	#help-button > .sidebar-footer-icon {
-	  padding: 0 0 16px 16px;
-	  background-size: 16px !important;
-	  background-image: url("../assets/yaru-icons/help-app-symbolic.svg") !important;
-	  width: 0px !important;
-	  height: 0px !important;
-	}
+  #category-home > .category-icon {
+    list-style-image: url("../assets/yaru-icons/user-home-symbolic.svg") !important;
+  }
+  .page-options-menu > .more-options-button {
+    background-image: url("../assets/yaru-icons/settings-app-symbolic.svg") !important;
+  }
+  .more-options-button {
+    background-image: url("../assets/yaru-icons/view-more-horizontal-symbolic.svg") !important;
+  }
+  .category[name="discover"] {
+    background-image: url("../assets/yaru-icons/non-starred-symbolic.svg") !important;
+  }
+  .category[name="extension"] {
+    background-image: url("../assets/yaru-icons/application-x-addon-symbolic.svg") !important;
+  }
+  .category[name="theme"] {
+    background-image: url("../assets/yaru-icons/preferences-desktop-appearance-symbolic.svg") !important;
+  }
+  .category[name="plugin"] {
+    background-image: url("../assets/yaru-icons/applications-electronics-symbolic.svg") !important;
+  }
+  .category[name="locale"] {
+    background-image: url("../assets/yaru-icons/preferences-desktop-locale-symbolic.svg") !important;
+  }
+  #preferencesButton > .sidebar-footer-icon {
+    padding: 0 0 16px 16px;
+    background-size: 16px !important;
+    background-image: url("../assets/yaru-icons/settings-app-symbolic.svg") !important;
+    width: 0px !important;
+    height: 0px !important;
+  }
+    #help-button > .sidebar-footer-icon {
+    padding: 0 0 16px 16px;
+    background-size: 16px !important;
+    background-image: url("../assets/yaru-icons/help-app-symbolic.svg") !important;
+    width: 0px !important;
+    height: 0px !important;
+  }
 }

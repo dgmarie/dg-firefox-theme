@@ -1,15 +1,15 @@
 /* about:newtab */
 
 @-moz-document url("about:newtab"), url("about:home") {
-    body {
-        --newtab-background-color: var(--gnome-browser-before-load-background) !important;
-        --newtab-background-color-secondary: var(--gnome-menu-background) !important;
-        --newtab-primary-action-background: var(--gnome-accent) !important;
-    }
-    body:-moz-window-inactive {
-        --newtab-background-color: var(--gnome-inactive-browser-before-load-background) !important;
-        --newtab-background-color-secondary: var(--gnome-menu-background) !important;
-        --newtab-primary-action-background: var(--gnome-accent) !important;
-        transition: 200ms ease-out;
-    }
+  body {
+    --newtab-background-color: var(--gnome-browser-before-load-background) !important;
+    --newtab-background-color-secondary: var(--gnome-menu-background) !important;
+    --newtab-primary-action-background: var(--gnome-accent) !important;
+  }
+  body:-moz-window-inactive {
+    --newtab-background-color: var(--gnome-inactive-browser-before-load-background) !important;
+    --newtab-background-color-secondary: var(--gnome-menu-background) !important;
+    --newtab-primary-action-background: var(--gnome-accent) !important;
+    transition: 200ms ease-out;
+  }
 }

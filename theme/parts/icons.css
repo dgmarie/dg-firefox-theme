@@ -40,7 +40,7 @@ button.close::before,
 #permissions-granted-icon,
 #downloads-indicator-icon,
 .textbox-search-clear {
-	fill: var(--gnome-toolbar-icon-fill) !important;
+  fill: var(--gnome-toolbar-icon-fill) !important;
   -moz-context-properties: fill, fill-opacity;
 }
 
@@ -49,25 +49,25 @@ button.close::before,
 .searchbar-search-icon,
 .textbox-search-sign,
 .textbox-search-clear {
-	opacity: 0.7 !important;
+  opacity: 0.7 !important;
 }
 .textbox-search-clear:hover {
-	opacity: 1 !important;
+  opacity: 1 !important;
 }
 
 /* Fix icons sizes */
 .permission-popup-permission-remove-button > .button-box > .button-icon,
 .menu-iconic-icon {
-	height: 16px !important;
-	width: 16px !important;
+  height: 16px !important;
+  width: 16px !important;
 }
 /* Fix icon color */
 #sidebar-icon {
-	opacity: 1 !important;
+  opacity: 1 !important;
 }
 treechildren::-moz-tree-twisty,
 treechildren::-moz-tree-image {
-	fill-opacity: 1 !important;
+  fill-opacity: 1 !important;
 }
 
 /* Icons active color */
@@ -78,38 +78,38 @@ treechildren::-moz-tree-image(selected, focus, open),
 .item.client:focus .item-twisty-container,
 .sidebar-panel[lwt-sidebar-brighttext] .sidebar-placesTreechildren::-moz-tree-twisty,
 .sidebar-panel[lwt-sidebar-brighttext] .sidebar-placesTreechildren::-moz-tree-twisty(open) {
-	fill: #fff !important;
+  fill: #fff !important;
 }
 
 /* Fix flat buttons icons aproach */
 button.close::before {
-	content: "";
-	display: block;
-	background-position: center center;
-	background-repeat: no-repeat;
-	height: 100%;
-	width: 100%;
+  content: "";
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }
 
 /* Fix main menu zoom controls icons */
 #appMenu-zoom-controls2 .toolbarbutton-icon {
-	padding: 0 !important;
-	padding-block: 0 !important;
-	padding-inline: 0 !important;
+  padding: 0 !important;
+  padding-block: 0 !important;
+  padding-inline: 0 !important;
 }
 
 /* Scroll icons */
 #scrollbutton-up {
-	list-style-image: var(--scrollbutton-icon-name) !important;
+  list-style-image: var(--scrollbutton-icon-name) !important;
 }
 #scrollbutton-down {
-	list-style-image: var(--scrollbutton-icon-name) !important;
+  list-style-image: var(--scrollbutton-icon-name) !important;
 }
 arrowscrollbox {
-	--scrollbutton-icon-name: url("../assets/yaru-icons/pan-down-symbolic.svg");
+  --scrollbutton-icon-name: url("../assets/yaru-icons/pan-down-symbolic.svg");
 }
 arrowscrollbox[orient="horizontal"] {
-	--scrollbutton-icon-name: url("../assets/yaru-icons/pan-start-symbolic.svg");
+  --scrollbutton-icon-name: url("../assets/yaru-icons/pan-start-symbolic.svg");
 }
 
 /* Popovers subview menu arrow */
@@ -119,31 +119,31 @@ arrowscrollbox[orient="horizontal"] {
 .protections-popup-category::after,
 .subviewbutton-back,
 .menu-right {
-	fill-opacity: 1 !important;
-	opacity: .3;
+  fill-opacity: 1 !important;
+  opacity: .3;
 }
 .menu-right {
-	-moz-appearance: none !important;
-	list-style-image: url("../assets/yaru-icons/go-next-symbolic.svg") !important;
-	width: 16px !important;
-	height: 16px !important;
+  -moz-appearance: none !important;
+  list-style-image: url("../assets/yaru-icons/go-next-symbolic.svg") !important;
+  width: 16px !important;
+  height: 16px !important;
 }
 #identity-popup-mainView .subviewbutton-nav::after,
 .widget-overflow-list .subviewbutton-nav::after,
 .PanelUI-subView .subviewbutton-nav::after {
-	content: "" !important;
-	background: url("../assets/yaru-icons/go-next-symbolic.svg");
-	background-size: contain;
-	height: 16px;
-	width: 16px;
+  content: "" !important;
+  background: url("../assets/yaru-icons/go-next-symbolic.svg");
+  background-size: contain;
+  height: 16px;
+  width: 16px;
 }
 .protections-popup-category::after {
-	content: url("../assets/yaru-icons/go-next-symbolic.svg") !important;
+  content: url("../assets/yaru-icons/go-next-symbolic.svg") !important;
 }
 
 /* Popovers subview back button */
 .subviewbutton-back {
-	list-style-image: url("../assets/yaru-icons/go-previous-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/go-previous-symbolic.svg") !important;
 }
 
 /* Arrow down buttons */
@@ -151,33 +151,33 @@ arrowscrollbox[orient="horizontal"] {
 #sidebar-switcher-arrow,
 #viewButton .button-menu-dropmarker,
 .popup-notification-dropmarker .button-icon {
-	-moz-appearance: none !important;
-	list-style-image: url("../assets/yaru-icons/pan-down-symbolic.svg") !important;
-	width: 16px !important;
-	height: 16px !important;
+  -moz-appearance: none !important;
+  list-style-image: url("../assets/yaru-icons/pan-down-symbolic.svg") !important;
+  width: 16px !important;
+  height: 16px !important;
 }
 .menulist-label-box:after {
-	content: url("../assets/yaru-icons/pan-down-symbolic.svg") !important;
+  content: url("../assets/yaru-icons/pan-down-symbolic.svg") !important;
 }
 
 /* Arrow up buttons */
 .expander-up > .button-box {
-	-moz-appearance: none !important;
-	list-style-image: url("../assets/yaru-icons/pan-up-symbolic.svg") !important;
-	width: 16px !important;
-	height: 16px !important;
+  -moz-appearance: none !important;
+  list-style-image: url("../assets/yaru-icons/pan-up-symbolic.svg") !important;
+  width: 16px !important;
+  height: 16px !important;
 }
 
 /* Search entries */
 #urlbar:not(.searchButton) > #urlbar-input-container > #identity-box[pageproxystate="invalid"] > #identity-icon,
 .searchbar-search-icon,
 .textbox-search-sign {
-	list-style-image: url(../assets/yaru-icons/edit-find-symbolic.svg) !important;
+  list-style-image: url(../assets/yaru-icons/edit-find-symbolic.svg) !important;
 }
 .textbox-search-sign {
-	margin: 3px 0;
-	max-height: 16px !important;
-	width: 16px !important;
+  margin: 3px 0;
+  max-height: 16px !important;
+  width: 16px !important;
 }
 
 /* Findbar */
@@ -191,18 +191,18 @@ arrowscrollbox[orient="horizontal"] {
 /* Tree views */
 treechildren::-moz-tree-twisty,
 .item.client .item-twisty-container {
-	list-style-image: url("../assets/yaru-icons/pan-down-symbolic.svg") !important;
-	width: 16px !important;
-	height: 16px !important;
+  list-style-image: url("../assets/yaru-icons/pan-down-symbolic.svg") !important;
+  width: 16px !important;
+  height: 16px !important;
 }
 .item.client .item-twisty-container {
-	background-image: url("../assets/yaru-icons/pan-down-symbolic.svg") !important;
+  background-image: url("../assets/yaru-icons/pan-down-symbolic.svg") !important;
 }
 treechildren::-moz-tree-twisty(open) {
-	list-style-image: url("../assets/yaru-icons/pan-end-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/pan-end-symbolic.svg") !important;
 }
 .item.client.closed .item-twisty-container {
-	background-image: url("../assets/yaru-icons/pan-end-symbolic.svg") !important;
+  background-image: url("../assets/yaru-icons/pan-end-symbolic.svg") !important;
 }
 
 treechildren::-moz-tree-image(title, container),
@@ -216,22 +216,22 @@ treechildren::-moz-tree-image(query, OrganizerQuery_history____v) {
 
 /* Menu checkbox */
 menuitem[type="checkbox"] {
-	list-style-image: none !important;
+  list-style-image: none !important;
 }
 menuitem[type="checkbox"][checked="true"] {
-	list-style-image: url("../assets/adw-icons/check-symbolic.svg") !important;
+  list-style-image: url("../assets/adw-icons/check-symbolic.svg") !important;
 }
 menuitem[type="checkbox"] .menu-iconic-icon {
   border-radius: 5px;
-	border: 2px solid var(--gnome-toolbar-border-color);
-	background-color: var(--gnome-menu-icon-background);
+  border: 2px solid var(--gnome-toolbar-border-color);
+  background-color: var(--gnome-menu-icon-background);
 }
 menuitem[type="checkbox"][checked="true"] .menu-iconic-icon {
-	border-color: var(--gnome-accent);
-	background-color: var(--gnome-accent);
+  border-color: var(--gnome-accent);
+  background-color: var(--gnome-accent);
 }
 menuitem[type="checkbox"][disabled="true"] .menu-iconic-icon {
-	opacity: 0.5;
+  opacity: 0.5;
 }
 
 /* Checkbox */
@@ -244,53 +244,53 @@ checkbox .checkbox-check {
   transition: 200ms !important;
 }
 checkbox .checkbox-check[checked="true"] {
-  	background-image: url("../assets/adw-icons/check-symbolic.svg") !important;
+    background-image: url("../assets/adw-icons/check-symbolic.svg") !important;
   border-color: var(--gnome-accent) !important;
-	background-color: var(--gnome-accent) !important;
+  background-color: var(--gnome-accent) !important;
 }
 checkbox .checkbox-check[disabled="true"] {
-	opacity: 0.5;
+  opacity: 0.5;
 }
 
 /* Menu radio */
 menuitem[type="radio"] {
-	list-style-image: none !important;
+  list-style-image: none !important;
 }
 menuitem[type="radio"][checked="true"] {
-	list-style-image: url("../assets/adw-icons/bullet-symbolic.svg") !important;
+  list-style-image: url("../assets/adw-icons/bullet-symbolic.svg") !important;
 }
 menuitem[type="radio"] .menu-iconic-icon {
-	border-radius: 100%;
-	border: 2px solid var(--gnome-toolbar-border-color);
-	background-color: var(--gnome-menu-icon-background);
+  border-radius: 100%;
+  border: 2px solid var(--gnome-toolbar-border-color);
+  background-color: var(--gnome-menu-icon-background);
 }
 menuitem[type="radio"][checked="true"] .menu-iconic-icon {
-	border-color: var(--gnome-accent);
-	background-color: var(--gnome-accent);
+  border-color: var(--gnome-accent);
+  background-color: var(--gnome-accent);
 }
 menuitem[type="radio"][disabled="true"] .menu-iconic-icon {
-	opacity: 0.5;
+  opacity: 0.5;
 }
 
 /* Close button */
 .close-icon:not(.tab-close-button),
 .identity-popup-permission-remove-button .button-icon,
 .permission-popup-permission-remove-button > .button-box > .button-icon {
-	list-style-image: url("../assets/yaru-icons/window-close-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/window-close-symbolic.svg") !important;
 }
 #urlbar-search-mode-indicator-close,
 button.close::before {
-	background-image: url("../assets/yaru-icons/window-close-symbolic.svg") !important;
+  background-image: url("../assets/yaru-icons/window-close-symbolic.svg") !important;
 }
 @media (prefers-color-scheme: light) {
-	.notificationbox-stack notification[type="critical"] .close-icon:not(.tab-close-button):not(:hover) {
-		fill: #fff !important;
-	}
+  .notificationbox-stack notification[type="critical"] .close-icon:not(.tab-close-button):not(:hover) {
+    fill: #fff !important;
+  }
 }
 @media (prefers-color-scheme: dark) {
-	.notificationbox-stack notification[type="warning"] .close-icon:not(.tab-close-button):not(:hover) image {
-		fill: rgb(46, 52, 54) !important;
-	}
+  .notificationbox-stack notification[type="warning"] .close-icon:not(.tab-close-button):not(:hover) image {
+    fill: rgb(46, 52, 54) !important;
+  }
 }
 
 /* Sound icons */
@@ -303,126 +303,126 @@ button.close::before {
 
 /* Location icon */
 .geo-icon {
-  	list-style-image: url("../assets/yaru-icons/mark-location-symbolic.svg") !important;
+    list-style-image: url("../assets/yaru-icons/mark-location-symbolic.svg") !important;
 }
 /* Camera icon */
 #webrtc-sharing-icon[sharing="camera"] {
-  	list-style-image: url("../assets/yaru-icons/camera-video-symbolic.svg") !important;
+    list-style-image: url("../assets/yaru-icons/camera-video-symbolic.svg") !important;
 }
 /* Microphone icon */
 #webrtc-sharing-icon[sharing="microphone"] {
-  	list-style-image: url("../assets/yaru-icons/audio-input-microphone-symbolic.svg") !important;
+    list-style-image: url("../assets/yaru-icons/audio-input-microphone-symbolic.svg") !important;
 }
   
 /* Private browsing button */
 #privatebrowsing-button {
-	list-style-image: url("../assets/yaru-icons/eye-not-looking-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/eye-not-looking-symbolic.svg") !important;
 }
 /* Sidebar button */
 #sidebar-button:-moz-locale-dir(ltr):not([positionend])  .toolbarbutton-icon, #sidebar-button:-moz-locale-dir(rtl)[positionend]  .toolbarbutton-icon {
-	list-style-image: url("../assets/yaru-icons/sidebar-show-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/sidebar-show-symbolic.svg") !important;
 }
 #sidebar-button .toolbarbutton-icon {
-	list-style-image: url("../assets/yaru-icons/sidebar-show-right-symbolic.svg");
+  list-style-image: url("../assets/yaru-icons/sidebar-show-right-symbolic.svg");
 }
-/* Back button */	
+/* Back button */  
 #nav-bar #back-button,
 #context-back { 
-	list-style-image: url("../assets/yaru-icons/go-previous-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/go-previous-symbolic.svg") !important;
 }
-/* Forward button */	
+/* Forward button */  
 #nav-bar #forward-button,
 #context-forward,
 #urlbar-go-button,
 .search-go-button { 
-	list-style-image: url("../assets/yaru-icons/go-next-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/go-next-symbolic.svg") !important;
 }
 /* Menu button */
 #PanelUI-menu-button {
-	list-style-image: url("../assets/yaru-icons/open-menu-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/open-menu-symbolic.svg") !important;
 }
 /* New tab button */
 #new-tab-button {
-	list-style-image: url("../assets/yaru-icons/tab-new-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/tab-new-symbolic.svg") !important;
 }
 #tabs-newtab-button,
 #TabsToolbar #new-tab-button {
-	list-style-image: url("../assets/yaru-icons/list-add-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/list-add-symbolic.svg") !important;
 }
 /* Home button */
 #home-button {
-	list-style-image: url("../assets/yaru-icons/user-home-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/user-home-symbolic.svg") !important;
 }
 /* Preferences button */
 #preferences-button,
 .search-setting-button-compact > .button-box > .button-icon {
-	list-style-image: url("../assets/yaru-icons/settings-app-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/settings-app-symbolic.svg") !important;
 }
 /* Tabs sync */
 #sync-button,
 #sidebar-box[sidebarcommand="viewTabsSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon,
 .urlbarView-row[source="tabs"] > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-favicon,
 #urlbar-engine-one-off-item-tabs {
-	list-style-image: url("../assets/adw-icons/tab-symbolic.svg") !important;
+  list-style-image: url("../assets/adw-icons/tab-symbolic.svg") !important;
 }
 /* Fullscreen button */
 #fullscreen-button,
 #appMenu-fullscreen-button2 {
-	list-style-image: url("../assets/yaru-icons/view-fullscreen-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/view-fullscreen-symbolic.svg") !important;
 }
 /* Zoom out button */
 #zoom-out-button,
 #appMenu-zoomReduce-button2 {
-	list-style-image: url("../assets/yaru-icons/zoom-out-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/zoom-out-symbolic.svg") !important;
 }
 /* Zoom in button */
 #zoom-in-button,
 #appMenu-zoomEnlarge-button2 {
-	list-style-image: url("../assets/yaru-icons/zoom-in-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/zoom-in-symbolic.svg") !important;
 }
 /* Developer button */
 #developer-button {
-	list-style-image: url("../assets/yaru-icons/applications-engineering-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/applications-engineering-symbolic.svg") !important;
 }
 /* Email link button */
 #email-link-button {
-	list-style-image: url("../assets/yaru-icons/mail-unread-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/mail-unread-symbolic.svg") !important;
 }
 /* Print button */
 #print-button {
-	list-style-image: url("../assets/yaru-icons/printer-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/printer-symbolic.svg") !important;
 }
 /* Addons button */
 #add-ons-button,
 #addons-notification-icon,
 .install-icon {
-	list-style-image: url("../assets/yaru-icons/application-x-addon-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/application-x-addon-symbolic.svg") !important;
 }
 /* Find button */
 #find-button {
-	list-style-image: url("../assets/yaru-icons/edit-find-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/edit-find-symbolic.svg") !important;
 }
 /* New window button */
 #new-window-button {
-	list-style-image: url("../assets/yaru-icons/window-new-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/window-new-symbolic.svg") !important;
 }
 /* Bookmarks menu button */
 #bookmarks-menu-button,
 #sidebar-box[sidebarcommand="viewBookmarksSidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon,
 .urlbarView-row[source="bookmarks"] > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-favicon,
 #urlbar-engine-one-off-item-bookmarks {
-	list-style-image: url("../assets/yaru-icons/starred-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/starred-symbolic.svg") !important;
 }
 #context-bookmarkpage[starred="true"],
 #star-button[starred] {
-	list-style-image: url("../assets/yaru-icons/starred-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/starred-symbolic.svg") !important;
 }
 #context-bookmarkpage,
 #star-button {
-	list-style-image: url("../assets/yaru-icons/non-starred-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/non-starred-symbolic.svg") !important;
 }
 #star-button[starred] {
-	fill: var(--gnome-accent) !important;
+  fill: var(--gnome-accent) !important;
 }
 
 /* History button */
@@ -430,62 +430,62 @@ button.close::before {
 #sidebar-box[sidebarcommand="viewHistorySidebar"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon,
 .urlbarView-row[source="history"] > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-favicon,
 #urlbar-engine-one-off-item-history {
-	list-style-image: url("../assets/yaru-icons/preferences-system-time-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/preferences-system-time-symbolic.svg") !important;
 }
 /* All tabs button */
 #alltabs-button {
-	list-style-image: url("../assets/yaru-icons/pan-down-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/pan-down-symbolic.svg") !important;
 }
 /* Cut button */
 #cut-button,
 #appMenu-cut-button {
-	list-style-image: url("../assets/yaru-icons/edit-cut-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/edit-cut-symbolic.svg") !important;
 }
 /* Copy button */
 #copy-button,
 #appMenu-copy-button {
-	list-style-image: url("../assets/yaru-icons/edit-copy-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/edit-copy-symbolic.svg") !important;
 }
 /* Paste button */
 #paste-button,
 #appMenu-paste-button {
-	list-style-image: url("../assets/yaru-icons/edit-paste-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/edit-paste-symbolic.svg") !important;
 }
 /* Overflow button */
 #nav-bar-overflow-button {
-	list-style-image: url("../assets/yaru-icons/pan-down-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/pan-down-symbolic.svg") !important;
 }
 /* Reload */
 #reload-button,
 .downloadIconRetry > .button-box > .button-icon,
 #context-reload {
-	list-style-image: url("../assets/yaru-icons/view-refresh-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/view-refresh-symbolic.svg") !important;
 }
 /* Stop */
 #stop-button,
 .downloadIconCancel > .button-box > .button-icon,
 #context-stop {
-	list-style-image: url("../assets/yaru-icons/process-stop-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/process-stop-symbolic.svg") !important;
 }
 /* Downlaod */
 #downloads-button,
 #downloads-indicator-icon {
-	list-style-image: url("../assets/yaru-icons/folder-download-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/folder-download-symbolic.svg") !important;
 }
 /* Info */
 .panel-info-button > image,
 #identity-icon {
-	list-style-image: url("../assets/yaru-icons/dialog-information-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/dialog-information-symbolic.svg") !important;
 }
 .tabbrowser-tab[image="chrome://global/skin/icons/info.svg"]:not([busy]):not([progress]) .tab-icon-stack::before {
-	content: "";
-	height: 16px;
-	width: 16px;
-	background-image: url("../assets/yaru-icons/dialog-information-symbolic.svg") !important;
+  content: "";
+  height: 16px;
+  width: 16px;
+  background-image: url("../assets/yaru-icons/dialog-information-symbolic.svg") !important;
 }
 /* Password */
 #password-notification-icon {
-	list-style-image: url("../assets/yaru-icons/dialog-password-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/dialog-password-symbolic.svg") !important;
 }
 
 /* Url Bar icons */
@@ -506,7 +506,7 @@ button.close::before {
   list-style-image: url("../assets/yaru-icons/channel-secure-symbolic.svg") !important;
 }
 #identity-popup[connection^="secure"] .identity-popup-security-connection {
-	background-image: url("../assets/yaru-icons/channel-secure-symbolic.svg") !important;
+  background-image: url("../assets/yaru-icons/channel-secure-symbolic.svg") !important;
 }
 #identity-box[pageproxystate="valid"].notSecure #identity-icon,
 #identity-box[pageproxystate="valid"].mixedActiveContent #identity-icon,
@@ -514,7 +514,7 @@ button.close::before {
   list-style-image: url("../assets/yaru-icons/channel-insecure-symbolic.svg") !important;
 }
 .identity-popup-security-connection {
-	background-image: url("../assets/yaru-icons/channel-insecure-symbolic.svg") !important;
+  background-image: url("../assets/yaru-icons/channel-insecure-symbolic.svg") !important;
 }
 #permissions-granted-icon {
   list-style-image: url("../assets/yaru-icons/tweaks-app-symbolic.svg") !important;
@@ -523,26 +523,26 @@ button.close::before {
   list-style-image: url("../assets/yaru-icons/chat-symbolic.svg") !important;
 }
 #reader-mode-button-icon {
-	list-style-image: url("../assets/yaru-icons/view-dual-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/view-dual-symbolic.svg") !important;
 }
 .urlbar-icon {
-	margin: 2px 0 !important;
+  margin: 2px 0 !important;
 }
 
 /* Fix for extensions icons */
 @media (prefers-color-scheme: dark) {
-	.webextension-browser-action {
-		list-style-image: var(--webextension-menupanel-image-light, inherit) !important;
-	}
+  .webextension-browser-action {
+    list-style-image: var(--webextension-menupanel-image-light, inherit) !important;
+  }
 }
 
 /* Folder icon */
 .bookmark-item[container],
 .downloadIconShow > .button-box > .button-icon {
-	list-style-image: url("../assets/yaru-icons/folder-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/folder-symbolic.svg") !important;
 }
 
 /* Text clear */
 .textbox-search-clear {
-	content: url("../assets/yaru-icons/edit-clear-symbolic.svg") !important;
+  content: url("../assets/yaru-icons/edit-clear-symbolic.svg") !important;
 }

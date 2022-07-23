@@ -39,56 +39,56 @@
   /* Checkbox */
   html|input[type="checkbox"] {
     background-size: 12px !important;
-	  background-image: none !important;
+    background-image: none !important;
     border-radius: 5px !important;
-	  border: 2px solid var(--gnome-toolbar-border-color) !important;
-	  background-color: transparent !important;
+    border: 2px solid var(--gnome-toolbar-border-color) !important;
+    background-color: transparent !important;
     transition: 200ms !important;
   }
   html|input[type="checkbox"] {
-    	background-image: url("../assets/adw-icons/check-symbolic.svg") !important;
-	  border-color: var(--gnome-accent) !important;
-	  background-color: var(--gnome-accent) !important;
+      background-image: url("../assets/adw-icons/check-symbolic.svg") !important;
+    border-color: var(--gnome-accent) !important;
+    background-color: var(--gnome-accent) !important;
   }
   html|input[type="checkbox"] {
-	  opacity: 0.5;
-	}
+    opacity: 0.5;
+  }
 
-	/* Buttons and boxes */
+  /* Buttons and boxes */
   #prefs,
   button,
   html|select,
   html|input[type="color"],
   xul|menulist,
-	html|input:is([type="email"],
-	[type="tel"],
-	[type="text"],
-	[type="password"],
-	[type="url"],
-	[type="number"]),
-	html|textarea,
-	xul|search-textbox,
-	.web-appearance-choice {
-	  border-radius: 6px !important;
-	}
+  html|input:is([type="email"],
+  [type="tel"],
+  [type="text"],
+  [type="password"],
+  [type="url"],
+  [type="number"]),
+  html|textarea,
+  xul|search-textbox,
+  .web-appearance-choice {
+    border-radius: 6px !important;
+  }
 
-	/* Icons color */
+  /* Icons color */
   #about-config-search,
   .button-toggle,
   .button-edit,
   .button-reset,
   .button-delete {
-	  fill: var(--gnome-toolbar-icon-fill) !important;
+    fill: var(--gnome-toolbar-icon-fill) !important;
     -moz-context-properties: fill, fill-opacity;
   }
   .title {
-  	  fill: var(--gnome-warning-icon-fill) !important;
+      fill: var(--gnome-warning-icon-fill) !important;
   }
   
-	/* Icons */
-	.title {
+  /* Icons */
+  .title {
     background-image: url("../assets/yaru-icons/warning-symbolic.svg") !important;
-	}
+  }
   #about-config-search {
     background-image: url("../assets/yaru-icons/edit-find-symbolic.svg") !important;
   }

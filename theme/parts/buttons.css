@@ -4,10 +4,10 @@
 
 /* Hide buttons separator */
 #nav-bar .toolbaritem-combined-buttons separator {
-	display: none !important;
+  display: none !important;
 }
 #appMenu-popup .toolbaritem-combined-buttons toolbarseparator {
-	border: 0 !important;
+  border: 0 !important;
 }
 
 /* Buttons */
@@ -40,22 +40,22 @@ button.close,
 .button.connect-device,
 #item-choose button,
 #editBMPanel_newFolderButton {
-	-moz-appearance: none !important;
-	background: var(--gnome-button-background) !important;
-	border-radius: 6px !important;
-	border: 0 !important;
-	padding: 0 1px !important;
-	height: 34px !important;
-	max-height: 34px !important;
-	min-height: 34px !important;
-	min-width: 34px !important;
-	color: var(--gnome-toolbar-color) !important;
-	outline: 0 !important;
-	font: menu !important;
-	-moz-box-align: center !important;
+  -moz-appearance: none !important;
+  background: var(--gnome-button-background) !important;
+  border-radius: 6px !important;
+  border: 0 !important;
+  padding: 0 1px !important;
+  height: 34px !important;
+  max-height: 34px !important;
+  min-height: 34px !important;
+  min-width: 34px !important;
+  color: var(--gnome-toolbar-color) !important;
+  outline: 0 !important;
+  font: menu !important;
+  -moz-box-align: center !important;
 }
 .subviewbutton-iconic {
-	-moz-box-pack: center !important;
+  -moz-box-pack: center !important;
 }
 
 /* Flat Buttons */
@@ -64,7 +64,7 @@ button.close,
 button.close,
 #protections-popup-info-button,
 .permission-popup-permission-remove-button {
-	background: transparent !important;
+  background: transparent !important;
 }
 
 /* Buttons with margins */
@@ -72,38 +72,38 @@ button.close,
 .notification-button,
 .subviewbutton.panel-subview-footer:not(:only-of-type),
 .panel-footer button:not(:only-of-type) {
-	margin: 0 3px !important;
+  margin: 0 3px !important;
 }
 .close-icon:not(.tab-close-button) {
-	margin-left: 6px !important;
+  margin-left: 6px !important;
 }
 
 /* Forward/back buttons */
 #nav-bar #back-button,
 #nav-bar #forward-button {
-	-moz-appearance: none !important;
-	background: var(--gnome-button-background) !important;
-	border: 0 !important;
-	border-radius: 0 !important;
-	height: 34px !important;
-	max-height: 34px !important;
-	min-height: 34px !important;
-	min-width: 34px !important;
-	color: var(--gnome-toolbar-color) !important;
-	outline: 0 !important;
-	font: menu !important;
-	-moz-box-align: center !important;
+  -moz-appearance: none !important;
+  background: var(--gnome-button-background) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  height: 34px !important;
+  max-height: 34px !important;
+  min-height: 34px !important;
+  min-width: 34px !important;
+  color: var(--gnome-toolbar-color) !important;
+  outline: 0 !important;
+  font: menu !important;
+  -moz-box-align: center !important;
 }
 #nav-bar #back-button {
-	border-top-left-radius: 6px !important;
-	border-bottom-left-radius: 6px !important;
-	margin: 0 0 0 3px !important;
-	padding: 0 0 0 1px!important;
+  border-top-left-radius: 6px !important;
+  border-bottom-left-radius: 6px !important;
+  margin: 0 0 0 3px !important;
+  padding: 0 0 0 1px !important;
 }
 #nav-bar #forward-button {
-	border-top-right-radius: 6px !important;
-	border-bottom-right-radius: 6px !important;
-	margin: 0 3px 0 0 !important;
+  border-top-right-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
+  margin: 0 3px 0 0 !important;
   padding: 0 1px 0 0 !important;
 }
 
@@ -125,7 +125,7 @@ menulist,
 .button.connect-device,
 #item-choose button,
 #editBMPanel_newFolderButton {
-	padding: 2px 16px !important;
+  padding: 2px 16px !important;
 }
 .subviewbutton.panel-subview-footer label,
 .panel-footer button,
@@ -141,30 +141,30 @@ menulist,
 .dialog-button-box button,
 .button.connect-device,
 #item-choose button {
-	text-align: center !important;
+  text-align: center !important;
 }
 
 /* Drop down buttons */
 #sidebar-switcher-target,
 #viewButton {
-	padding: 2px 16px !important;
-	position: relative;
+  padding: 2px 16px !important;
+  position: relative;
 }
 #sidebar-switcher-arrow,
 #viewButton .button-menu-dropmarker { /* Arrow position, type b */
-	transform: translate(6px, 0)
+  transform: translate(6px, 0)
 }
 .menulist-label-box {
-	padding: 2px 26px 2px 16px !important;
-	position: relative;
+  padding: 2px 26px 2px 16px !important;
+  position: relative;
 }
 .menulist-label-box:after { /* Arrow position */
-	position: absolute !important;
-	right: 8px !important;
-	top: 8px !important;
+  position: absolute !important;
+  right: 8px !important;
+  top: 8px !important;
 }
 .menulist-label-box:after { /* Create arrow if icon tag no exist */
-	content: "";
+  content: "";
 }
 
 /* Hover buttons */
@@ -191,8 +191,8 @@ menulist:hover .menulist-label-box,
 .searchbar-engine-one-off-item:hover,
 .button.connect-device:hover,
 #editBMPanel_newFolderButton:hover {
-	outline: 0 !important;
-	background: var(--gnome-button-hover-background) !important;
+  outline: 0 !important;
+  background: var(--gnome-button-hover-background) !important;
 }
 
 /* Hover flat buttons */
@@ -202,8 +202,8 @@ button.close:hover,
 #protections-popup-info-button:hover,
 .permission-popup-permission-remove-button:hover,
 #item-choose button:hover {
-	outline: 0 !important;
-	background: var(--gnome-button-flat-hover-background) !important;
+  outline: 0 !important;
+  background: var(--gnome-button-flat-hover-background) !important;
 }
 
 /* Active buttons */
@@ -229,7 +229,7 @@ menulist[open] .menulist-label-box,
 .dialog-button-box button:not([disabled="true"]):active,
 .button.connect-device:active,
 #editBMPanel_newFolderButton:active {
-	background: var(--gnome-button-active-background) !important;
+  background: var(--gnome-button-active-background) !important;
 }
 
 /* Active flat buttons */
@@ -242,7 +242,7 @@ button.close:active,
 #protections-popup-info-button:not(#hack)[checked],
 .permission-popup-permission-remove-button:active,
 #item-choose button:active {
-	background: var(--gnome-button-flat-active-background) !important;
+  background: var(--gnome-button-flat-active-background) !important;
 }
 
 /* Disabled buttons */
@@ -250,15 +250,15 @@ button.close:active,
 #appMenu-popup .toolbaritem-combined-buttons toolbarbutton[disabled="true"],
 #context-navigation menuitem[disabled="true"],
 .dialog-button-box button[disabled="true"] {
-	opacity: .5 !important;
+  opacity: .5 !important;
 }
 
 #nav-bar toolbarbutton:not(#urlbar-zoom-button)[disabled="true"]:-moz-window-inactive,
 #appMenu-popup .toolbaritem-combined-buttons toolbarbutton[disabled="true"]:-moz-window-inactive,
 #context-navigation menuitem[disabled="true"]:-moz-window-inactive,
 .dialog-button-box button[disabled="true"]:-moz-window-inactive {
-	opacity: 1 !important;
-	transition: 200ms ease-out;
+  opacity: 1 !important;
+  transition: 200ms ease-out;
 }
 
 /* Inactive window buttons */
@@ -267,16 +267,16 @@ button.close:active,
 #sidebar-switcher-target:-moz-window-inactive,
 #viewButton:-moz-window-inactive,
 .notification-button:-moz-window-inactive {
-	background: var(--gnome-inactive-button-background) !important;
-	box-shadow: var(--gnome-inactive-button-box-shadow) !important;
-	border-color: var(--gnome-inactive-button-border-color) !important;
-	transition: 200ms ease-out;
+  background: var(--gnome-inactive-button-background) !important;
+  box-shadow: var(--gnome-inactive-button-box-shadow) !important;
+  border-color: var(--gnome-inactive-button-border-color) !important;
+  transition: 200ms ease-out;
 }
 
 /* Circle buttons */
 #downloadsPanel-mainView .download-state .downloadButton,
 .permission-popup-permission-remove-button:not(#hack) {
-	border-radius: 100% !important;
+  border-radius: 100% !important;
 }
 
 /* Combined buttons */
@@ -286,10 +286,10 @@ button.close:active,
 .findbar-container toolbarbutton.findbar-find-previous,
 .findbar-button:not(:last-of-type),
 .search-panel-one-offs .searchbar-engine-one-off-item:not(:last-child) {
-	border-top-right-radius: 0 !important;
-	border-bottom-right-radius: 0 !important;
-	border-right-width: 0 !important;
-	margin-right: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-right-width: 0 !important;
+  margin-right: 0 !important;
 }
 
 #nav-bar .toolbaritem-combined-buttons toolbarbutton:not(:first-of-type):not(#hack),
@@ -299,14 +299,14 @@ button.close:active,
 .findbar-container toolbarbutton.findbar-find-next,
 .findbar-button:not(:first-of-type),
 .search-panel-one-offs .searchbar-engine-one-off-item:not(:first-child) {
-	border-top-left-radius: 0 !important;
-	border-bottom-left-radius: 0 !important;
-	margin-left: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  margin-left: 0 !important;
 }
 
 #nav-bar .toolbaritem-combined-buttons {
-	margin-left: 0 !important;
-	margin-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 /* Opaque buttons */
@@ -317,8 +317,8 @@ button.popup-notification-primary-button,
 .button.connect-device,
 #editBookmarkPanelRemoveButton,
 #PanelUI-panic-view-button {
-	color: white !important;
-	font-weight: bold !important;
+  color: white !important;
+  font-weight: bold !important;
 }
 
 /* Buttons with suggested action */
@@ -327,13 +327,13 @@ button.popup-notification-primary-button:not(#hack),
 #editBookmarkPanelDoneButton,
 #tracking-action-block,
 .button.connect-device {
-	background-color: var(--gnome-button-suggested-action-background) !important;
+  background-color: var(--gnome-button-suggested-action-background) !important;
 }
 
 /* Buttons with destructive action */
 #editBookmarkPanelRemoveButton,
 #PanelUI-panic-view-button {
-	background-color: var(--gnome-button-destructive-action-background) !important;
+  background-color: var(--gnome-button-destructive-action-background) !important;
 }
 
 /* Opaque buttons hover */
@@ -344,7 +344,7 @@ button.popup-notification-primary-button:hover,
 .button.connect-device:hover,
 #editBookmarkPanelRemoveButton:hover,
 #PanelUI-panic-view-button:hover {
-	background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)) !important;
+  background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)) !important;
 }
 
 /* Opaque buttons active */
@@ -355,5 +355,5 @@ button.popup-notification-primary-button:active,
 .button.connect-device:active,
 #editBookmarkPanelRemoveButton:active,
 #PanelUI-panic-view-button:active {
-	background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)) !important;
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)) !important;
 }

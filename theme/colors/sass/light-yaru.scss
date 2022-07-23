@@ -13,57 +13,57 @@ $accent_color_rgb: toRGB($accent_color);
  * built-in in Firefox, so you need to add an !important if you wanna
  * override them. */
 :root {
-	/* Browser area before a page starts loading */
-	--gnome-browser-before-load-background: #ffffff;
-	--gnome-inactive-browser-before-load-background: #fafafa;
+  /* Browser area before a page starts loading */
+  --gnome-browser-before-load-background: #ffffff;
+  --gnome-inactive-browser-before-load-background: #fafafa;
 
-	/* Accent */
-	--gnome-accent-bg: #{$accent_color};
-	--gnome-accent: #{$accent_color};
+  /* Accent */
+  --gnome-accent-bg: #{$accent_color};
+  --gnome-accent: #{$accent_color};
 
-	/* Toolbars */
-	--gnome-toolbar-background: #ebebeb;
-	--gnome-toolbar-border-color: rgba(0, 0, 0, .12);
-	--gnome-toolbar-icon-fill: rgba(0, 0, 0, .8);
-	--gnome-inactive-toolbar-background: #fafafa;
-	--gnome-inactive-toolbar-border-color: rgba(226, 226, 226, .98);
+  /* Toolbars */
+  --gnome-toolbar-background: #ebebeb;
+  --gnome-toolbar-border-color: rgba(0, 0, 0, .12);
+  --gnome-toolbar-icon-fill: rgba(0, 0, 0, .8);
+  --gnome-inactive-toolbar-background: #fafafa;
+  --gnome-inactive-toolbar-border-color: rgba(226, 226, 226, .98);
 
-	/* Menus */
-	--gnome-menu-background: #fafafa;
-	--gnome-menu-border-color: rgba(0, 0, 0, .12);
-	--gnome-menu-icon-background: #ffffff;
-	--gnome-menu-separator-color: rgba(213, 213, 213, .97);
+  /* Menus */
+  --gnome-menu-background: #fafafa;
+  --gnome-menu-border-color: rgba(0, 0, 0, .14);
+  --gnome-menu-shadow: 0 1px 5px 1px rgba(0,0,0, .09), 0 2px 14px 3px rgba(0,0,0, .05), 0 0 0 1px rgba(0, 0, 0, .07);
+  --gnome-menu-icon-background: #ffffff;
+  --gnome-toolbar-border-color: rgba(0, 0, 0, .12);
 
-	/* Header bar */
-	--gnome-headerbar-background: #ebebeb;
+  /* Header bar */
+  --gnome-headerbar-background: #ebebeb;
 
-	/* Buttons */
-	--gnome-button-destructive-action-background: #c7162b;
+  /* Buttons */
+  --gnome-button-destructive-action-background: #c7162b;
 
-	/* Entries */
-	--gnome-entry-background: rgba(0, 0, 0, .1);
-	--gnome-inactive-entry-background: rgba(0, 0, 0, .05);
-	--gnome-focused-urlbar-border-color: rgba(#{$accent_color_rgb}, 0.5); /* Same as --gnome-accent but with opacity*/
-	--gnome-inactive-entry-color: #000000;
-	--gnome-urlbar-results-color: #ffffff;
+  /* Entries */
+  --gnome-entry-background: rgba(0, 0, 0, .1);
+  --gnome-inactive-entry-background: rgba(0, 0, 0, .05);
+  --gnome-focused-urlbar-border-color: rgba(#{$accent_color_rgb}, 0.5); /* Same as --gnome-accent but with opacity*/
+  --gnome-inactive-entry-color: #000000;
 
-	/* Sidebar */
-	--gnome-inactive-sidebar-background: #fafafa;
+  /* Sidebar */
+  --gnome-inactive-sidebar-background: #fafafa;
 
-	/* Settings */
-	--gnome-settings-background: #fafafa;
-	--gnome-settings-info-background: rgba(#{$accent_color_rgb}, 0.1); /* Same as --gnome-accent but with opacity*/
+  /* Settings */
+  --gnome-settings-background: #fafafa;
+  --gnome-settings-info-background: rgba(#{$accent_color_rgb}, 0.1); /* Same as --gnome-accent but with opacity*/
 
-	/* Advanced Preferences */
-	--gnome-warning-icon-fill: #F99B11;
+  /* Advanced Preferences */
+  --gnome-warning-icon-fill: #F99B11;
 
-	/* Tabs */
-	--gnome-tabbar-tab-background: #e1e1e1;
-	--gnome-tabbar-tab-hover-background: #dcdcdc;
-	--gnome-tabbar-tab-active-background: #ebebeb;
-	--gnome-tabbar-tab-active-hover-background: #e5e5e5;
-	--gnome-inactive-tabbar-tab-background: #f0f0f0;
-	--gnome-inactive-tabbar-tab-hover-background: #eaeaea;
-	--gnome-inactive-tabbar-tab-active-background: #fafafa;
-	--gnome-inactive-tabbar-tab-active-hover-background: #f4f4f4;
+  /* Tabs */
+  --gnome-tabbar-tab-background: #e1e1e1;
+  --gnome-tabbar-tab-hover-background: #dcdcdc;
+  --gnome-tabbar-tab-active-background: #ebebeb;
+  --gnome-tabbar-tab-active-hover-background: #e5e5e5;
+  --gnome-inactive-tabbar-tab-background: #f0f0f0;
+  --gnome-inactive-tabbar-tab-hover-background: #eaeaea;
+  --gnome-inactive-tabbar-tab-active-background: #fafafa;
+  --gnome-inactive-tabbar-tab-active-hover-background: #f4f4f4;
 }

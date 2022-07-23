@@ -3,16 +3,16 @@
 
 /* Headerbar */
 #nav-bar {
-	padding: 5px 3px 6px !important;
+  padding: 5px 3px 6px !important;
 }
 
 /* Headerbar CSD colors */
 :root[tabsintitlebar] #nav-bar {
-	background: var(--gnome-headerbar-background) !important;
-	border: none !important;
-	box-shadow: var(--gnome-headerbar-box-shadow) !important;
+  background: var(--gnome-headerbar-background) !important;
+  border: none !important;
+  box-shadow: var(--gnome-headerbar-box-shadow) !important;
 }
 :root[tabsintitlebar] #nav-bar:-moz-window-inactive {
-	background: var(--gnome-inactive-headerbar-background) !important;
-	box-shadow: var(--gnome-inactive-headerbar-box-shadow) !important;
+  background: var(--gnome-inactive-headerbar-background) !important;
+  box-shadow: var(--gnome-inactive-headerbar-box-shadow) !important;
 }
