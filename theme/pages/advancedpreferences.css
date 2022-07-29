@@ -9,10 +9,10 @@
     --in-content-page-color: var(--gnome-toolbar-color) !important;
     --in-content-box-background: var(--gnome-menu-background) !important;
     --in-content-box-background-odd: var(--gnome-menu-background) !important;
-    --in-content-box-border-color: var(--gnome-toolbar-border-color) !important;
+    --in-content-box-border-color: var(--gnome-menu-separator-color) !important;
     --in-content-box-info-background: var(--gnome-settings-info-background) !important;
-    --in-content-border-color: var(--gnome-toolbar-border-color) !important;
-    --in-content-border-hover: var(--gnome-toolbar-border-color) !important;
+    --in-content-border-color: var(--gnome-menu-separator-color) !important;
+    --in-content-border-hover: var(--gnome-menu-separator-color) !important;
     --in-content-border-invalid: var(--gnome-button-destructive-action-background) !important;
     --in-content-error-text-color: var(--gnome-button-destructive-action-background) !important;
     --in-content-button-background: var(--gnome-button-background) !important;
@@ -41,35 +41,54 @@
     background-size: 12px !important;
     background-image: none !important;
     border-radius: 5px !important;
-    border: 2px solid var(--gnome-toolbar-border-color) !important;
+    border: 2px solid var(--gnome-switch-border-color) !important;
     background-color: transparent !important;
-    transition: 200ms !important;
   }
-  html|input[type="checkbox"] {
-      background-image: url("../assets/adw-icons/check-symbolic.svg") !important;
+  html|input[type="checkbox"]:checked {
+    background-image: url("../assets/adw-icons/check-symbolic.svg") !important;
     border-color: var(--gnome-accent) !important;
     background-color: var(--gnome-accent) !important;
+    transition: 400ms !important;
   }
-  html|input[type="checkbox"] {
+  html|input[type="checkbox"]:not(:enabled) {
     opacity: 0.5;
   }
 
+  /* Content */
+  #toolbar {
+    padding: 20px 20px 0 !important;
+  }
+  #prefs {
+    margin: 20px !important;
+    width: calc(100% - 40px) !important;
+  }
+
   /* Buttons and boxes */
-  #prefs,
-  button,
-  html|select,
-  html|input[type="color"],
-  xul|menulist,
-  html|input:is([type="email"],
-  [type="tel"],
-  [type="text"],
-  [type="password"],
-  [type="url"],
-  [type="number"]),
-  html|textarea,
-  xul|search-textbox,
-  .web-appearance-choice {
+  button {
     border-radius: 6px !important;
+  }
+  button:hover,
+  #prefs > tr:hover,
+  button:active {
+    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  #prefs {
+    background-color: var(--gnome-box-background) !important;
+    border-radius: 12px !important;
+    border-width: 0 !important;
+    box-shadow: var(--gnome-list-box-shadow) !important;
+  }
+  #about-config-search,
+  html|input:is([type="email"], [type="tel"], [type="text"], [type="password"], [type="url"], [type="number"]) {
+    background-color: var(--gnome-entry-background) !important;
+    border-radius: 8px !important;
+    border-width: 0 !important;
+    box-shadow: none !important;
+    outline: 2px solid transparent !important;
+  }
+  #about-config-search:focus,
+  html|input:is([type="email"], [type="tel"], [type="text"], [type="password"], [type="url"], [type="number"]):focus {
+    outline: 2px solid var(--gnome-focused-urlbar-border-color) !important;
   }
 
   /* Icons color */

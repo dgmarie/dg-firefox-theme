@@ -20,6 +20,11 @@ while getopts 'f:p:c:h' flag; do
 		echo "  -h to show this message."
 		exit 0
 		;;
+	*)
+		echo "ERROR: Unrecognized installation option '$1'."
+		echo "Try '$0 --help' for more information."
+		exit 1
+		;;
 	esac
 done
 
@@ -89,7 +94,7 @@ function saveProfile(){
 
 PROFILES_FILE="${FIREFOXFOLDER}/profiles.ini"
 if [ ! -f "${PROFILES_FILE}" ]; then
-	>&2 echo "failed, lease check Firefox installation, unable to find profiles.ini at ${FIREFOXFOLDER}"
+	>&2 echo "failed, please check Firefox installation, unable to find profiles.ini at ${FIREFOXFOLDER}"
 	exit 1
 fi
 

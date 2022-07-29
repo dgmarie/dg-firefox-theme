@@ -223,12 +223,13 @@ menuitem[type="checkbox"][checked="true"] {
 }
 menuitem[type="checkbox"] .menu-iconic-icon {
   border-radius: 5px;
-  border: 2px solid var(--gnome-toolbar-border-color);
-  background-color: var(--gnome-menu-icon-background);
+  border: 2px solid var(--gnome-switch-border-color);
+  background-color: transparent;
 }
 menuitem[type="checkbox"][checked="true"] .menu-iconic-icon {
   border-color: var(--gnome-accent);
   background-color: var(--gnome-accent);
+  transition: 400ms !important;
 }
 menuitem[type="checkbox"][disabled="true"] .menu-iconic-icon {
   opacity: 0.5;
@@ -239,12 +240,11 @@ checkbox .checkbox-check {
   background-size: 12px !important;
   background-image: none !important;
   border-radius: 5px !important;
-  border: 2px solid var(--gnome-toolbar-border-color) !important;
+  border: 2px solid var(--gnome-switch-border-color) !important;
   background-color: transparent !important;
-  transition: 200ms !important;
 }
 checkbox .checkbox-check[checked="true"] {
-    background-image: url("../assets/adw-icons/check-symbolic.svg") !important;
+  background-image: url("../assets/adw-icons/check-symbolic.svg") !important;
   border-color: var(--gnome-accent) !important;
   background-color: var(--gnome-accent) !important;
 }
@@ -261,14 +261,37 @@ menuitem[type="radio"][checked="true"] {
 }
 menuitem[type="radio"] .menu-iconic-icon {
   border-radius: 100%;
-  border: 2px solid var(--gnome-toolbar-border-color);
-  background-color: var(--gnome-menu-icon-background);
+  border: 2px solid var(--gnome-switch-border-color);
+  background-color: transparent;
 }
 menuitem[type="radio"][checked="true"] .menu-iconic-icon {
   border-color: var(--gnome-accent);
   background-color: var(--gnome-accent);
+  transition: 400ms !important;
 }
 menuitem[type="radio"][disabled="true"] .menu-iconic-icon {
+  opacity: 0.5;
+}
+
+/* Radio */
+html|input[type="radio"],
+xul|*.radio-check {
+  outline: none !important;
+  background-size: 12px !important;
+  background-image: none !important;
+  border-radius: 100% !important;
+  border: 2px solid var(--gnome-switch-border-color) !important;
+  background-color: transparent !important;
+}
+html|input[type="radio"]:checked,
+xul|*.radio-check[selected] {
+  background-image: url("../assets/adw-icons/bullet-symbolic.svg") !important;
+  border-color: var(--gnome-accent) !important;
+  background-color: var(--gnome-accent) !important;
+  transition: 400ms !important;
+}
+html|input[type="radio"][disabled="true"],
+xul|*.radio-check[disabled="true"] {
   opacity: 0.5;
 }
 

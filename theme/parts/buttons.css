@@ -12,7 +12,7 @@
 
 /* Buttons */
 menulist,
-#nav-bar toolbarbutton:not(#urlbar-zoom-button, .subviewbutton, #back-button, #forward-button),
+#nav-bar toolbarbutton:not(#urlbar-zoom-button, .subviewbutton),
 .subviewbutton.panel-subview-footer,
 .panel-footer button,
 #downloadsPanel-mainView .download-state .downloadButton,
@@ -68,7 +68,7 @@ button.close,
 }
 
 /* Buttons with margins */
-#nav-bar toolbarbutton:not(#urlbar-zoom-button, .subviewbutton, #back-button, #forward-button),
+#nav-bar toolbarbutton:not(#urlbar-zoom-button, .subviewbutton),
 .notification-button,
 .subviewbutton.panel-subview-footer:not(:only-of-type),
 .panel-footer button:not(:only-of-type) {
@@ -76,35 +76,6 @@ button.close,
 }
 .close-icon:not(.tab-close-button) {
   margin-left: 6px !important;
-}
-
-/* Forward/back buttons */
-#nav-bar #back-button,
-#nav-bar #forward-button {
-  -moz-appearance: none !important;
-  background: var(--gnome-button-background) !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  height: 34px !important;
-  max-height: 34px !important;
-  min-height: 34px !important;
-  min-width: 34px !important;
-  color: var(--gnome-toolbar-color) !important;
-  outline: 0 !important;
-  font: menu !important;
-  -moz-box-align: center !important;
-}
-#nav-bar #back-button {
-  border-top-left-radius: 6px !important;
-  border-bottom-left-radius: 6px !important;
-  margin: 0 0 0 3px !important;
-  padding: 0 0 0 1px !important;
-}
-#nav-bar #forward-button {
-  border-top-right-radius: 6px !important;
-  border-bottom-right-radius: 6px !important;
-  margin: 0 3px 0 0 !important;
-  padding: 0 1px 0 0 !important;
 }
 
 /* Text buttons */
@@ -193,6 +164,7 @@ menulist:hover .menulist-label-box,
 #editBMPanel_newFolderButton:hover {
   outline: 0 !important;
   background: var(--gnome-button-hover-background) !important;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 /* Hover flat buttons */
@@ -204,6 +176,7 @@ button.close:hover,
 #item-choose button:hover {
   outline: 0 !important;
   background: var(--gnome-button-flat-hover-background) !important;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 /* Active buttons */
@@ -230,6 +203,7 @@ menulist[open] .menulist-label-box,
 .button.connect-device:active,
 #editBMPanel_newFolderButton:active {
   background: var(--gnome-button-active-background) !important;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 /* Active flat buttons */
@@ -243,6 +217,7 @@ button.close:active,
 .permission-popup-permission-remove-button:active,
 #item-choose button:active {
   background: var(--gnome-button-flat-active-background) !important;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 /* Disabled buttons */

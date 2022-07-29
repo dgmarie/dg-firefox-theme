@@ -8,9 +8,9 @@ window {
 
 /* Browser dialog prompts center */
 .dialogOverlay {
-    display: grid;
+  display: grid;
   place-content: center;
-   justify-content: center;
+  justify-content: center;
   grid-auto-rows: min(90%, var(--doc-height-px));
 }
 .dialogOverlay[topmost="true"], #window-modal-dialog::backdrop {

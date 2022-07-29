@@ -3,13 +3,143 @@
 @-moz-document url("about:newtab"), url("about:home") {
   body {
     --newtab-background-color: var(--gnome-browser-before-load-background) !important;
-    --newtab-background-color-secondary: var(--gnome-menu-background) !important;
+    --newtab-background-color-secondary: var(--gnome-box-background) !important;
+    --newtab-text-primary-color: var(--gnome-toolbar-color) !important;
     --newtab-primary-action-background: var(--gnome-accent) !important;
+    --newtab-element-hover-color: var(--gnome-row-hover-background) !important;
+    --newtab-border-color: var(--gnome-menu-separator-color) !important;
+    --newtab-primary-element-text-color: #ffffff !important;
   }
-  body:-moz-window-inactive {
-    --newtab-background-color: var(--gnome-inactive-browser-before-load-background) !important;
-    --newtab-background-color-secondary: var(--gnome-menu-background) !important;
-    --newtab-primary-action-background: var(--gnome-accent) !important;
-    transition: 200ms ease-out;
+
+  /* Search and cards */
+  .search-wrapper .search-handoff-button,
+  .search-wrapper input,
+  .top-site-outer .tile,
+  .ds-card-grid.ds-card-grid-border .ds-card:not(.placeholder),
+  .card-outer .card {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .03),
+                0 1px 3px 1px rgba(0, 0, 0, .07) !important;
+    border-radius: 12px !important;
+    transition: transform 150ms ease, box-shadow 150ms ease !important;
+  }
+  .ds-card-grid.ds-card-grid-border .ds-card:not(.placeholder) .img-wrapper .img img,
+  .card-outer .card-preview-image-outer {
+    border-radius: 12px 12px 0 0 !important;
+  }
+  .ds-card .img img {
+    box-shadow: none !important;
+  }
+  .search-wrapper.fake-focus:not(.search.disabled) .search-handoff-button,
+  .search-wrapper .search-handoff-button:hover,
+  .search-wrapper input:hover,
+  .top-site-outer .tile:hover,
+  .ds-card-grid.ds-card-grid-border .ds-card:not(.placeholder):hover,
+  .card-outer .card:hover,
+  .search-wrapper.fake-focus:not(.search.disabled) .search-handoff-button {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .07),
+                0 1px 3px 1px rgba(0, 0, 0, .11),
+                0 2px 6px 2px rgba(0, 0, 0, .07) !important;
+    transition: transform 150ms ease, box-shadow 150ms ease !important;
+  }
+  .top-site-outer .tile:active,
+  .ds-card-grid.ds-card-grid-border .ds-card:not(.placeholder):active,
+  .card-outer .card:active {
+    box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, .07),
+                inset 0 1px 2px 1px rgba(0, 0, 0, .11) !important;
+    transition: transform 150ms ease, box-shadow 150ms ease !important;
+  }
+  .search-wrapper .search-handoff-button,
+  .search-wrapper input {
+    border-width: 2px !important;
+  }
+  .search-wrapper.fake-focus:not(.search.disabled) .search-handoff-button {
+    border-color: var(--gnome-focused-urlbar-border-color) !important;
+    border-width: 2px !important;
+  }
+  .context-menu {
+    border-radius: 12px !important;
+    border: none !important;
+    padding: 6px !important;
+    background-color: var(--gnome-menu-background) !important;
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, .09),
+                0 2px 14px 3px rgba(0, 0, 0, .05);
+  }
+  .fake-caret {
+    background-color: transparent !important;
+  }
+
+  /* Customize Menu */
+  .customize-menu {
+    background-color: var(--gnome-toolbar-background) !important;
+    box-shadow: none !important;
+    border-left: 1px solid var(--gnome-toolbar-border-color) !important;
+  }
+  .customize-menu:-moz-window-inactive {
+    background-color: var(--gnome-inactive-toolbar-background) !important;
+    border-left: 1px solid var(--gnome-inactive-toolbar-border-color) !important;
+  }
+  .personalize-button,
+  .customize-menu .close-button,
+  .home-section .section .selector {
+    border-radius: 6px !important;
+  }
+  customize-menu .close-button {
+    border: none !important;
+  }
+  .customize-menu .close-button {
+    background-color: var(--gnome-button-background) !important;
+  }
+  .customize-menu .close-button:hover {
+    background-color: var(--gnome-button-hover-background) !important;
+  }
+  .top-site-outer .top-site-icon {
+    background-color: transparent !important;
+  }
+  /* Checkbox */
+  .home-section .section .sponsored-checkbox {
+    background: none !important;
+    border-radius: 5px !important;
+    border: 2px solid var(--gnome-switch-border-color) !important;
+    background-color: transparent !important;
+  }
+  .home-section .section .sponsored-checkbox:checked {
+    background: url("../assets/adw-icons/check-symbolic.svg") center !important;
+    border-color: var(--gnome-accent) !important;
+    background-color: var(--gnome-accent) !important;
+    background-size: 12px !important;
+    transition: 400ms !important;
+  }
+  checkbox .checkbox-check[disabled="true"] {
+    opacity: 0.5;
+  }
+
+  /* Toggle */
+  .home-section .section .switch {
+    height: 20px !important;
+    width: 37px !important;
+  }
+  .home-section .section .slider {
+    transition: transform 200ms !important;
+    border-radius: 10px !important;
+    border: none !important;
+  }
+  .home-section .section .slider::before {
+    transition: transform 200ms !important;
+    height: 16px !important;
+    width: 16px !important;
+    inset-inline-start: 2px !important;
+    bottom: 2px !important;
+    outline: none !important;
+  }
+  .home-section .section input:checked + .slider::before {
+    inset-inline-start: 9px !important;
+  }
+
+  /* Icons */
+  .icon.icon-settings {
+    background-image: url("../assets/yaru-icons/settings-app-symbolic.svg") !important;
+  }
+  .home-section .external-link {
+    background: url("../assets/yaru-icons/settings-app-symbolic.svg") left no-repeat !important;
   }
 }

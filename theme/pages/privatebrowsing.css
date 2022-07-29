@@ -2,15 +2,65 @@
 
 @-moz-document url("about:privatebrowsing") {
   html.private {
-    --in-content-page-background: var(--gnome-private-in-content-page-background) !important;
+    --in-content-page-background: var(--gnome-browser-before-load-background) !important;
+    --in-content-page-color: var(--gnome-toolbar-color) !important;
+    --in-content-box-background: var(--gnome-menu-background) !important;
+    --in-content-box-background-odd: var(--gnome-menu-background) !important;
+    --in-content-box-border-color: var(--gnome-menu-separator-color) !important;
+    --in-content-box-info-background: var(--gnome-settings-info-background) !important;
+    --in-content-border-color: var(--gnome-menu-separator-color) !important;
+    --in-content-border-hover: var(--gnome-menu-separator-color) !important;
+    --in-content-border-invalid: var(--gnome-button-destructive-action-background) !important;
+    --in-content-error-text-color: var(--gnome-button-destructive-action-background) !important;\
+    --in-content-button-background: var(--gnome-button-background) !important;
+    --in-content-button-background-hover: var(--gnome-button-hover-background) !important;
+    --in-content-button-background-active: var(--gnome-button-active-background) !important;
+    --in-content-icon-color: var(--gnome-toolbar-icon-fill) !important;
+    --in-content-accent-color: var(--gnome-accent) !important;
+    --in-content-accent-color-active: var(--gnome-accent) !important;
+    --in-content-link-color: var(--gnome-accent) !important;
+    --in-content-link-color-hover: var(--gnome-accent) !important;
+    --in-content-link-color-active: var(--gnome-accent) !important;
+    --in-content-link-color-visited: var(--gnome-accent) !important;
+    --in-content-primary-button-text-color: #ffffff !important;
+    --in-content-primary-button-background: var(--gnome-accent) !important;
+    --in-content-primary-button-background-hover: var(--gnome-accent) !important;
+    --in-content-primary-button-background-active: var(--gnome-accent) !important;
+    --in-content-danger-button-background: var(--gnome-button-destructive-action-background) !important;
+    --in-content-danger-button-background-hover: var(--gnome-button-destructive-action-background) !important;
+    --in-content-danger-button-background-active: var(--gnome-button-destructive-action-background) !important;
+    --in-content-table-background: var(--gnome-menu-background) !important;
+    --dialog-warning-text-color: var(--gnome-button-destructive-action-background) !important;
+  }
 
-    /* Used by headings in promo boxes Firefox shows (like an ad for Firefox Focus) */
-    --in-content-text-color: var(--gnome-private-text-primary-color) !important;
+  /* Search and cards */
+  .search-handoff-button {
+    border-radius: 12px !important;
+    transition: transform 150ms ease, box-shadow 150ms ease !important;
+    background-color: var(--gnome-box-background) !important;
+    border: 2px solid transparent !important;
+    font-size: 15px !important;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .03),
+                0 1px 3px 1px rgba(0, 0, 0, .07) !important;
   }
-  .wordmark {
-    fill: var(--gnome-private-wordmark) !important;
+  .search-handoff-button.focused:not(.disabled) {
+    border: 2px solid var(--gnome-focused-urlbar-border-color) !important;
   }
-  .showPrivate {
-    color: var(--gnome-private-text-primary-color);
+  .search-inner-wrapper {
+    height: 52px !important;
+  }
+  .fake-textbox {
+    color: var(--in-content-page-color) !important;
+  }
+  .fake-caret {
+    background-color: transparent !important;
+  }
+
+  /* Info box */
+  .info {
+    background-color: var(--gnome-box-background) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .03),
+                0 1px 3px 1px rgba(0, 0, 0, .07) !important;
   }
 }
