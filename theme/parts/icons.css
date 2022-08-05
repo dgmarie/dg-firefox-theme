@@ -217,19 +217,14 @@ treechildren::-moz-tree-image(query, OrganizerQuery_history____v) {
 /* Menu checkbox */
 menuitem[type="checkbox"] {
   list-style-image: none !important;
+  padding-right: 2px;
 }
 menuitem[type="checkbox"][checked="true"] {
   list-style-image: url("../assets/adw-icons/check-symbolic.svg") !important;
 }
 menuitem[type="checkbox"] .menu-iconic-icon {
-  border-radius: 5px;
-  border: 2px solid var(--gnome-switch-border-color);
-  background-color: transparent;
-}
-menuitem[type="checkbox"][checked="true"] .menu-iconic-icon {
-  border-color: var(--gnome-accent);
-  background-color: var(--gnome-accent);
-  transition: 400ms !important;
+  width: 14px !important;
+  height: 14px !important;
 }
 menuitem[type="checkbox"][disabled="true"] .menu-iconic-icon {
   opacity: 0.5;
@@ -261,13 +256,8 @@ menuitem[type="radio"][checked="true"] {
 }
 menuitem[type="radio"] .menu-iconic-icon {
   border-radius: 100%;
-  border: 2px solid var(--gnome-switch-border-color);
+  border: 1px solid var(--gnome-menu-radio-border-color);
   background-color: transparent;
-}
-menuitem[type="radio"][checked="true"] .menu-iconic-icon {
-  border-color: var(--gnome-accent);
-  background-color: var(--gnome-accent);
-  transition: 400ms !important;
 }
 menuitem[type="radio"][disabled="true"] .menu-iconic-icon {
   opacity: 0.5;
