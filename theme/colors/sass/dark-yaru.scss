@@ -72,14 +72,12 @@ $accent_color_rgb: toRGB($accent_color);
 		--gnome-warning-icon-fill: #F99B11;
 
 		/* Tabs */
-		--gnome-tabbar-tab-background: #1b1b1b;
-		--gnome-tabbar-tab-hover-background: #222222;
-		--gnome-tabbar-tab-active-background: #222222;
-		--gnome-tabbar-tab-active-hover-background: #292929;
-		--gnome-inactive-tabbar-tab-background: #222222;
-		--gnome-inactive-tabbar-tab-hover-background: #292929;
-		--gnome-inactive-tabbar-tab-active-background: #2c2c2c;
-		--gnome-inactive-tabbar-tab-active-hover-background: #323232;
+		--gnome-tabbar-tab-hover-background: #323232;
+		--gnome-tabbar-tab-active-background: #383838;
+		--gnome-tabbar-tab-active-hover-background: #3f3f3f;
+		--gnome-inactive-tabbar-tab-hover-background: #333333;
+		--gnome-inactive-tabbar-tab-active-background: #363636;
+		--gnome-inactive-tabbar-tab-active-hover-background: #3a3a3a;
 	}
 
 	/* Private window colors */
@@ -91,14 +89,12 @@ $accent_color_rgb: toRGB($accent_color);
 		--gnome-private-inactive-toolbar-border-color: #3e4556;
 
 		/* Tabs */
-		--gnome-private-tabbar-tab-background: #1d2539;
-		--gnome-private-tabbar-tab-hover-background: #242c3f;
-		--gnome-private-tabbar-tab-active-background: #252f49;
-		--gnome-private-tabbar-tab-active-hover-background: #2c354e;
-		--gnome-private-inactive-tabbar-tab-background: #161c2c;
-		--gnome-private-inactive-tabbar-tab-hover-background: #161c2c;
-		--gnome-private-inactive-tabbar-tab-active-background: #1c2438;
-		--gnome-private-inactive-tabbar-tab-active-hover-background: #232b3e;
+		--gnome-private-tabbar-tab-hover-background: #343e56;
+		--gnome-private-tabbar-tab-active-background: #3a435b;
+		--gnome-private-tabbar-tab-active-hover-background: #414a61;
+		--gnome-private-inactive-tabbar-tab-hover-background: #242c3f;
+		--gnome-private-inactive-tabbar-tab-active-background: #272f42;
+		--gnome-private-inactive-tabbar-tab-active-hover-background: #2b3245;
 	}
 }
 

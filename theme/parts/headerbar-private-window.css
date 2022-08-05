@@ -14,11 +14,9 @@
   --gnome-inactive-headerbar-background: var(--gnome-private-inactive-toolbar-background) !important;
 
   /* Tabs */
-  --gnome-tabbar-tab-background: var(--gnome-private-tabbar-tab-background) !important;
   --gnome-tabbar-tab-hover-background: var(--gnome-private-tabbar-tab-hover-background) !important;
   --gnome-tabbar-tab-active-background: var(--gnome-private-tabbar-tab-active-background) !important;
   --gnome-tabbar-tab-active-hover-background: var(--gnome-private-tabbar-tab-active-hover-background) !important;
-  --gnome-inactive-tabbar-tab-background: var(--gnome-private-inactive-tabbar-tab-background) !important;
   --gnome-inactive-tabbar-tab-hover-background: var(--gnome-private-inactive-tabbar-tab-hover-background) !important;
   --gnome-inactive-tabbar-tab-active-background: var(--gnome-private-inactive-tabbar-tab-active-background) !important;
   --gnome-inactive-tabbar-tab-active-hover-background: var(--gnome-private-inactive-tabbar-tab-active-hover-background) !important;
