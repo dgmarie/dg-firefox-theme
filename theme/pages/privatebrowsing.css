@@ -11,7 +11,7 @@
     --in-content-border-color: var(--gnome-menu-separator-color) !important;
     --in-content-border-hover: var(--gnome-menu-separator-color) !important;
     --in-content-border-invalid: var(--gnome-button-destructive-action-background) !important;
-    --in-content-error-text-color: var(--gnome-button-destructive-action-background) !important;\
+    --in-content-error-text-color: var(--gnome-button-destructive-action-background) !important;
     --in-content-button-background: var(--gnome-button-background) !important;
     --in-content-button-background-hover: var(--gnome-button-hover-background) !important;
     --in-content-button-background-active: var(--gnome-button-active-background) !important;
@@ -35,7 +35,7 @@
 
   /* Search and cards */
   .search-handoff-button {
-    border-radius: 12px !important;
+    border-radius: 999px !important;
     transition: transform 150ms ease, box-shadow 150ms ease !important;
     background-color: var(--gnome-box-background) !important;
     border: 2px solid transparent !important;
@@ -53,7 +53,7 @@
     color: var(--in-content-page-color) !important;
   }
   .fake-caret {
-    background-color: transparent !important;
+    background-color: white !important;
   }
 
   /* Info box */
