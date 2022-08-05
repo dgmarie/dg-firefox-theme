@@ -146,6 +146,8 @@
   html|input[type="radio"]:checked,
   xul|*.radio-check[selected] {
     background-image: url("../assets/adw-icons/bullet-symbolic.svg") !important;
+    fill: white !important;
+    -moz-context-properties: fill, fill-opacity;
     border-color: var(--gnome-accent) !important;
     background-color: var(--gnome-accent) !important;
     transition: 400ms !important;

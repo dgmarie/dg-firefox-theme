@@ -101,6 +101,8 @@
   }
   .home-section .section .sponsored-checkbox:checked {
     background: url("../assets/adw-icons/check-symbolic.svg") center !important;
+    fill: white !important;
+    -moz-context-properties: fill, fill-opacity;
     border-color: var(--gnome-accent) !important;
     background-color: var(--gnome-accent) !important;
     background-size: 12px !important;

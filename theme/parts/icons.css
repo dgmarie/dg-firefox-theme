@@ -39,7 +39,12 @@ button.close::before,
 #identity-icon,
 #permissions-granted-icon,
 #downloads-indicator-icon,
-.textbox-search-clear {
+.textbox-search-clear,
+menuitem[type="checkbox"],
+checkbox .checkbox-check,
+menuitem[type="radio"],
+html|input[type="radio"],
+xul|*.radio-check {
   fill: var(--gnome-toolbar-icon-fill) !important;
   -moz-context-properties: fill, fill-opacity;
 }
@@ -242,6 +247,7 @@ checkbox .checkbox-check[checked="true"] {
   background-image: url("../assets/adw-icons/check-symbolic.svg") !important;
   border-color: var(--gnome-accent) !important;
   background-color: var(--gnome-accent) !important;
+  fill: white !important;
 }
 checkbox .checkbox-check[disabled="true"] {
   opacity: 0.5;
@@ -279,6 +285,7 @@ xul|*.radio-check[selected] {
   border-color: var(--gnome-accent) !important;
   background-color: var(--gnome-accent) !important;
   transition: 400ms !important;
+  fill: white !important;
 }
 html|input[type="radio"][disabled="true"],
 xul|*.radio-check[disabled="true"] {
