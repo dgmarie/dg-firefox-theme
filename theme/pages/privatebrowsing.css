@@ -35,7 +35,7 @@
 
   /* Search and cards */
   .search-handoff-button {
-    border-radius: 999px !important;
+    border-radius: 12px !important;
     transition: transform 150ms ease, box-shadow 150ms ease !important;
     background-color: var(--gnome-box-background) !important;
     border: 2px solid transparent !important;
