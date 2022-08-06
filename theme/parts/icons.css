@@ -1,6 +1,7 @@
 /* Replace icons */
 
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+@namespace html "http://www.w3.org/1999/xhtml";
 
 /* Icons color */
 .toolbarbutton-icon,
@@ -223,6 +224,7 @@ treechildren::-moz-tree-image(query, OrganizerQuery_history____v) {
 menuitem[type="checkbox"] {
   list-style-image: none !important;
   padding-right: 2px;
+
 }
 menuitem[type="checkbox"][checked="true"] {
   list-style-image: url("../assets/adw-icons/check-symbolic.svg") !important;
