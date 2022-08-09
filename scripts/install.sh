@@ -6,6 +6,12 @@ PROFILENAME=""
 THEME=yaru
 COLOR=orange
 
+NC='\033[0m'
+BOLD='\033[1m'
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+BGREEN='\033[1;32m'
+
 # Get options.
 while getopts 'f:p:c:h' flag; do
 	case "${flag}" in
@@ -32,7 +38,7 @@ function saveProfile(){
 	local PROFILE_PATH="$1"
 
 	cd "$FIREFOXFOLDER/$PROFILE_PATH"
-	echo "Installing $COLOR Firefox theme in $PWD"
+	echo -e "${GREEN}Installing ${BGREEN}${COLOR} dg-firefox-theme ${NC} in ${BOLD}${PWD}${NC}"
 	# Create a chrome directory if it doesn't exist.
 	mkdir -p chrome
 	cd chrome
@@ -94,7 +100,7 @@ function saveProfile(){
 
 PROFILES_FILE="${FIREFOXFOLDER}/profiles.ini"
 if [ ! -f "${PROFILES_FILE}" ]; then
-	>&2 echo "failed, please check Firefox installation, unable to find profiles.ini at ${FIREFOXFOLDER}"
+	>&2 echo -e "${RED}Failed${NC}, please check Firefox installation, unable to find profiles.ini at ${FIREFOXFOLDER}"
 	exit 1
 fi
 
