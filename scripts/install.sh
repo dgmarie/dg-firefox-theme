@@ -38,7 +38,7 @@ function saveProfile(){
 	local PROFILE_PATH="$1"
 
 	cd "$FIREFOXFOLDER/$PROFILE_PATH"
-	echo -e "${GREEN}Installing ${BGREEN}${COLOR} dg-firefox-theme ${NC}in ${BOLD}${PWD}${NC}"
+	echo -e "${GREEN}Installing ${NC}${BOLD}${COLOR} dg-firefox-theme ${NC}in ${BOLD}${PWD}${NC}"
 	# Create a chrome directory if it doesn't exist.
 	mkdir -p chrome
 	cd chrome
