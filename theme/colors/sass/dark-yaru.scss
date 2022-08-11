@@ -38,6 +38,8 @@ $accent_color_rgb: toRGB($accent_color);
 
 		/* Header bar */
 		--gnome-headerbar-background: #222222;
+		--gnome-headerbar-border: #161616;
+		--gnome-inactive-headerbar-border: #1c1c1c;
 
 		/* Buttons */
 		--gnome-button-destructive-action-background: #c7162b;

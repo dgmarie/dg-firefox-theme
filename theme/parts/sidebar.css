@@ -7,7 +7,7 @@
 }
 #sidebar-box:-moz-window-inactive, .sidebar-panel:-moz-window-inactive {
   background: var(--gnome-inactive-sidebar-background) !important;
-  transition: 200ms ease-out;
+  transition: 200ms ease-out !important;
 }
 #sidebar-splitter {
   background: var(--gnome-toolbar-background) !important;
@@ -18,7 +18,7 @@
 #sidebar-splitter:-moz-window-inactive {
   background: var(--gnome-inactive-toolbar-background) !important;
   border-color: var(--gnome-inactive-toolbar-border-color) !important;
-  transition: 200ms ease-out;
+  transition: 200ms ease-out !important;
 }
 
 #sidebar-header {

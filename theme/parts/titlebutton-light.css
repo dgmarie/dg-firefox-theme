@@ -1,6 +1,6 @@
 :root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-button {
   opacity: 0.3;
-  transition: 200ms ease-out;
+  transition: 200ms ease-out !important;
 }
 :root[tabsintitlebar] #titlebar .titlebar-close {
   background: url("../assets/mac-icons/titlebutton-close.svg") no-repeat;

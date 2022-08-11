@@ -1,7 +1,6 @@
 /* Buttons Issues/Glitches fixes */
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
-/* Fix notification dropmarker */
 .popup-notification-dropmarker dropmarker {
 	display: none !important;
 }
@@ -67,13 +66,13 @@
 :root:-moz-window-inactive[customizing] #nav-bar #edit-controls toolbarbutton {
 	background-image: var(--gnome-inactive-button-background);
 	box-shadow: var(--gnome-inactive-button-box-shadow);
-	transition: 200ms ease-out;
+	transition: 200ms ease-out !important;
 }
 /* Glitch customizing: Reload and Cut / Copy / Paste buttons' icons */
 :root:-moz-window-inactive[customizing] #nav-bar #stop-reload-button image.toolbarbutton-icon,
 :root:-moz-window-inactive[customizing] #nav-bar #edit-controls image.toolbarbutton-icon {
 	opacity: .5 !important;
-	transition: 200ms ease-out;
+	transition: 200ms ease-out !important;
 }
 
 /* Glitch: Overflow and Burger buttons

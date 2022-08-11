@@ -18,7 +18,7 @@
 }
 findbar, #toolbar-menubar, #PersonalToolbar, #TabsToolbar {
   border-bottom: none !important;
-  border-top: 1px solid var(--gnome-toolbar-border-color) !important;
+  border-top: 1px solid var(--gnome-headerbar-border) !important;
 }
 findbar:-moz-window-inactive,
 #toolbar-menubar:-moz-window-inactive,
@@ -30,7 +30,7 @@ findbar:-moz-window-inactive,
 findbar:-moz-window-inactive,
 #toolbar-menubar:-moz-window-inactive,
 #PersonalToolbar:-moz-window-inactive {
-  border-color: var(--gnome-inactive-toolbar-border-color) !important;
+  border-color: var(--gnome-inactive-headerbar-border) !important;
 }
 
 #navigator-toolbox:-moz-window-inactive label, #navigator-toolbox:-moz-window-inactive image, 
@@ -41,7 +41,7 @@ findbar:-moz-window-inactive description,
 #viewButton:-moz-window-inactive dropmarker,
 .container.infobar:-moz-window-inactive {
   opacity: 0.5 !important;
-  transition: 200ms ease-out;
+  transition: 200ms ease-out !important;
 }
 #toolbar-menubar:not([inactive=true]) {
   margin-bottom: 0 !important;
@@ -125,12 +125,14 @@ findbar:-moz-window-inactive description,
 }
 
 .notificationbox-stack[notificationside="top"] notification-message {
-  border-top: 1px solid var(--gnome-toolbar-border-color) !important;
+  border-top: 1px solid var(--gnome-headerbar-border) !important;
 }
 .notificationbox-stack[notificationside="bottom"] notification-message {
-  border-top: 1px solid var(--gnome-toolbar-border-color) !important;
+  border-top: 1px solid var(--gnome-headerbar-border) !important;
 }
-
+.notificationbox-stack notification-message:-moz-window-inactive {
+  border-color: var(--gnome-inactive-headerbar-border) !important;
+}
 /* Text link */
 .text-link {
   color: var(--gnome-accent) !important;
