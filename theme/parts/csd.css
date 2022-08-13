@@ -35,15 +35,24 @@
 /* Left window buttons */
 @media (-moz-gtk-csd-reversed-placement) {
   :root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
-    padding-right: 2px !important;
+    padding-right: 3px !important;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
+      padding-right: 2px !important;
+    }
   }
 
   /* Window buttons box */
   :root[tabsintitlebar] #titlebar .titlebar-buttonbox-container {
-    left: 10px;
+    left: 11px;
     right: auto !important;
   }
-
+  @media (prefers-color-scheme: dark) {
+    :root[tabsintitlebar] #titlebar .titlebar-buttonbox-container {
+      left: 10px;
+    }
+  }
   /* Window controls: at least 1 button */
   @media (-moz-gtk-csd-minimize-button), (-moz-gtk-csd-maximize-button), (-moz-gtk-csd-close-button) {
     :root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
@@ -106,9 +115,15 @@
   -moz-appearance: none !important;
   padding: 0;
   position: absolute !important;
-  right: 10px;
-  top: 0;
+  right: 11px;
+  top: 15px;
   display: block !important;
+}
+@media (prefers-color-scheme: dark) {
+  :root[tabsintitlebar] #titlebar .titlebar-buttonbox-container {
+    right: 10px;
+    top: 14px;
+  }
 }
 :root[tabsintitlebar] #titlebar .titlebar-buttonbox {
   -moz-appearance: none !important;
@@ -121,11 +136,10 @@
   border: none !important;
   border-radius: 100% !important;
   height: 16px;
-  margin: 14px 4px 15px !important;
+  margin: 0 4px !important;
   padding: 0 !important;
   width: 16px;
 }
-
 :root[tabsintitlebar] #titlebar .titlebar-button .toolbarbutton-icon,
 :root[tabsintitlebar][inFullscreen] #window-controls toolbarbutton .toolbarbutton-icon {
   opacity: 0 !important;

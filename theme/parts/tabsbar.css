@@ -37,24 +37,16 @@ tab > stack {
 #TabsToolbar {
   --toolbarbutton-active-background: transparent !important;
   --toolbarbutton-hover-background: transparent !important;
-  padding: 0 3px !important;
 }
-
 /* Tabsbar buttons */
 #TabsToolbar .toolbarbutton-1:not(#hack) {
   border-radius: 6px !important;
-  margin: 5px !important;
+  margin: 5px 4px 5px 5px !important;
   width: 34px !important;
   height: 34px !important;
   padding: 4px !important;
 }
-#TabsToolbar toolbartabstop {
-  border-left: 1px solid var(--gnome-tabbar-tab-border-color);
-  margin: 9px 0;
-}
-#TabsToolbar toolbartabstop:-moz-window-inactive {
-  border-color: var(--gnome-inactive-toolbar-border-color);
-}
+
 #TabsToolbar .toolbarbutton-1:not([disabled]):not(:active):not([open]):hover {
   background-color: var(--gnome-tabbar-tab-hover-background) !important;
 }
@@ -88,19 +80,24 @@ tab > stack {
 .tab-content:-moz-window-inactive {
   border-color: var(--gnome-inactive-toolbar-border-color);
 }
-.tabbrowser-tab:is([beforeselected-visible="true"], [beforehovered="true"], [selected="true"], :last-of-type, :hover) .tab-content {
+#tabbrowser-tabs:not([hasadjacentnewtabbutton]) .tabbrowser-tab:last-of-type .tab-content,
+.tabbrowser-tab:is([beforeselected-visible="true"], [beforehovered="true"], [selected="true"], :hover):not(:last-of-type) .tab-content {
   border-color: transparent !important;
 }
 
 /* Space around tabs */
 .tabbrowser-tab {
   margin: 5px 2px 5px 0 !important;
+  padding: 0 !important;
 }
 .tabbrowser-tab:last-of-type {
   margin-right: 0 !important;
 }
+#tabbrowser-tabs:not([hasadjacentnewtabbutton]) .tabbrowser-tab:last-of-type {
+  margin-right: 1px !important;
+}
 .tabbrowser-tab:first-of-type {
-  margin-left: 5px !important;
+  margin-left: 4px !important;
 }
 .tab-background,
 .tab-content {
@@ -109,27 +106,22 @@ tab > stack {
 .tab-content {
   padding-right: 3px !important;
 }
-.tabbrowser-tab:last-of-type .tab-background,
-.tabbrowser-tab:last-of-type .tab-content {
-  margin-right: 5px !important;
+#tabbrowser-tabs[hasadjacentnewtabbutton] .tabbrowser-tab:last-of-type .tab-background,
+#tabbrowser-tabs[hasadjacentnewtabbutton] .tabbrowser-tab:last-of-type .tab-content {
+  margin-right: 6px !important;
 }
-.tabbrowser-tab:last-of-type .tab-content {
-  padding-right: 5px !important;
+#tabbrowser-tabs[hasadjacentnewtabbutton] .tabbrowser-tab:last-of-type .tab-content {
+  padding-right: 6px !important;
 }
-.tabbrowser-tab:not(:first-of-type) {
-  margin-left: 0 !important;
+@media (prefers-color-scheme: light) {
+  #TabsToolbar {
+    padding: 0 1px !important;
+  }
 }
-.tabbrowser-tab {
-  border: 0 !important;
-  padding-inline: 0 !important;
-}
-#TabsToolbar {
-  padding: 0 !important;
-}
+
 
 /* Tabs borders */
 #TabsToolbar {
-  margin-right: -1px !important;
   border-bottom: 1px solid var(--gnome-headerbar-border) !important;
 }
 #TabsToolbar:-moz-window-inactive,
