@@ -95,7 +95,7 @@ url("about:preferences#moreFromMozilla") {
     border-right: 1px solid var(--gnome-menu-separator-color) !important;
   }
   #categories {
-    margin: 6px 0 0 !important;
+    margin: 6px 0 !important;
   }
   .category-name {
     padding-inline-start: 10px !important;
@@ -129,7 +129,7 @@ url("about:preferences#moreFromMozilla") {
 
   /* Content */
   .main-content {
-    padding: 0 20px 20px 20px !important;
+    padding: 0 24px 24px 24px !important;
   }
 
   /* Buttons and boxes */
@@ -161,12 +161,12 @@ url("about:preferences#moreFromMozilla") {
     box-shadow: var(--gnome-list-box-shadow) !important;
   }
   #policies-container {
-    border-radius: 8px !important;
+    border-radius: 6px !important;
   }
   xul|search-textbox,
   html|input:is([type="email"], [type="tel"], [type="text"], [type="password"], [type="url"], [type="number"]) {
     background-color: var(--gnome-entry-background) !important;
-    border-radius: 8px !important;
+    border-radius: 6px !important;
     border-width: 0 !important;
     box-shadow: none !important;
     outline: 2px solid transparent !important;

@@ -58,11 +58,11 @@
 
   /* Content */
   #toolbar {
-    padding: 20px 20px 0 !important;
+    padding: 24px 24px 0 !important;
   }
   #prefs {
-    margin: 20px !important;
-    width: calc(100% - 40px) !important;
+    margin: 24px !important;
+    width: calc(100% - 48px) !important;
   }
 
   /* Buttons and boxes */
@@ -83,7 +83,7 @@
   #about-config-search,
   html|input:is([type="email"], [type="tel"], [type="text"], [type="password"], [type="url"], [type="number"]) {
     background-color: var(--gnome-entry-background) !important;
-    border-radius: 8px !important;
+    border-radius: 6px !important;
     border-width: 0 !important;
     box-shadow: none !important;
     outline: 2px solid transparent !important;

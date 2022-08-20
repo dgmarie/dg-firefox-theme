@@ -34,7 +34,7 @@
     --in-content-danger-button-background-active: var(--gnome-button-destructive-action-background) !important;
     --in-content-table-background: var(--gnome-menu-background) !important;
     --dialog-warning-text-color: var(--gnome-button-destructive-action-background) !important;
-    --main-margin-start: 20px !important;
+    --main-margin-start: 24px !important;
   }
 
   /* Sidebar */
@@ -43,7 +43,7 @@
     border-right: 1px solid var(--gnome-menu-separator-color) !important;
   }
   #categories {
-    margin: 6px 0 0 !important;
+    margin: 6px 0 !important;
   }
   #categories > .category {
     background-position-x: 14px !important;
@@ -121,7 +121,7 @@
   }
   xul|search-textbox {
     background-color: var(--gnome-entry-background) !important;
-    border-radius: 8px !important;
+    border-radius: 6px !important;
     border-width: 0 !important;
     box-shadow: none !important;
     outline: 2px solid transparent !important;
