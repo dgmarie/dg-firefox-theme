@@ -6,6 +6,8 @@
 
 **A Libadwaita + macOS + Yaru theme for Firefox**
 
+This theme is supposed to be used with [this](https://github.com/dgmarie/dg-gnome-theme).
+
 ## Installation
 
 ### Installation script
