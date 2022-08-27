@@ -19,8 +19,8 @@ This theme is supposed to be used with [this](https://github.com/dgmarie/dg-gnom
 2. Run installation script
 	#### Install script
 	```sh
-	./scripts/install.sh # Standard
-	./scripts/install.sh -f ~/.var/app/org.mozilla.firefox/.mozilla/firefox # Flatpak
+	./install.sh # Standard
+	./install.sh -f ~/.var/app/org.mozilla.firefox/.mozilla/firefox # Flatpak
 	```
 
 	##### Script options
