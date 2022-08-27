@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-themedirectory="$(dirname -- "$0")"
+dir="$(dirname -- "$0")"
+themedirectory="$(realpath "${dir}")"
 firefoxfolder="${HOME}/.mozilla/firefox"
 profilename=""
 theme=yaru
