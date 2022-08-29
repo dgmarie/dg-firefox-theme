@@ -1,3 +1,5 @@
+/* Most of this (including the images that are used here) is borrowed from https://github.com/vinceliuice/WhiteSur-firefox-theme */
+
 :root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-button {
   opacity: 0.3;
   transition: 200ms ease-out !important;
