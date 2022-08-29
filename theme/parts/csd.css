@@ -34,22 +34,20 @@
 }
 
 /* Right window buttons offset by button count */
-:root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
+:root[tabsintitlebar] #nav-bar {
 	padding-left: 3px !important;
 	padding-right: var(--gnome-navbar-csd-offset) !important;
-}
-/* Fullscreen headerbar padding for 1 button */
-:root[tabsintitlebar][inFullscreen] #nav-bar {
-	padding-right: 50px !important;
 }
 
 /* Left window buttons */
 @media (-moz-gtk-csd-reversed-placement) {
-  :root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
+ 	/* Window controls offset by button count */
+  :root[tabsintitlebar] #nav-bar {
+    padding-left: var(--gnome-navbar-csd-offset) !important;
     padding-right: 3px !important;
   }
   @media (prefers-color-scheme: dark) {
-    :root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
+    :root[tabsintitlebar] #nav-bar {
       padding-right: 2px !important;
     }
   }
@@ -64,23 +62,6 @@
       left: 10px;
     }
   }
-
-	/* Fullscreen headerbar padding for 1 button */
-	:root[tabsintitlebar][inFullscreen] #nav-bar {
-		padding-left: 50px !important;
-		padding-right: 3px !important
-  }
-}
-
-/* Remove close and minimize buttons from fullscreen buttons */
-:root[tabsintitlebar][inFullscreen] #titlebar .titlebar-buttonbox-container .titlebar-min,
-:root[tabsintitlebar][inFullscreen] #titlebar .titlebar-buttonbox-container .titlebar-close {
-  display: none !important;
-}
-
-/* Force the restore button to appear regardless of maximize button's status */
-:root[tabsintitlebar][inFullscreen] #titlebar .titlebar-buttonbox-container .titlebar-restore {
-	display: inherit !important;
 }
 
 /* Hide window controls when navbar is hidden */

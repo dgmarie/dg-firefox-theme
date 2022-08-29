@@ -103,7 +103,7 @@
     -moz-context-properties: fill, fill-opacity;
   }
   .title {
-      fill: var(--gnome-warning-icon-fill) !important;
+    fill: var(--gnome-warning-icon-fill) !important;
   }
   
   /* Icons */
