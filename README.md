@@ -20,6 +20,7 @@ This theme is supposed to be used with [this](https://github.com/dgmarie/dg-gnom
 	#### Install script
 	```sh
 	./install.sh # Standard
+	./install.sh -f ~//snap/firefox/common/.mozilla/firefox # Snap
 	./install.sh -f ~/.var/app/org.mozilla.firefox/.mozilla/firefox # Flatpak
 	```
 

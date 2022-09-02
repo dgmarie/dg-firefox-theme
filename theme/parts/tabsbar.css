@@ -65,8 +65,8 @@ tab > stack {
   padding: 0 !important;
   margin: 0 !important;
 }
-#tabbrowser-tabs[movingtab] .tab-background[selected="true"],
-#tabbrowser-tabs[movingtab] .tab-background {
+#tabbrowser-tabs[movingtab] .tabbrowser-tab:last-of-type .tab-content,
+#tabbrowser-tabs[movingtab] .tabbrowser-tab:is([beforeselected-visible="true"], [beforehovered="true"], [selected="true"], :hover):not(:last-of-type) .tab-content {
   border-color: transparent !important;
 }
 
