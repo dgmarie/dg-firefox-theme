@@ -1,12 +1,8 @@
 #!/usr/bin/env bash
-
 dir="$(dirname -- "$0")"
 themedirectory="$(realpath "${dir}")"
-firefoxfolder="${HOME}/.mozilla/firefox"
 profilename=""
 theme=yaru
-color=orange
-
 nc='\033[0m'
 bold='\033[1m'
 red='\033[0;31m'
@@ -34,11 +30,25 @@ while getopts 'f:p:c:h' flag; do
   esac
 done
 
+if [[ -z "${color}" ]]; then
+  color=orange
+fi
+if [[ -z "${firefoxfolder}" ]]; then
+  firefoxfolder="${HOME}/.mozilla/firefox"
+fi
+
 function saveProfile(){
   local profile_path="$1"
 
   cd "$firefoxfolder/$profile_path" || exit
-  echo -e "${green}Installing ${nc}${bold}${color} dg-firefox-theme ${nc}in ${bold}${PWD}${nc}"
+
+  # If being updated by dg-gnome-theme
+  if [[ "${update_firefox}" == "true" ]]; then
+    echo -e "${green}Updating ${nc}${bold}dg-firefox-theme ${nc}in ${bold}${PWD}${nc}"
+  else
+    echo -e "${green}Installing ${nc}${bold}${color} dg-firefox-theme ${nc}in ${bold}${PWD}${nc}"
+  fi
+
   # Create a chrome directory if it doesn't exist.
   mkdir -p chrome
   cd chrome || exit
