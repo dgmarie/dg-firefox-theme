@@ -25,12 +25,14 @@ findbar:-moz-window-inactive,
 #nav-bar:-moz-window-inactive,
 #PersonalToolbar:-moz-window-inactive {
   background: var(--gnome-inactive-toolbar-background) !important;
+  transition: background 200ms ease-out !important;
 }
 
 findbar:-moz-window-inactive,
 #toolbar-menubar:-moz-window-inactive,
 #PersonalToolbar:-moz-window-inactive {
   border-color: var(--gnome-inactive-headerbar-border) !important;
+  transition: border-color 200ms ease-out !important;
 }
 
 #navigator-toolbox:-moz-window-inactive label, #navigator-toolbox:-moz-window-inactive image, 
@@ -41,7 +43,7 @@ findbar:-moz-window-inactive description,
 #viewButton:-moz-window-inactive dropmarker,
 .container.infobar:-moz-window-inactive {
   opacity: 0.5 !important;
-  transition: 200ms ease-out !important;
+  transition-property: opacity 200ms ease-out !important;
 }
 #toolbar-menubar:not([inactive=true]) {
   margin-bottom: 0 !important;

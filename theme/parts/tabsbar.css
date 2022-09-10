@@ -25,7 +25,9 @@
 
 #TabsToolbar:-moz-window-inactive {
   background-color: var(--gnome-inactive-toolbar-background) !important;
-  transition: 200ms ease-out !important;
+  transition-property: background, border, color, opacity !important;
+  transition-duration: 200ms !important;
+  transition-timing-function: ease-out !important;
 }
 
 tab > stack {
@@ -124,10 +126,11 @@ tab > stack {
 #TabsToolbar {
   border-bottom: 1px solid var(--gnome-headerbar-border) !important;
 }
-#TabsToolbar:-moz-window-inactive,
 #TabsToolbar .toolbarbutton-1:not(#hack):-moz-window-inactive {
   border-color: var(--gnome-inactive-headerbar-border) !important;
-  transition: 200ms ease-out !important;
+  transition-property: background, border, color, opacity !important;
+  transition-duration: 200ms !important;
+  transition-timing-function: ease-out !important;
 }
 
 /* Tab labels */
@@ -180,14 +183,32 @@ tab {
   min-width: 0 !important;
 }
 
-/* Put tab close button to the right */
-.tabbrowser-tab .tab-close-button {
-  margin-left: auto !important;
+/* Fix gradient on tab overflow */
+.tabbrowser-tab:not([pinned]):is(:only-of-type, :not([selected], :hover)) .tab-close-button {
+  margin-left: -8px !important;
+}
+.tabbrowser-tab:not([pinned]):is(:hover, [selected]:not(:only-of-type)) .tab-close-button {
+  margin-left: 8px !important;
+}
+.tabbrowser-tab:not([pinned]):is(:only-of-type, :not([selected], :hover)) .tab-label-container {
+  padding-right: 8px !important;
+}
+.tabbrowser-tab:not([pinned]):is(:hover, [selected]:not(:only-of-type)) .tab-label-container {
+  padding-right: 0px !important;
+}
+
+/* Force tab label to the center */
+.tabbrowser-tab:not([pinned]) .tab-label-container {
+  position: relative;
+  margin-right: auto !important;
+  right: -5%;
 }
 
 /* Force tab favicon to the center */
 .tabbrowser-tab:not([pinned]) .tab-icon-stack {
+  position: relative;
   margin-left: auto !important;
+  right: -5%;
 }
 
 /* Tab icon margin */
@@ -293,12 +314,13 @@ tab {
 }
   
 /* Autohide */
-.tabbrowser-tab:not([selected="true"]) .tab-close-button {
+.tabbrowser-tab:not([pinned]):is(:only-of-type, :not([selected], :hover)) .tab-close-button {
   visibility: hidden !important;
   opacity: 0 !important;
 }
-.tabbrowser-tab:hover .tab-close-button {
+.tabbrowser-tab:not([pinned]):is(:hover, [selected]:not(:only-of-type)) .tab-close-button {
   visibility: visible !important;
+  transition: background 150ms ease-in-out !important;
   opacity: 1 !important;
 }
 
@@ -320,10 +342,7 @@ tab {
 .tab-close-button {
   margin-right: 4px !important;
 }
-/* Move tab label to the left some so the close button doesn't overlap */
-.tabbrowser-tab:not([pinned]) .tab-label-container {
-  margin-right: -2px !important;
-}
+
 /* Active tab */
 .tab-background[selected=true] {
   background-color: var(--gnome-tabbar-tab-active-background) !important;
