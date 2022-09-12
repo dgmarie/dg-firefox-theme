@@ -75,45 +75,37 @@ tab > stack {
 /* Mimic libadwaita tab separators */
 .tab-content {
   height: 26px !important;
-  border-right: 1px solid var(--gnome-tabbar-tab-border-color);
-  transition: border-color 150ms ease-in-out !important;
+  border-left: 1px solid var(--gnome-tabbar-tab-border-color);
   margin: auto !important;
 }
 .tab-content:-moz-window-inactive {
+  transition: border-color 150ms ease-in-out !important;
   border-color: var(--gnome-inactive-toolbar-border-color);
 }
-#tabbrowser-tabs:not([hasadjacentnewtabbutton]) .tabbrowser-tab:last-of-type .tab-content,
-.tabbrowser-tab:is([beforeselected-visible="true"], [beforehovered="true"], [selected="true"], :hover):not(:last-of-type) .tab-content {
+.tabbrowser-tab:is(:first-of-type, [selected="true"], :hover) .tab-content,
+.tabbrowser-tab:is([selected="true"], :hover) + .tabbrowser-tab .tab-content {
   border-color: transparent !important;
 }
 
 /* Space around tabs */
 .tabbrowser-tab {
-  margin: 5px 2px 5px 0 !important;
+  margin: 5px 0 5px 2px !important;
   padding: 0 !important;
 }
 .tabbrowser-tab:last-of-type {
-  margin-right: 0 !important;
-}
-#tabbrowser-tabs:not([hasadjacentnewtabbutton]) .tabbrowser-tab:last-of-type {
-  margin-right: 1px !important;
+  margin-right: 5px !important;
 }
 .tabbrowser-tab:first-of-type {
-  margin-left: 4px !important;
+  margin-left: 1px !important;
 }
-.tab-background,
+#tabbrowser-tabs:not([hasadjacentnewtabbutton]) .tabbrowser-tab:last-of-type {
+  margin-right: 4px !important;
+}
+.tab-background {
+  margin-left: 3px !important;
+}
 .tab-content {
-  margin-right: 3px !important;
-}
-.tab-content {
-  padding-right: 3px !important;
-}
-#tabbrowser-tabs[hasadjacentnewtabbutton] .tabbrowser-tab:last-of-type .tab-background,
-#tabbrowser-tabs[hasadjacentnewtabbutton] .tabbrowser-tab:last-of-type .tab-content {
-  margin-right: 6px !important;
-}
-#tabbrowser-tabs[hasadjacentnewtabbutton] .tabbrowser-tab:last-of-type .tab-content {
-  padding-right: 6px !important;
+  padding-left: 3px !important;
 }
 @media (prefers-color-scheme: light) {
   #TabsToolbar {
@@ -121,16 +113,24 @@ tab > stack {
   }
 }
 
-
-/* Tabs borders */
+/* Tabbar border */
 #TabsToolbar {
   border-bottom: 1px solid var(--gnome-headerbar-border) !important;
 }
-#TabsToolbar .toolbarbutton-1:not(#hack):-moz-window-inactive {
+#TabsToolbar:-moz-window-inactive {
   border-color: var(--gnome-inactive-headerbar-border) !important;
-  transition-property: background, border, color, opacity !important;
-  transition-duration: 200ms !important;
-  transition-timing-function: ease-out !important;
+  transition: border 200ms ease-out !important;
+}
+
+/* Border before new tab button */
+#tabbrowser-tabs[hasadjacentnewtabbutton="true"] > #tabbrowser-arrowscrollbox > #tabbrowser-arrowscrollbox-periphery > toolbartabstop {
+  border-left: 1px solid var(--gnome-tabbar-tab-border-color) !important;
+  width: 1px;
+  margin: 9px 0;
+}
+#tabbrowser-tabs[hasadjacentnewtabbutton="true"] > #tabbrowser-arrowscrollbox > #tabbrowser-arrowscrollbox-periphery > toolbartabstop:-moz-window-inactive {
+  border-color: var(--gnome-inactive-toolbar-border-color);
+  transition: border 200ms ease-out !important;
 }
 
 /* Tab labels */
@@ -153,7 +153,7 @@ tab {
 .tab-content {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   margin-top: -1px;
   min-width: 100% !important;
   padding: 0 4px !important;
@@ -184,31 +184,31 @@ tab {
 }
 
 /* Fix gradient on tab overflow */
-.tabbrowser-tab:not([pinned]):is(:only-of-type, :not([selected], :hover)) .tab-close-button {
-  margin-left: -8px !important;
-}
-.tabbrowser-tab:not([pinned]):is(:hover, [selected]:not(:only-of-type)) .tab-close-button {
-  margin-left: 8px !important;
-}
 .tabbrowser-tab:not([pinned]):is(:only-of-type, :not([selected], :hover)) .tab-label-container {
+  margin-right: -16px !important;
   padding-right: 8px !important;
 }
 .tabbrowser-tab:not([pinned]):is(:hover, [selected]:not(:only-of-type)) .tab-label-container {
+  margin-right: 0px !important;
   padding-right: 0px !important;
+}
+
+/* Force tab close button to the end */
+.tab-close-button {
+  align-self: center;
+  margin-left: auto !important;
+  margin-right: 0 !important;
 }
 
 /* Force tab label to the center */
 .tabbrowser-tab:not([pinned]) .tab-label-container {
-  position: relative;
-  margin-right: auto !important;
-  right: -5%;
+  align-self: center;
 }
 
 /* Force tab favicon to the center */
 .tabbrowser-tab:not([pinned]) .tab-icon-stack {
-  position: relative;
-  margin-left: auto !important;
-  right: -5%;
+  align-self: center;
+  margin-left: auto;
 }
 
 /* Tab icon margin */
@@ -325,12 +325,6 @@ tab {
 }
 
 /* Fix close button position */
-.tabbrowser-tab:not([pinned]) .tab-label-container {
-  margin-right: -16px;
-}
-.tabbrowser-tab:not([pinned]):is([selected="true"], :hover) .tab-label-container[textoverflow="true"] {
-  margin-right: 0;
-}
 #tabbrowser-tabs[closebuttons="activetab"] .tabbrowser-tab:not([pinned]) .tab-close-button {
   display: block !important;
 }
@@ -338,9 +332,6 @@ tab {
 /* Tab close button etc. positioning */
 .tab-throbber, .tab-icon-image, .tab-sharing-icon-overlay, .tab-icon-sound, .tab-close-button {
   margin-top: 0 !important;
-}
-.tab-close-button {
-  margin-right: 4px !important;
 }
 
 /* Active tab */
