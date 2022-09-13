@@ -25,7 +25,7 @@
 
 #TabsToolbar:-moz-window-inactive {
   background-color: var(--gnome-inactive-toolbar-background) !important;
-  transition-property: background, border, color, opacity !important;
+  transition-property: background-color, border, color, opacity !important;
   transition-duration: 200ms !important;
   transition-timing-function: ease-out !important;
 }
@@ -53,10 +53,10 @@ tab > stack {
 }
 
 #TabsToolbar .toolbarbutton-1:not([disabled]):not(:active):not([open]):hover {
-  background-color: var(--gnome-tabbar-tab-hover-background) !important;
+  background-color: var(--gnome-button-flat-hover-background) !important;
 }
 #TabsToolbar .toolbarbutton-1:active, #TabsToolbar .toolbarbutton-1[open] {
-  background-color: var(--gnome-tabbar-tab-active-hover-background) !important;
+  background-color: var(--gnome-button-flat-active-background) !important;
 }
 
 /* Remove shadow next to tab scroll buttons */
@@ -119,7 +119,6 @@ tab > stack {
 }
 #TabsToolbar:-moz-window-inactive {
   border-color: var(--gnome-inactive-headerbar-border) !important;
-  transition: border 200ms ease-out !important;
 }
 
 /* Border before new tab button */

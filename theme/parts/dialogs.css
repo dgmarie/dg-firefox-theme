@@ -79,3 +79,8 @@ dialog {
 #os-default-handler .name {
   font-weight: normal !important;
 }
+
+/* Add bookmark fix */
+#editBookmarkPanelRows vbox {
+  margin: 1px !important
+}

@@ -1,5 +1,6 @@
 /* Entries */
 
+@namespace html "http://www.w3.org/1999/xhtml";
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
 /* Entries */
@@ -11,7 +12,10 @@
 #password1Textbox,
 .tabsFilter,
 #editBMPanel_namePicker,
-#editBMPanel_tagsField {
+#editBMPanel_tagsField,
+html|input:is([type="email"], [type="tel"], [type="text"], [type="password"], [type="url"], [type="number"]),
+html|textarea,
+xul|search-textbox {
   -moz-appearance: none !important;
   background: var(--gnome-entry-background) !important;
   border: 0 !important;
@@ -36,7 +40,10 @@
 #password1Textbox:focus,
 .tabsFilter[focused],
 #editBMPanel_namePicker:focus-visible,
-#editBMPanel_tagsField:focus-visible {
+#editBMPanel_tagsField:focus-visible,
+html|input:is([type="email"], [type="tel"], [type="text"], [type="password"], [type="url"], [type="number"]):focus,
+html|textaream:focus,
+xul|search-textbox[focused] {
   outline: 2px solid var(--gnome-focused-urlbar-border-color) !important;
   outline-offset: -2px;
   -moz-outline-radius: 5px;
