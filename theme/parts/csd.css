@@ -14,34 +14,34 @@
 
 /* Window buttons: at least 1 button */
 @media (-moz-gtk-csd-minimize-button), (-moz-gtk-csd-maximize-button), (-moz-gtk-csd-close-button) {
-	:root {
-		--gnome-navbar-csd-offset: 42px;
-	}
+  :root {
+    --gnome-navbar-csd-offset: 42px;
+  }
 }
 /* Window buttons: at least 2 buttons */
 @media (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-maximize-button),
        (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-close-button),
        (-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button) {
-	:root {
-		--gnome-navbar-csd-offset: 66px;
-	}
+  :root {
+    --gnome-navbar-csd-offset: 66px;
+  }
 }
 /* Window buttons: 3 buttons */
 @media (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button) {
-	:root {
-		--gnome-navbar-csd-offset: 90px;
-	}
+  :root {
+    --gnome-navbar-csd-offset: 90px;
+  }
 }
 
 /* Right window buttons offset by button count */
 :root[tabsintitlebar] #nav-bar {
-	padding-left: 3px !important;
-	padding-right: var(--gnome-navbar-csd-offset) !important;
+  padding-left: 3px !important;
+  padding-right: var(--gnome-navbar-csd-offset) !important;
 }
 
 /* Left window buttons */
 @media (-moz-gtk-csd-reversed-placement) {
- 	/* Window controls offset by button count */
+   /* Window controls offset by button count */
   :root[tabsintitlebar] #nav-bar {
     padding-left: var(--gnome-navbar-csd-offset) !important;
     padding-right: 3px !important;

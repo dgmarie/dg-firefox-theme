@@ -3,7 +3,7 @@
 @import 'accent-colors';
 
 @function toRGB($color) {
-	@return red($color) + ", " + green($color) + ", " + blue($color);
+  @return red($color) + ", " + green($color) + ", " + blue($color);
 }
 
 $accent_color_rgb: toRGB($accent_color);
@@ -13,91 +13,79 @@ $accent_color_rgb: toRGB($accent_color);
  * built-in in Firefox, so you need to add an !important if you wanna
  * override them. */
 @media (prefers-color-scheme: dark) {
-	:root {
-		/* Browser area before a page starts loading */
-		--gnome-browser-before-load-background: #242424;
+  :root {
+    /* Browser area before a page starts loading */
+    --gnome-browser-before-load-background: #242424;
 
-		/* Accent */
-		--gnome-accent-bg: #{$accent_color};
-		--gnome-accent: #{$accent_color};
+    /* Accent */
+    --gnome-accent-bg: #{$accent_color};
+    --gnome-accent: #{$accent_color};
 
-		/* Toolbars */
-		--gnome-toolbar-background: #222222;
-		--gnome-toolbar-color: #ffffff;
-		--gnome-toolbar-border-color: #434343;
-		--gnome-toolbar-icon-fill: #ffffff;
-		--gnome-inactive-toolbar-background: #2c2c2c;
-		--gnome-inactive-toolbar-border-color: #4c4c4c;
+    /* Toolbars */
+    --gnome-toolbar-background: #222222;
+    --gnome-toolbar-color: #ffffff;
+    --gnome-inactive-toolbar-color: rgba(255, 255, 255, .5);
+    --gnome-toolbar-border-color: #434343;
+    --gnome-toolbar-icon-fill: #ffffff;
+    --gnome-inactive-toolbar-background: #2c2c2c;
+    --gnome-inactive-toolbar-border-color: #4c4c4c;
 
-		/* Menus */
-		--gnome-menu-background: #1d1d1d;
-		--gnome-menu-border-color: rgba(0, 0, 0, .14);
-		--gnome-menu-shadow: 0 1px 5px 1px rgba(0,0,0, .09), 0 2px 14px 3px rgba(0,0,0, .05), 0 0 0 1px rgba(0, 0, 0, .07);
-		--gnome-menu-separator-color: rgba(255, 255, 255, .15);
-		--gnome-menu-radio-border-color: rgba(255, 255, 255, .3);
+    /* Menus */
+    --gnome-menu-background: #1d1d1d;
+    --gnome-menu-border-color: rgba(0, 0, 0, .14);
+    --gnome-menu-shadow: 0 1px 5px 1px rgba(0,0,0, .09), 0 2px 14px 3px rgba(0,0,0, .05), 0 0 0 1px rgba(0, 0, 0, .07);
+    --gnome-menu-separator-color: rgba(255, 255, 255, .15);
+    --gnome-menu-radio-border-color: rgba(255, 255, 255, .3);
 
-		/* Header bar */
-		--gnome-headerbar-background: #222222;
-		--gnome-headerbar-border: #161616;
-		--gnome-inactive-headerbar-border: #1c1c1c;
+    /* Header bar */
+    --gnome-headerbar-background: #222222;
+    --gnome-headerbar-border: #161616;
+    --gnome-inactive-headerbar-border: #1c1c1c;
 
-		/* Buttons */
-		--gnome-button-destructive-action-background: #c7162b;
+    /* Buttons */
+    --gnome-button-destructive-action-background: #c7162b;
 
-		/* Switches */
-		--gnome-switch-border-color: rgba(255, 255, 255, .15);
+    /* Switches */
+    --gnome-switch-border-color: rgba(255, 255, 255, .15);
 
-		/* Boxes */
-		--gnome-box-background: rgba(255, 255, 255, .08);
+    /* Boxes */
+    --gnome-box-background: rgba(255, 255, 255, .08);
 
-		/* Lists */
-		--gnome-list-background: #272727;
-		--gnome-row-hover-background: rgba(255, 255, 255, .07);
-		--gnome-row-selected-background: rgba(255, 255, 255, .1);
-		--gnome-row-selected-hover-background: rgba(255, 255, 255, .13);
-		--gnome-list-box-shadow: 0 0 0 1px rgba(0, 0, 0, .03), 0 1px 3px 1px rgba(0, 0, 0, .07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
+    /* Lists */
+    --gnome-list-background: #272727;
+    --gnome-row-hover-background: rgba(255, 255, 255, .07);
+    --gnome-row-selected-background: rgba(255, 255, 255, .1);
+    --gnome-row-selected-hover-background: rgba(255, 255, 255, .13);
+    --gnome-list-box-shadow: 0 0 0 1px rgba(0, 0, 0, .03), 0 1px 3px 1px rgba(0, 0, 0, .07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
 
-		/* Entries */
-		--gnome-entry-background: rgba(255, 255, 255, .1);
-		--gnome-inactive-entry-background: rgba(255, 255, 255, .05);
-		--gnome-focused-urlbar-border-color: rgba(#{$accent_color_rgb}, 0.5); /* Same as --gnome-accent but with opacity*/
-		--gnome-inactive-entry-color: #ffffff;
+    /* Entries */
+    --gnome-entry-background: rgba(255, 255, 255, .1);
+    --gnome-inactive-entry-background: rgba(255, 255, 255, .05);
+    --gnome-focused-urlbar-border-color: rgba(#{$accent_color_rgb}, 0.5); /* Same as --gnome-accent but with opacity*/
+    --gnome-inactive-entry-color: #ffffff;
 
-		/* Sidebar */
-		--gnome-inactive-sidebar-background: #2c2c2c;
+    /* Sidebar */
+    --gnome-inactive-sidebar-background: #2c2c2c;
 
-		/* Settings */
-		--gnome-settings-background: #2c2c2c;
-		--gnome-settings-info-background: rgba(#{$accent_color_rgb}, 0.1); /* Same as --gnome-accent but with opacity*/
-		--gnome-settings-hover-background: #3d3d3d;
+    /* Settings */
+    --gnome-settings-background: #2c2c2c;
+    --gnome-settings-info-background: rgba(#{$accent_color_rgb}, 0.1); /* Same as --gnome-accent but with opacity*/
+    --gnome-settings-hover-background: #3d3d3d;
 
-		/* Advanced Preferences */
-		--gnome-warning-icon-fill: #F99B11;
+    /* Advanced Preferences */
+    --gnome-warning-icon-fill: #F99B11;
 
-		/* Tabs */
-		--gnome-tabbar-tab-hover-background: #323232;
-		--gnome-tabbar-tab-active-background: #383838;
-		--gnome-tabbar-tab-active-hover-background: #3f3f3f;
-		--gnome-inactive-tabbar-tab-hover-background: #333333;
-		--gnome-inactive-tabbar-tab-active-background: #363636;
-		--gnome-inactive-tabbar-tab-active-hover-background: #3a3a3a;
-	}
+    /* Tabs */
+    --gnome-tabbar-tab-background: var(--gnome-toolbar-color);
+  }
 
-	/* Private window colors */
-	:root {
-		/* Toolbars */
-		--gnome-private-toolbar-background: #252F49;
-		--gnome-private-inactive-toolbar-background: #1c2438;
-		--gnome-private-toolbar-border-color: #464e64;
-		--gnome-private-inactive-toolbar-border-color: #3e4556;
-
-		/* Tabs */
-		--gnome-private-tabbar-tab-hover-background: #343e56;
-		--gnome-private-tabbar-tab-active-background: #3a435b;
-		--gnome-private-tabbar-tab-active-hover-background: #414a61;
-		--gnome-private-inactive-tabbar-tab-hover-background: #242c3f;
-		--gnome-private-inactive-tabbar-tab-active-background: #272f42;
-		--gnome-private-inactive-tabbar-tab-active-hover-background: #2b3245;
-	}
+  /* Private window colors */
+  :root {
+    /* Toolbars */
+    --gnome-private-toolbar-background: #252F49;
+    --gnome-private-inactive-toolbar-background: #1c2438;
+    --gnome-private-toolbar-border-color: #464e64;
+    --gnome-private-inactive-toolbar-border-color: #3e4556;
+  }
 }
 

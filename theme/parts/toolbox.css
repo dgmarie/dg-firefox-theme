@@ -43,7 +43,7 @@ findbar:-moz-window-inactive description,
 #viewButton:-moz-window-inactive dropmarker,
 .container.infobar:-moz-window-inactive {
   opacity: 0.5 !important;
-  transition-property: opacity 200ms ease-out !important;
+  transition: opacity 200ms ease-out !important;
 }
 #toolbar-menubar:not([inactive=true]) {
   margin-bottom: 0 !important;
