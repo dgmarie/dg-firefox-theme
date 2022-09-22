@@ -25,7 +25,7 @@
 
 #TabsToolbar:-moz-window-inactive {
   background-color: var(--gnome-inactive-toolbar-background) !important;
-  transition-property: background-color, border, color, opacity !important;
+  transition-property: border, color, opacity !important;
   transition-duration: 200ms !important;
   transition-timing-function: ease-out !important;
 }
@@ -78,7 +78,7 @@ tab > stack {
 /* Mimic libadwaita tab separators */
 .tab-content {
   height: 26px !important;
-  border-left: 1px solid var(--gnome-tabbar-tab-border-color);
+  border-left: 1px solid var(--gnome-toolbar-border-color);
   margin: auto !important;
 }
 .tab-content:-moz-window-inactive {
@@ -123,7 +123,7 @@ tab > stack {
 
 /* Border before new tab button */
 #tabbrowser-tabs[hasadjacentnewtabbutton="true"] > #tabbrowser-arrowscrollbox > #tabbrowser-arrowscrollbox-periphery > toolbartabstop {
-  border-left: 1px solid var(--gnome-tabbar-tab-border-color) !important;
+  border-left: 1px solid var(--gnome-toolbar-border-color) !important;
   width: 0;
   margin: 9px 2px 9px 0;
 }
@@ -305,7 +305,7 @@ tab {
 .tabbrowser-tab:not([pinned]):hover .tab-content::after { /* Hover */
   opacity: 0.07;
 }
-.tabbrowser-tab:not([pinned])[selected=true]:not(:only-of-type, :hover) .tab-content::after { /* Active */
+.tabbrowser-tab:not([pinned], :-moz-window-inactive)[selected=true]:not(:only-of-type, :hover) .tab-content::after { /* Active */
   opacity: 0.1;
   transition: none;
 }
@@ -315,15 +315,12 @@ tab {
 /* Inactive Window */
 .tabbrowser-tab:not([pinned]):hover:-moz-window-inactive .tab-content::after { /* Hover */
   opacity: 0.035;
-  transition: opacity 200ms ease-out !important;
 }
 .tabbrowser-tab:not([pinned])[selected=true]:not(:only-of-type, :hover):-moz-window-inactive .tab-content::after { /* Active */
   opacity: 0.05;
-  transition: opacity 200ms ease-out !important;
 }
 .tabbrowser-tab:not([pinned])[selected=true]:hover:not(:only-of-type):-moz-window-inactive .tab-content::after { /* Hover + Active */
   opacity: 0.065;
-  transition: opacity 200ms ease-out !important;
 }
 
 
@@ -394,7 +391,7 @@ tab {
 .tabbrowser-tab:only-of-type:hover:is(:only-of-type, :not([selected="true"])) .tab-background { /* Hover */
   opacity: 0.07 !important;
 }
-.tabbrowser-tab[selected="true"]:not(:hover, :only-of-type) .tab-background { /* Active */
+.tabbrowser-tab[selected="true"]:not(:hover, :only-of-type, :-moz-window-inactive) .tab-background { /* Active */
   opacity: 0.1 !important;
   transition: none !important;
 }
@@ -405,15 +402,12 @@ tab {
 .tabbrowser-tab:hover:is(:only-of-type, :not([selected="true"])):-moz-window-inactive .tab-background,
 .tabbrowser-tab:only-of-type:hover:is(:only-of-type, :not([selected="true"])):-moz-window-inactive .tab-background { /* Hover */
   opacity: 0.035 !important;
-  transition: opacity 200ms ease-out !important;
 }
 .tabbrowser-tab[selected="true"]:not(:hover, :only-of-type):-moz-window-inactive .tab-background { /* Active */
   opacity: 0.05 !important;
-  transition: opacity 200ms ease-out !important;
 }
 .tabbrowser-tab[selected="true"]:not(:only-of-type):hover:-moz-window-inactive .tab-background { /* Active + Hover */
   opacity: 0.065 !important;
-  transition: opacity 200ms ease-out !important;
 }
 
 /* Full width tabs */
@@ -452,7 +446,7 @@ tab {
 .tabbrowser-tab[class*="identity-color-"]:only-of-type:hover:is(:only-of-type, :not([selected="true"])) .tab-background {  /* Hover */
   opacity: .1 !important;
 }
-.tabbrowser-tab[class*="identity-color-"][selected="true"]:not(:hover, :only-of-type) .tab-background {  /* Active */
+.tabbrowser-tab[class*="identity-color-"][selected="true"]:not(:hover, :only-of-type, :-moz-window-inactive) .tab-background {  /* Active */
   opacity: .13 !important;
   transition: none;
 }
@@ -469,7 +463,6 @@ tab {
 }
 .tabbrowser-tab[class*="identity-color-"][selected="true"]:not(:hover, :only-of-type):-moz-window-inactive .tab-background {  /* Active */
   opacity: .065 !important;
-  transition: none;
 }
 .tabbrowser-tab[class*="identity-color-"][selected="true"]:hover:not(:only-of-type):-moz-window-inactive .tab-background { /* Active + Hover */
   opacity: .08 !important;
