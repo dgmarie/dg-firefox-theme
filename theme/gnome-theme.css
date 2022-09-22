@@ -22,8 +22,9 @@
 
 @import "parts/remove-white-flash.css";
 
-@import "colors/light.css";
-@import "colors/dark.css";
+@import "colors/accent-colors.css";
+@import "colors/light-yaru.css";
+@import "colors/dark-yaru.css";
 
 @import "symbolic-tab-icons.css";
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";

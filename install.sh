@@ -3,6 +3,8 @@ dir="$(dirname -- "$0")"
 themedirectory="$(realpath "${dir}")"
 profilename=""
 theme=yaru
+color_variants=('orange' 'bark' 'sage' 'olive' 'viridian' 'prussiangreen' 'blue' 'purple' 'magenta' 'red')
+
 nc='\033[0m'
 bold='\033[1m'
 red='\033[0;31m'
@@ -31,10 +33,15 @@ while getopts 'f:p:c:h' flag; do
 done
 
 if [[ -z "${color}" ]]; then
-  color=orange
+  color="orange"
 fi
 if [[ -z "${firefoxfolder}" ]]; then
   firefoxfolder="${HOME}/.mozilla/firefox"
+fi
+
+if ! printf '%s\0' "${color_variants[@]}" | grep -Fxqz -- "${color}"; then
+  echo "ERROR: Unrecognized accent color variant '${color}'."
+  exit 1
 fi
 
 function saveProfile(){
@@ -57,19 +64,12 @@ function saveProfile(){
   cp -fR "$themedirectory" "$PWD"
 
   # Set accent color
-  sed -i "/\$accent_color:/s/orange/${color}/" "${PWD}"/dg-firefox-theme/theme/colors/sass/_accent-colors.scss
+  sed -i "s/--yaru-orange/--yaru-${color}/g" "${PWD}"/dg-firefox-theme/theme/colors/light-yaru.css
+  sed -i "s/--yaru-orange/--yaru-${color}/g" "${PWD}"/dg-firefox-theme/theme/colors/dark-yaru.css
 
-  # Generate CSS
-  sassc -M -t expanded "${PWD}/dg-firefox-theme/theme/colors/sass/dark-yaru.scss"  "${PWD}/dg-firefox-theme/theme/colors/dark-yaru.css"
-  sassc -M -t expanded "${PWD}/dg-firefox-theme/theme/colors/sass/light-yaru.scss" "${PWD}/dg-firefox-theme/theme/colors/light-yaru.css"
-
-  # Remove Sass directory
-  rm -rf "${PWD}/dg-firefox-theme/theme/colors/sass"
-
-  # Create single-line user CSS files if non-existent or empty.
+  # Create single-line user CSS file
   if [ -s userChrome.css ]; then
-    # Remove older theme imports
-    sed 's/@import "dg-firefox-theme.*.//g' userChrome.css | sed '/^\s*$/d' > tmpfile && mv tmpfile userChrome.css
+    rm -rf userChrome.css
     echo >> userChrome.css
   else
     echo >> userChrome.css
@@ -83,10 +83,9 @@ function saveProfile(){
     echo "@import \"dg-firefox-theme\/theme/colors/dark-$theme.css\";" >> userChrome.css
   fi
 
-  # Create single-line user content CSS files if non-existent or empty.
+  # Create single-line user content CSS file
   if [ -s userContent.css ]; then
-    # Remove older theme imports
-    sed 's/@import "dg-firefox-theme.*.//g' userContent.css | sed '/^\s*$/d' > tmpfile && mv tmpfile userContent.css
+    rm -rf userContent.css
     echo >> userContent.css
   else
     echo >> userContent.css

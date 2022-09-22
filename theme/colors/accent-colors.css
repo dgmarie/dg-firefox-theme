@@ -1,0 +1,16 @@
+@namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Accent colors from yaru */
+:root {
+    /* Just the rgb values */
+    --yaru-orange: 233, 84, 32;
+    --yaru-bark: 120, 120, 89;
+    --yaru-sage: 101, 123, 105;
+    --yaru-olive: 75, 133, 1;
+    --yaru-viridian: 3, 135, 91;
+    --yaru-prussiangreen: 48, 130, 128;
+    --yaru-blue: 0, 115, 229;
+    --yaru-purple: 119, 100, 216;
+    --yaru-magenta: 179, 76, 179;
+    --yaru-red: 218, 52, 80;
+}

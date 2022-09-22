@@ -1,5 +1,6 @@
-@import "theme/colors/light.css";
-@import "theme/colors/dark.css";
+@import "theme/colors/accent-colors.css";
+@import "theme/colors/light-yaru.css";
+@import "theme/colors/dark-yaru.css";
 
 @import "theme/pages/addons.css";
 @import "theme/pages/advancedpreferences.css";
