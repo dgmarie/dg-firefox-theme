@@ -7,7 +7,6 @@
   --gnome-toolbar-background: var(--gnome-private-toolbar-background) !important;
   --gnome-inactive-toolbar-background: var(--gnome-private-inactive-toolbar-background) !important;
   --gnome-toolbar-border-color: var(--gnome-private-toolbar-border-color) !important;
-  --gnome-inactive-toolbar-border-color: var(--gnome-private-inactive-toolbar-border-color) !important;
 
   /* Change headerbar colors */
   --gnome-headerbar-background: var(--gnome-private-headerbar-background) !important;

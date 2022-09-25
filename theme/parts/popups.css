@@ -174,7 +174,6 @@ menuitem, menupopup menu,
 .protections-popup-footer-button,
 .protections-popup-category,
 .identity-popup-content-blocking-category,
-#PlacesToolbar menupopup[placespopup="true"] .bookmark-item,
 .openintabs-menuitem,
 .widget-overflow-list .toolbarbutton-1 {
   margin: 0 !important;
@@ -207,7 +206,6 @@ menupopup menu:not([disabled="true"]):is(:hover, [_moz-menuactive]),
 #protections-popup-show-report-stack:hover .protections-popup-footer-button,
 .protections-popup-category:not([disabled="true"]):hover,
 .identity-popup-content-blocking-category:not([disabled="true"]):hover,
-#PlacesToolbar .bookmark-item:is(:hover, [open], [_moz-menuactive]),
 #downloadsPanel-mainView .download-state:hover {
   background: var(--gnome-menu-button-hover-background) !important;
 }

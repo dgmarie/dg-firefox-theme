@@ -37,9 +37,6 @@ toolbarspring {
   padding: 0 4px !important;
 }
 
-#urlbar .urlbar-input-box:-moz-window-inactive {
-  opacity: 0.5;
-}
 /* URL bar results */
 .urlbarView {
   background: var(--gnome-menu-background) !important;

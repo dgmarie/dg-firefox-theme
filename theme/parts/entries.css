@@ -49,19 +49,6 @@ xul|search-textbox[focused] {
   -moz-outline-radius: 5px;
 }
 
-/* Inactive window entries */
-#urlbar:-moz-window-inactive,
-#searchbar:-moz-window-inactive,
-#search-box:-moz-window-inactive,
-.findbar-textbox:-moz-window-inactive,
-#loginTextbox:-moz-window-inactive,
-#password1Textbox:-moz-window-inactive,
-.tabsFilter:-moz-window-inactive {
-  background: var(--gnome-inactive-entry-background) !important;
-  color: var(--gnome-inactive-entry-color) !important;
-  transition: 200ms ease-out !important;
-}
-
 /* Entries combined */
 .findbar-textbox:not(.minimal) {
   border-top-right-radius: 0 !important;

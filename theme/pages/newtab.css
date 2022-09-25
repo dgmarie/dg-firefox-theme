@@ -71,10 +71,6 @@
     box-shadow: none !important;
     border-left: 1px solid var(--gnome-toolbar-border-color) !important;
   }
-  .customize-menu:-moz-window-inactive {
-    background-color: var(--gnome-inactive-toolbar-background) !important;
-    border-left: 1px solid var(--gnome-inactive-toolbar-border-color) !important;
-  }
   .personalize-button,
   .customize-menu .close-button,
   .home-section .section .selector {

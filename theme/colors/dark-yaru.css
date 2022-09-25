@@ -16,11 +16,10 @@
     /* Toolbars */
     --gnome-toolbar-background: #222222;
     --gnome-toolbar-color: #ffffff;
-    --gnome-toolbar-border-color: #434343;
+    --gnome-toolbar-border-color: rgba(255, 255, 255, .15);
     --gnome-toolbar-icon-fill: #ffffff;
     --gnome-inactive-toolbar-color: rgba(255, 255, 255, .5);
     --gnome-inactive-toolbar-background: #2c2c2c;
-    --gnome-inactive-toolbar-border-color: #4c4c4c;
     --gnome-inactive-toolbar-icon-fill: rgba(255, 255, 255, .5);
 
     /* Sidebar */
@@ -55,8 +54,6 @@
     /* Entries */
     --gnome-entry-background: rgba(255, 255, 255, .1);
   	--gnome-entry-color: #ffffff;
-    --gnome-inactive-entry-background: rgba(255, 255, 255, .05);
-    --gnome-inactive-entry-color: #ffffff;
     --gnome-focused-urlbar-border-color: rgba(var(--yaru-orange), 0.5); /* Same as --gnome-accent but with opacity*/
 
     /* Switches */

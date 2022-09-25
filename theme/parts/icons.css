@@ -156,7 +156,8 @@ arrowscrollbox[orient="horizontal"] {
 .expander-down > .button-box,
 #sidebar-switcher-arrow,
 #viewButton .button-menu-dropmarker,
-.popup-notification-dropmarker .button-icon {
+.popup-notification-dropmarker .button-icon,
+#PlacesChevron {
   -moz-appearance: none !important;
   list-style-image: url("../assets/yaru-icons/pan-down-symbolic.svg") !important;
   width: 16px !important;

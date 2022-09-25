@@ -15,12 +15,6 @@
   border-right: 1px solid var(--gnome-toolbar-border-color) !important;
   width: 0 !important;
 }
-#sidebar-splitter:-moz-window-inactive {
-  background: var(--gnome-inactive-toolbar-background) !important;
-  border-color: var(--gnome-inactive-toolbar-border-color) !important;
-  transition: 200ms ease-out !important;
-}
-
 #sidebar-header {
   padding: 6px !important;
   border-bottom: 1px solid var(--gnome-toolbar-border-color) !important;
