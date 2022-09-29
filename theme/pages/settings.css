@@ -14,7 +14,7 @@ url("about:preferences#moreFromMozilla") {
     --in-content-page-background: var(--gnome-settings-background) !important;
     --in-content-page-color: var(--gnome-toolbar-color) !important;
     --in-content-box-background: var(--gnome-menu-background) !important;
-    --in-content-box-background-odd: var(--gnome-menu-background) !important;
+    --in-content-box-background-odd: transparent !important;
     --in-content-box-border-color: var(--gnome-menu-separator-color) !important;
     --in-content-box-info-background: var(--gnome-settings-info-background) !important;
     --in-content-border-color: var(--gnome-menu-separator-color) !important;
@@ -96,15 +96,29 @@ url("about:preferences#moreFromMozilla") {
   }
   #categories {
     margin: 6px 0 !important;
-  }
-  .category-name {
-    padding-inline-start: 10px !important;
+    padding: 0 !important;
   }
   #categories > .category {
     padding: 0 14px !important;
+    min-height: 43px !important;
+    background-size: 16px !important;
     margin-inline-start: 6px !important;
-    margin-inline-end: 6px !important;
     margin-bottom: 2px !important;
+    margin-inline-end: 6px !important;
+  }
+  #categories .category-icon {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  #categories .category-name,
+  .sidebar-footer-label {
+    font-size: 1em !important;
+    line-height: normal !important;
+    margin-left: 12px !important;
+    margin-inline: 0 !important;
+  }
+  .sidebar-footer-link {
+    height: 43px !important;
   }
   #categories > .category[selected] {
     background-color: var(--gnome-row-selected-background) !important;
@@ -112,12 +126,17 @@ url("about:preferences#moreFromMozilla") {
   }
   #categories > .category[selected]:hover {
     background-color: var(--gnome-row-selected-hover-background) !important;
-    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  #categories > .category[selected]:active {
+    background-color: var(--gnome-row-selected-active-background) !important;
   }
   #categories > .category:not([selected]):hover,
   .sidebar-footer-link:hover {
     background-color: var(--gnome-row-hover-background) !important;
-    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  #categories > .category:not([selected]):active,
+  .sidebar-footer-link:active {
+    background-color: var(--gnome-row-active-background) !important;
   }
   .sidebar-footer-list {
     margin-block: 0 6px !important;
@@ -125,57 +144,49 @@ url("about:preferences#moreFromMozilla") {
   }
   .sidebar-footer-icon {
     margin-inline-start: 14px !important;
+    margin-right: 8px !important;
   }
 
-  /* Content */
+  /* Page content */
   .main-content {
     padding: 0 24px 24px 24px !important;
   }
 
-  /* Buttons and boxes */
+  /* Buttons */
   #categories > .category,
   button,
   xul|menulist,
+  xul|menuitem,
   .sidebar-footer-link {
     border-radius: 6px !important;
   }
-  #categories > .category:hover,
-  button:hover,
-  xul|menulist:hover,
-  xul|treecol:not([hideheader="true"], [sortable="false"]):hover
-  .sidebar-footer-link:hover,
-  #categories > .category:active,
-  button:active,
-  xul|menulist:active,
-  xul|treecol:not([hideheader="true"], [sortable="false"]):active
-  .sidebar-footer-link:active {
-    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  #categories > .category,
+  button,
+  xul|menulist,
+  xul|treecol:not([hideheader="true"], [sortable="false"])
+  .sidebar-footer-link {
+    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
   }
-  xul|listheader, xul|treecols {
-    border-radius: 12px 12px 0 0 !important;
+  button,
+  xul|menulist:not(.actionsMenu) {
+    padding: 2px 16px !important;
+    height: 34px !important;
+    max-height: 34px !important;
   }
-  xul|richlistbox:not(#categories, xul|listheader + xul|richlistbox), .qr-code-box:not([hidden="true"]), .info-box-container:not(#policies-container, .content-blocking-category.selected), xul|tree {
-    background-color: var(--gnome-box-background) !important;
-    border-radius: 12px !important;
-    border-width: 0 !important;
-    box-shadow: var(--gnome-list-box-shadow) !important;
-  }
+
+  /* Policy container */
   #policies-container {
     border-radius: 6px !important;
+    height: 34px !important;
+    max-height: 34px !important;
   }
-  xul|search-textbox,
-  html|input:is([type="email"], [type="tel"], [type="text"], [type="password"], [type="url"], [type="number"]) {
-    background-color: var(--gnome-entry-background) !important;
-    border-radius: 6px !important;
-    border-width: 0 !important;
-    box-shadow: none !important;
-    outline: 2px solid transparent !important;
-  }
+
+  /* Cards */
   .web-appearance-choice {
-    background-color: var(--gnome-box-background) !important;
+    background-color: var(--gnome-card-background) !important;
     border-radius: 8px !important;
     border-width: 0 !important;
-    box-shadow: var(--gnome-list-box-shadow) !important;
+    box-shadow: var(--gnome-card-box-shadow) !important;
   }
   .web-appearance-choice:hover {
     background-color: var(--gnome-settings-hover-background) !important;
@@ -183,21 +194,100 @@ url("about:preferences#moreFromMozilla") {
   }
   .content-blocking-category {
     border-radius: 12px !important;
-    box-shadow: var(--gnome-list-box-shadow) !important;
-  }
-  xul|listheader + xul|richlistbox {
-    border-radius: 0 0 12px 12px !important;
+    box-shadow: var(--gnome-card-box-shadow) !important;
   }
   .info-box-container:not(#policies-container) {
     padding: 14px !important;
   }
-  xul|search-textbox[focused],
-  html|input:is([type="email"], [type="tel"], [type="text"], [type="password"], [type="url"], [type="number"]):focus {
-    outline: 2px solid var(--gnome-focused-urlbar-border-color) !important;
+
+  /* Lists */
+  xul|menulist.actionsMenu {
+    background: none !important;
   }
+  xul|richlistitem {
+    height: 34px !important;
+    max-height: 34px !important;
+  }
+  xul|listheader + xul|richlistbox {
+    background-color: var(--gnome-list-background) !important;
+    border-radius: 0 0 12px 12px !important;
+  }
+  xul|richlistitem[selected] {
+    background-color: var(--gnome-row-selected-background) !important;
+  }
+  xul|richlistitem[selected]:hover {
+    background-color: var(--gnome-row-selected-hover-background) !important;
+  }
+  xul|richlistitem[selected]:active {
+    background-color: var(--gnome-row-selected-active-background) !important;
+  }
+  xul|richlistitem:hover {
+    background-color: var(--gnome-row-hover-background) !important;
+  }
+  xul|richlistitem:active {
+    background-color: var(--gnome-row-active-background) !important;
+  }
+  xul|listheader, xul|treecols {
+    border-radius: 12px 12px 0 0 !important;
+    background-color: var(--gnome-list-background) !important;
+  }
+  xul|richlistbox:not(#categories, xul|listheader + xul|richlistbox), .qr-code-box:not([hidden="true"]), .info-box-container:not(#policies-container, .content-blocking-category.selected) {
+    background-color: var(--gnome-card-background) !important;
+    border-radius: 12px !important;
+    border-width: 0 !important;
+    box-shadow: var(--gnome-card-box-shadow) !important;
+  }
+  xul|tree {
+    border-radius: 12px !important;
+    background-color: var(--gnome-list-background) !important;
+  }
+
+  /* Menus */
   xul|menulist > xul|menupopup {
     --panel-border-radius: 12px !important;
     --panel-border-color: transparent !important;
+    --panel-padding: 6px !important;
+    --in-content-item-selected: transparent !important;
+    --in-content-item-hover: transparent !important;
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, .09),
+                0 2px 14px 3px rgba(0, 0, 0, .05);
+  }
+  xul|menuitem {
+    padding: 6px 14px !important;
+  }
+  xul|menuseparator {
+    margin: 4px 0 6px !important;
+  }
+  xul|menuitem:not(:last-of-type) {
+    margin-bottom: 2px !important;
+  }
+  xul|menuitem:hover {
+    background: var(--gnome-button-background) !important;
+  }
+  xul|menuitem:active {
+    background: var(--gnome-button-active-background) !important;
+  }
+
+  /* Entries */
+  xul|search-textbox,
+  html|input:is([type="email"], [type="tel"], [type="text"], [type="password"], [type="url"], [type="number"]) {
+    background-color: var(--gnome-entry-background) !important;
+    border-radius: 6px !important;
+    padding-left: 9px !important;
+    padding-right: 9px !important;
+    border-width: 0 !important;
+    box-shadow: none !important;
+    min-height: 34px !important;
+    max-height: 34px !important;
+  }
+  xul|search-textbox[focused],
+  html|input:is([type="email"], [type="tel"], [type="text"], [type="password"], [type="url"], [type="number"]):focus {
+    outline: 2px solid var(--gnome-focused-urlbar-border-color) !important;
+    outline-offset: -2px !important;
+    -moz-outline-radius: 5px;
+  }
+  #downloadFolder {
+    padding-inline-start: 32px !important;
   }
 
   /* Toggle */

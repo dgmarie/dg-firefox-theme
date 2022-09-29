@@ -7,43 +7,60 @@
 
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
+/* Toolbox top border corners rounded */
+:root[tabsintitlebar][sizemode="normal"]:not([gtktiledwindow="true"]) #navigator-toolbox {
+  border-radius: env(-moz-gtk-csd-titlebar-radius) env(-moz-gtk-csd-titlebar-radius) 0 0 !important;
+}
+
 /* Toolbox colors */
 #navigator-toolbox {
   border: none !important;
+}
+.browser-toolbar:not(.titlebar-color) {
   background: none !important;
 }
-
-#nav-bar, #PersonalToolbar, #toolbar-menubar, #TabsToolbar, findbar {
+#navigator-toolbox, findbar {
   background: var(--gnome-toolbar-background) !important;
 }
-findbar, #toolbar-menubar, #PersonalToolbar, #TabsToolbar {
+findbar, #toolbar-menubar, #PersonalToolbar {
   border-bottom: none !important;
   border-top: 1px solid var(--gnome-headerbar-border) !important;
 }
-#toolbar-menubar:-moz-window-inactive,
-#nav-bar:-moz-window-inactive,
-#PersonalToolbar:-moz-window-inactive {
+#TabsToolbar {
+  border-bottom: 1px solid var(--gnome-headerbar-border) !important;
+  border-top: 1px solid var(--gnome-headerbar-border) !important;
+}
+#navigator-toolbox:-moz-window-inactive {
   background: var(--gnome-inactive-toolbar-background) !important;
   transition: background-color 200ms ease-out !important;
 }
 
-#toolbar-menubar:-moz-window-inactive,
-#PersonalToolbar:-moz-window-inactive {
-  border-color: var(--gnome-inactive-headerbar-border) !important;
-  transition: border-color 200ms ease-out !important;
-}
-
 #nav-bar:-moz-window-inactive,
 #PlacesToolbar:-moz-window-inactive,
-#tabbrowser-tabs:-moz-window-inactive {
+#TabsToolbar:-moz-window-inactive .toolbar-items {
   opacity: 0.5 !important;
   transition: opacity 200ms ease-out !important;
 }
 #toolbar-menubar:not([inactive=true]) {
   margin-bottom: 0 !important;
 }
+/* Bookmarks bar */
 #PersonalToolbar {
   padding: 5px 2px !important;
+}
+@media (prefers-color-scheme: dark) {
+  #PersonalToolbar {
+    padding: 5px 1px !important;
+  }
+}
+/* Headerbar */
+#nav-bar {
+  padding: 6px 3px !important;
+}
+@media (prefers-color-scheme: dark) {
+  #nav-bar {
+    padding: 5px 2px 6px !important;
+  }
 }
 
 /* Overrides: Remove border below the menu bar / above the header bar */
@@ -98,12 +115,23 @@ findbar, #toolbar-menubar, #PersonalToolbar, #TabsToolbar {
 .container.infobar {
   background: var(--gnome-toolbar-background) !important;
   box-shadow: none !important;
-  padding: 6px !important;
+  padding: 4px 5px 5px !important;
+  align-items: center !important;
   border-radius: 0 !important;
 }
-.notificationbox-stack:-moz-window-inactive,
+@media (prefers-color-scheme: dark) {
+  .container.infobar {
+    padding: 4px 4px 5px !important;
+  }
+}
+.notificationbox-stack:-moz-window-inactive {
+  background: none !important;
+  transition: background-color 200ms ease-out ;
+}
 .container.infobar:-moz-window-inactive {
   background: var(--gnome-inactive-toolbar-background) !important;
+  opacity: 0.5 !important;
+  transition: background-color 200ms ease-out, opacity 200ms ease-out !important;
 }
 .container.infobar::before {
   display: none !important;
@@ -126,9 +154,7 @@ findbar, #toolbar-menubar, #PersonalToolbar, #TabsToolbar {
 .notificationbox-stack[notificationside="bottom"] notification-message {
   border-top: 1px solid var(--gnome-headerbar-border) !important;
 }
-.notificationbox-stack notification-message:-moz-window-inactive {
-  border-color: var(--gnome-inactive-headerbar-border) !important;
-}
+
 /* Text link */
 .text-link {
   color: var(--gnome-accent) !important;

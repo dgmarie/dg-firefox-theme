@@ -8,7 +8,7 @@
     --in-content-page-background: var(--gnome-settings-background) !important;
     --in-content-page-color: var(--gnome-toolbar-color) !important;
     --in-content-box-background: var(--gnome-menu-background) !important;
-    --in-content-box-background-odd: var(--gnome-menu-background) !important;
+    --in-content-box-background-odd: transparent !important;
     --in-content-box-border-color: var(--gnome-menu-separator-color) !important;
     --in-content-box-info-background: var(--gnome-settings-info-background) !important;
     --in-content-border-color: var(--gnome-menu-separator-color) !important;
@@ -44,15 +44,28 @@
   }
   #categories {
     margin: 6px 0 !important;
+    padding-inline-end: 3px !important;
+    padding: 0 !important;
   }
   #categories > .category {
+    padding: 0 14px !important;
+    min-height: 43px !important;
+    background-size: 16px !important;
     background-position-x: 14px !important;
+    background-position-y: center !important;
+    padding-inline-start: 34px !important;
     margin-inline-start: 6px !important;
-    margin-inline-end: 6px !important;
     margin-bottom: 2px !important;
+    margin-inline-end: 6px !important;
   }
-  .category-name {
-    padding-inline-start: 14px !important;
+  #categories .category-name,
+  .sidebar-footer-label {
+    font-size: 1em !important;
+    line-height: normal !important;
+    margin-left: 0 !important;
+  }
+  .sidebar-footer-link {
+    height: 43px !important;
   }
   #categories > .category[selected] {
     background-color: var(--gnome-row-selected-background) !important;
@@ -60,58 +73,78 @@
   }
   #categories > .category[selected]:hover {
     background-color: var(--gnome-row-selected-hover-background) !important;
-    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  #categories > .category[selected]:active {
+    background-color: var(--gnome-row-selected-active-background) !important;
   }
   #categories > .category:not([selected]):hover,
   .sidebar-footer-link:hover {
     background-color: var(--gnome-row-hover-background) !important;
-    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  #categories > .category:not([selected]):active,
+  .sidebar-footer-link:active {
+    background-color: var(--gnome-row-active-background) !important;
   }
   .sidebar-footer-list {
     margin-block: 0 6px !important;
     margin-inline: 6px !important;
   }
+  #categories .category-name {
+    padding-inline-start: 4px !important;
+  }
   .sidebar-footer-icon {
     margin-inline-start: 14px !important;
+    margin-right: 8px !important;
+  }
+  tr:not(:last-of-type) {
+    border-bottom:
   }
 
-  /* Content */
+  /* Page content */
   .main-search {
     padding-bottom: 20px !important;
     padding-inline-start: 20px !important;
   }
 
-  /* Buttons and boxes */
-  #categories > .category,
+  /* Buttons */
   button:not(.tab-button),
   .sidebar-footer-link {
     border-radius: 6px !important;
   }
-  #categories > .category:hover,
-  button:hover,
-  .sidebar-footer-link:hover,
-  #categories > .category:active,
-  button:active,
-  .sidebar-footer-link:active {
+  button:not(.tab-button, .more-options-button, .category) {
+    padding: 2px 16px !important;
+    height: 34px !important;
+    max-height: 34px !important;
+  }
+  .more-options-button {
+    height: 34px !important;
+    width: 34px !important;
+  }
+  button,
+  .sidebar-footer-link {
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
   .container {
-    border-radius: 8px !important;
+    border-radius: 6px !important;
   }
+
+  /* Cards */
   .card-heading-image {
     border-top-left-radius: 12px !important;
     border-top-right-radius: 12px !important;
   }
   .addon.card {
-    background-color: var(--gnome-box-background) !important;
+    background-color: var(--gnome-card-background) !important;
     border-radius: 12px !important;
     border-width: 0 !important;
-    box-shadow: var(--gnome-list-box-shadow) !important;
+    box-shadow: var(--gnome-card-box-shadow) !important;
   }
   addon-card:not([expanded]) > .addon.card:hover {
     background-color: var(--gnome-settings-hover-background) !important;
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
   }
+
+  /* Menus */
   panel-list {
     border-radius: 12px !important;
     border: none !important;
@@ -119,15 +152,31 @@
     box-shadow: 0 1px 5px 1px rgba(0, 0, 0, .09),
                 0 2px 14px 3px rgba(0, 0, 0, .05);
   }
+  panel-item-separator {
+    margin: 4px 0 6px !important;
+  }
+  button[role="menuitem"] {
+    padding-left: 30px !important;
+  }
+  button[role="menuitem"]:not(:last-of-type) {
+    margin-bottom: 2px !important;
+  }
+
+  /* Entries */
   xul|search-textbox {
     background-color: var(--gnome-entry-background) !important;
     border-radius: 6px !important;
     border-width: 0 !important;
     box-shadow: none !important;
-    outline: 2px solid transparent !important;
+    height: 34px !important;
+    max-height: 34px !important;
+    padding-left: 9px !important;
+    padding-right: 9px !important;
   }
   xul|search-textbox[focused] {
     outline: 2px solid var(--gnome-focused-urlbar-border-color) !important;
+    outline-offset: -2px !important;
+    -moz-outline-radius: 5px;
   }
   addon-card[expanded] .addon.card {
     margin-top: 6px !important;

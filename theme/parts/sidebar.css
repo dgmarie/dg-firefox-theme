@@ -5,10 +5,6 @@
 #sidebar-box, .sidebar-panel {
   background: var(--gnome-sidebar-background) !important;
 }
-#sidebar-box:-moz-window-inactive, .sidebar-panel:-moz-window-inactive {
-  background: var(--gnome-inactive-sidebar-background) !important;
-  transition: 200ms ease-out !important;
-}
 #sidebar-splitter {
   background: var(--gnome-toolbar-background) !important;
   border: 0 !important;

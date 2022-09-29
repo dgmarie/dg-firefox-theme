@@ -23,8 +23,7 @@
     --gnome-inactive-toolbar-icon-fill: rgba(255, 255, 255, .5);
 
     /* Sidebar */
-    --gnome-sidebar-background: var(--gnome-toolbar-background);
-    --gnome-inactive-sidebar-background: var(--gnome-sidebar-background);
+    --gnome-sidebar-background: #272727;
 
     /* Menus */
     --gnome-menu-background: #1d1d1d;
@@ -35,9 +34,7 @@
     --gnome-menu-radio-border-color: rgba(255, 255, 255, .3);
 
     /* Header bar */
-    --gnome-headerbar-background: #222222;
-    --gnome-headerbar-border: #161616;
-    --gnome-inactive-headerbar-border: #1c1c1c;
+    --gnome-headerbar-border: rgba(0, 0, 0, .36);
 
 		/* Buttons */
 		--gnome-button-background: rgba(255, 255, 255, .1);
@@ -59,15 +56,17 @@
     /* Switches */
     --gnome-switch-border-color: rgba(255, 255, 255, .15);
 
-    /* Boxes */
-    --gnome-box-background: rgba(255, 255, 255, .08);
+    /* Cards */
+    --gnome-card-background: rgba(255, 255, 255, .08);
+    --gnome-card-box-shadow: 0 0 0 1px rgba(0, 0, 0, .03), 0 1px 3px 1px rgba(0, 0, 0, .07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
 
     /* Lists */
     --gnome-list-background: #272727;
     --gnome-row-hover-background: rgba(255, 255, 255, .07);
+    --gnome-row-active-background: rgba(255, 255, 255, .16);
     --gnome-row-selected-background: rgba(255, 255, 255, .1);
     --gnome-row-selected-hover-background: rgba(255, 255, 255, .13);
-    --gnome-list-box-shadow: 0 0 0 1px rgba(0, 0, 0, .03), 0 1px 3px 1px rgba(0, 0, 0, .07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
+    --gnome-row-selected-active-background: rgba(255, 255, 255, .19);
 
     /* Settings */
     --gnome-settings-background: #2c2c2c;
@@ -90,7 +89,6 @@
     --gnome-private-inactive-toolbar-border-color: #3e4556;
 
 		/* Header bar */
-		--gnome-private-headerbar-background: #252F49;
 		--gnome-private-inactive-headerbar-background: var(--gnome-private-toolbar-background);
   }
 }

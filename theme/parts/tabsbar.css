@@ -15,46 +15,24 @@
 /* Tabs bar height */
 #tabbrowser-tabs,
 #tabbrowser-tabs arrowscrollbox {
-  height: 44px !important;
-  min-height: 44px !important;
-}
-
-#TabsToolbar {
-  background-color: var(--gnome-toolbar-background) !important;
-}
-
-#TabsToolbar:-moz-window-inactive {
-  background-color: var(--gnome-inactive-toolbar-background) !important;
-  transition: background-color 200ms ease-out !important;
-}
-
-tab > stack {
   height: 34px !important;
   min-height: 34px !important;
+}
+
+/* Tab bar padding */
+#TabsToolbar {
+  padding: 5px 2px !important;
+}
+@media (prefers-color-scheme: dark) {
+  #TabsToolbar {
+    padding: 5px 1px !important;
+  }
 }
 
 /* Remove hover effects on tab bar buttons */
 #TabsToolbar {
   --toolbarbutton-active-background: transparent !important;
   --toolbarbutton-hover-background: transparent !important;
-}
-/* Tabsbar buttons */
-#TabsToolbar .toolbarbutton-1:not(#hack) {
-  border-radius: 6px !important;
-  margin: 5px 3px 5px 3px !important;
-  width: 34px !important;
-  height: 34px !important;
-  padding: 4px !important;
-}
-#TabsToolbar .toolbarbutton-1:not(#hack):last-of-type {
-  margin-right: 4px !important;
-}
-
-#TabsToolbar .toolbarbutton-1:not([disabled]):not(:active):not([open]):hover {
-  background-color: var(--gnome-button-flat-hover-background) !important;
-}
-#TabsToolbar .toolbarbutton-1:active, #TabsToolbar .toolbarbutton-1[open] {
-  background-color: var(--gnome-button-flat-active-background) !important;
 }
 
 /* Remove shadow next to tab scroll buttons */
@@ -86,40 +64,24 @@ tab > stack {
 
 /* Space around tabs */
 .tabbrowser-tab {
-  margin: 5px 0 5px 2px !important;
+  margin-left: 2px !important;
   padding: 0 !important;
 }
-.tabbrowser-tab:last-of-type {
-  margin-right: 5px !important;
-}
 .tabbrowser-tab:first-of-type {
-  margin-left: 1px !important;
-}
-#tabbrowser-tabs:not([hasadjacentnewtabbutton]) .tabbrowser-tab:last-of-type {
-  margin-right: 4px !important;
-}
-.tab-background {
   margin-left: 3px !important;
 }
-@media (prefers-color-scheme: light) {
-  #TabsToolbar {
-    padding: 0 1px !important;
-  }
+.tabbrowser-tab:last-of-type {
+  margin-right: 3px !important;
 }
-
-/* Tabbar border */
-#TabsToolbar {
-  border-bottom: 1px solid var(--gnome-headerbar-border) !important;
-}
-#TabsToolbar:-moz-window-inactive {
-  border-color: var(--gnome-inactive-headerbar-border) !important;
+.tabbrowser-tab:not(:first-of-type) .tab-background {
+  margin-left: 3px !important;
 }
 
 /* Border before new tab button */
 #tabbrowser-tabs[hasadjacentnewtabbutton="true"] > #tabbrowser-arrowscrollbox > #tabbrowser-arrowscrollbox-periphery > toolbartabstop {
   border-left: 1px solid var(--gnome-toolbar-border-color) !important;
   width: 0;
-  margin: 9px 2px 9px 0;
+  margin: 4px 2px;
   opacity: 1 !important;
 }
 
@@ -311,7 +273,6 @@ tab {
 }
 .tabbrowser-tab:not([pinned])[selected=true]:not(:only-of-type, :hover) .tab-content::after { /* Active */
   opacity: 0.1;
-  transition: none;
 }
 .tabbrowser-tab:not([pinned])[selected=true]:hover:not(:only-of-type) .tab-content::after { /* Hover + Active */
   opacity: 0.13;
@@ -386,7 +347,6 @@ tab {
 }
 .tabbrowser-tab[selected="true"]:not(:hover, :only-of-type) .tab-background { /* Active */
   opacity: 0.1 !important;
-  transition: none !important;
 }
 .tabbrowser-tab[selected="true"]:not(:only-of-type):hover .tab-background { /* Active + Hover */
   opacity: 0.13 !important;
@@ -430,7 +390,6 @@ tab {
 }
 .tabbrowser-tab[class*="identity-color-"][selected="true"]:not(:hover, :only-of-type) .tab-background {  /* Active */
   opacity: .13 !important;
-  transition: none;
 }
 .tabbrowser-tab[class*="identity-color-"][selected="true"]:hover:not(:only-of-type) .tab-background { /* Active + Hover */
   opacity: .16 !important;
@@ -451,7 +410,6 @@ tab {
 }
 .tabbrowser-tab[class*="identity-color-"][selected="true"]:not(:hover, :only-of-type, [pinned]) .tab-content::after { /* Active */
   opacity: .13;
-  transition: none;
 }
 .tabbrowser-tab[class*="identity-color-"][selected="true"]:hover:not(:only-of-type, [pinned]) .tab-content::after {  /* Active + Hover */
   opacity: .16;

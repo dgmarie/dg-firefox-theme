@@ -8,7 +8,7 @@
     --in-content-page-background: var(--gnome-settings-background) !important;
     --in-content-page-color: var(--gnome-toolbar-color) !important;
     --in-content-box-background: var(--gnome-menu-background) !important;
-    --in-content-box-background-odd: var(--gnome-menu-background) !important;
+    --in-content-box-background-odd: transparent !important;
     --in-content-box-border-color: var(--gnome-menu-separator-color) !important;
     --in-content-box-info-background: var(--gnome-settings-info-background) !important;
     --in-content-border-color: var(--gnome-menu-separator-color) !important;
@@ -56,7 +56,7 @@
     opacity: 0.5;
   }
 
-  /* Content */
+  /* Page content */
   #toolbar {
     padding: 24px 24px 0 !important;
   }
@@ -70,15 +70,20 @@
     border-radius: 6px !important;
   }
   button:hover,
-  #prefs > tr:hover,
+  #prefs > tr,
   button:active {
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
   #prefs {
-    background-color: var(--gnome-box-background) !important;
     border-radius: 12px !important;
     border-width: 0 !important;
-    box-shadow: var(--gnome-list-box-shadow) !important;
+    border: 1px solid var(--gnome-toolbar-border-color) !important;
+  }
+  #prefs > tr:hover {
+    background-color: var(--gnome-row-hover-background) !important;
+  }
+  #prefs > tr:active {
+    background-color: var(--gnome-row-active-background) !important;
   }
   #about-config-search,
   html|input:is([type="email"], [type="tel"], [type="text"], [type="password"], [type="url"], [type="number"]) {

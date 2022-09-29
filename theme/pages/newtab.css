@@ -3,7 +3,7 @@
 @-moz-document url("about:newtab"), url("about:home") {
   body {
     --newtab-background-color: var(--gnome-browser-before-load-background) !important;
-    --newtab-background-color-secondary: var(--gnome-box-background) !important;
+    --newtab-background-color-secondary: var(--gnome-card-background) !important;
     --newtab-text-primary-color: var(--gnome-toolbar-color) !important;
     --newtab-primary-action-background: var(--gnome-accent) !important;
     --newtab-element-hover-color: var(--gnome-row-hover-background) !important;
@@ -71,23 +71,39 @@
     box-shadow: none !important;
     border-left: 1px solid var(--gnome-toolbar-border-color) !important;
   }
-  .personalize-button,
   .customize-menu .close-button,
-  .home-section .section .selector {
+  .home-section .section .selector,
+  #row-selector {
     border-radius: 6px !important;
+    padding: 2px 16px !important;
+    height: 34px !important;
+    max-height: 34px !important;
   }
-  customize-menu .close-button {
-    border: none !important;
+  .personalize-button {
+    border-radius: 6px !important;
+    height: 34px !important;
+    width: 34px !important;
   }
-  .customize-menu .close-button {
+  .customize-menu .close-button,
+  #row-selector {
+    border-color: transparent !important;
+  }
+  .customize-menu .close-button,
+  #row-selector {
     background-color: var(--gnome-button-background) !important;
   }
-  .customize-menu .close-button:hover {
+  .customize-menu .close-button:hover,
+  #row-selector:hover {
     background-color: var(--gnome-button-hover-background) !important;
+  }
+  .customize-menu .close-button:active,
+  #row-selector:active {
+    background-color: var(--gnome-button-active-background) !important;
   }
   .top-site-outer .top-site-icon {
     background-color: transparent !important;
   }
+
   /* Checkbox */
   .home-section .section .sponsored-checkbox {
     background: none !important;
