@@ -44,19 +44,24 @@ toolbarspring {
   margin-top: 7px !important;
   margin-inline: 0 !important;
   width: 100% !important;
+  padding: 6px !important;
   box-shadow: var(--gnome-menu-shadow) !important;
   border-radius: 12px !important;
+  border: 1px solid var(--gnome-menu-border-color) !important;
+  background-clip: padding-box !important;
 }
 #PopupSearchAutoComplete {
   margin-top: 6px !important;
 }
-
+.urlbarView-results {
+  padding-block: 0 !important;
+}
 .urlbarView-body-outer {
   --item-padding-start: 0 !important;
   --item-padding-end: 0 !important;
   background: var(--gnome-menu-background) !important;
   overflow-x: auto;
-  padding: 0 6px !important;
+  padding: 0 0 6px 0 !important;
   border-radius: 12px 12px 0 0 !important;
 }
 
@@ -87,7 +92,7 @@ toolbarspring {
 
 /* Search engines buttons */  
 .search-one-offs {
-  padding: 6px !important;
+  padding: 6px 0 0 0 !important;
   background: var(--gnome-menu-background) !important;
   border-radius: 0 0 6px 6px !important;
   border-top: 1px solid var(--gnome-menu-separator-color) !important;

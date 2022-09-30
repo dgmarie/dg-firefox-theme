@@ -22,6 +22,7 @@ menupopup, panel {
   box-shadow: var(--gnome-menu-shadow) !important;
   padding: 6px !important;
   margin: 0 !important;
+  border: 1px solid var(--gnome-menu-border-color) !important;
 }
 
 menuitem[type="checkbox"] image, menuitem[type="radio"] image {
