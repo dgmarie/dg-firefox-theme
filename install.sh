@@ -3,7 +3,7 @@ dir="$(dirname -- "$0")"
 themedirectory="$(realpath "${dir}")"
 profilename=""
 theme=yaru
-color_variants=('orange' 'bark' 'sage' 'olive' 'viridian' 'prussiangreen' 'blue' 'purple' 'magenta' 'red')
+color_variants=('orange' 'bark' 'sage' 'olive' 'viridian' 'prussiangreen' 'lightblue' 'blue' 'purple' 'magenta' 'pink' 'red')
 
 nc='\033[0m'
 bold='\033[1m'

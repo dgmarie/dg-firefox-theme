@@ -12,8 +12,7 @@
 @import "parts/entries.css";
 @import "parts/controls.css";
 @import "parts/icons.css";
-@import "parts/titlebutton-light.css";
-@import "parts/titlebutton-dark.css";
+@import "parts/titlebuttons.css";
 
 @import "parts/popups.css";
 @import "parts/popups-contents.css";

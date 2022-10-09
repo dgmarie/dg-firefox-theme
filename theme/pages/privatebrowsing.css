@@ -40,8 +40,7 @@
     background-color: var(--gnome-card-background) !important;
     border: 2px solid transparent !important;
     font-size: 15px !important;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .03),
-                0 1px 3px 1px rgba(0, 0, 0, .07) !important;
+    box-shadow: var(--gnome-card-box-shadow)!important;
   }
   .search-handoff-button.focused:not(.disabled) {
     border: 2px solid var(--gnome-focused-urlbar-border-color) !important;

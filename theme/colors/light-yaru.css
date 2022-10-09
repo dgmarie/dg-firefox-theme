@@ -6,14 +6,14 @@
  * override them. */
 :root {
   /* Browser area before a page starts loading */
-  --gnome-browser-before-load-background: #fafafa;
+  --gnome-browser-before-load-background: #fcfcfc;
 
   /* Accent */
   --gnome-accent-bg: rgb(var(--yaru-orange));
   --gnome-accent: rgb(var(--yaru-orange));
 
   /* Toolbars */
-  --gnome-toolbar-background: #ebebeb;
+  --gnome-toolbar-background: #eaeaea;
   --gnome-toolbar-color: rgba(0, 0, 0, .8);
   --gnome-toolbar-border-color: rgba(0, 0, 0, .12);
   --gnome-toolbar-icon-fill: rgba(0, 0, 0, .8);
@@ -22,10 +22,10 @@
   --gnome-inactive-toolbar-icon-fill: rgba(0, 0, 0, .4);
 
   /* Sidebar */
-  --gnome-sidebar-background: #fafafa;
+  --gnome-sidebar-background: #f7f7f7;
 
   /* Menus */
-  --gnome-menu-background: #fafafa;
+  --gnome-menu-background: #f7f7f7;
   --gnome-menu-border-color: rgba(0, 0, 0, .14);
   --gnome-menu-shadow: 0 1px 5px 1px rgba(0,0,0, .09), 0 2px 14px 3px rgba(0,0,0, .05);
 	--gnome-menu-button-hover-background: var(--gnome-button-background);
@@ -57,10 +57,12 @@
 
   /* Cards */
   --gnome-card-background: #ffffff;
+  --gnome-card-hover-background: #f9f9f9;
+  --gnome-card-active-background: #efefef;
   --gnome-card-box-shadow: 0 0 0 1px rgba(0, 0, 0, .03), 0 1px 3px 1px rgba(0, 0, 0, .07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
 
   /* Lists */
-  --gnome-list-background: #fafafa;
+  --gnome-list-background: #f7f7f7;
   --gnome-row-hover-background: rgba(0, 0, 0, .056);
   --gnome-row-active-background: rgba(0, 0, 0, .128);
   --gnome-row-selected-background: rgba(0, 0, 0, .08);
@@ -69,9 +71,8 @@
 
 
   /* Settings */
-  --gnome-settings-background: #ffffff;
+  --gnome-settings-background: #fcfcfc;
   --gnome-settings-info-background: rgba(var(--yaru-orange), 0.1); /* Same as --gnome-accent but with opacity*/
-  --gnome-settings-hover-background: #f9f9f9;
 
   /* Advanced Preferences */
   --gnome-warning-icon-fill: #F99B11;
@@ -85,9 +86,4 @@
   /* Toolbars */
   --gnome-private-toolbar-background: #d7e3f0;
   --gnome-private-inactive-toolbar-background: #eaf0f7;
-  --gnome-private-toolbar-border-color: #bdc8d3;
-  --gnome-private-inactive-toolbar-border-color: #ced3d9;
-
-	/* Header bar */
-	--gnome-private-inactive-headerbar-background: var(--gnome-private-toolbar-background);
 }

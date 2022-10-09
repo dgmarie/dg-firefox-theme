@@ -62,7 +62,6 @@ toolbarspring {
   background: var(--gnome-menu-background) !important;
   overflow-x: auto;
   padding: 0 0 6px 0 !important;
-  border-radius: 12px 12px 0 0 !important;
 }
 
 .urlbarView-body-inner {

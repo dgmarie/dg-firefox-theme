@@ -1,0 +1,58 @@
+/* Some of this (including the images that are used here) is borrowed from https://github.com/vinceliuice/WhiteSur-firefox-theme */
+:root[tabsintitlebar] #titlebar .titlebar-button:active {
+  transition: background-color 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+:root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-button {
+  transition: background-color 200ms ease-out, opacity 200ms ease-out !important;
+  opacity: 0.5 !important;
+}
+:root[tabsintitlebar] #titlebar .titlebar-button .toolbarbutton-icon {
+  opacity: 0 !important;
+  transition: opacity 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+:root[tabsintitlebar] #titlebar .titlebar-close {
+  background-color: #e9583b;
+}
+:root[tabsintitlebar] #titlebar .titlebar-restore,
+:root[tabsintitlebar][sizemode="maximized"] #titlebar .titlebar-max,
+:root[tabsintitlebar] #titlebar .titlebar-max {
+  background-color: #3fcd17;
+}
+:root[tabsintitlebar] #titlebar .titlebar-min {
+  background-color: #f3bb2e;
+}
+
+:root[tabsintitlebar] #titlebar .titlebar-close:active {
+  background-color: #f08a75;
+}
+:root[tabsintitlebar] #titlebar .titlebar-restore:active,
+:root[tabsintitlebar][sizemode="maximized"] #titlebar .titlebar-max:active,
+:root[tabsintitlebar] #titlebar .titlebar-max:active {
+  background-color: #78dc5c;
+}
+:root[tabsintitlebar] #titlebar .titlebar-min:active {
+  background-color: #f7cf6c;
+}
+:root[tabsintitlebar] #titlebar .titlebar-close:is(:hover, :active) .toolbarbutton-icon {
+  list-style-image: url("../assets/mac-icons/titlebutton-close-icon.svg") !important;
+}
+:root[tabsintitlebar] #titlebar .titlebar-max:is(:hover, :active) .toolbarbutton-icon {
+  list-style-image: url("../assets/mac-icons/titlebutton-maximize-icon.svg") !important;
+}
+:root[tabsintitlebar] #titlebar .titlebar-min:is(:hover, :active) .toolbarbutton-icon {
+  list-style-image: url("../assets/mac-icons/titlebutton-minimize-icon.svg") !important;
+}
+:root[tabsintitlebar] #titlebar .titlebar-restore:is(:hover, :active) .toolbarbutton-icon,
+:root[tabsintitlebar][sizemode="maximized"] #titlebar .titlebar-restore:is(:hover, :active) .toolbarbutton-icon {
+  list-style-image: url("../assets/mac-icons/titlebutton-restore-icon.svg") !important;
+}
+:root[tabsintitlebar] #titlebar .titlebar-button:is(:hover, :active) .toolbarbutton-icon {
+  opacity: 1 !important;
+}
+:root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-close,
+:root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-max,
+:root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-min,
+:root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-restore,
+:root[tabsintitlebar][sizemode="maximized"] #titlebar:-moz-window-inactive .titlebar-max {
+  background-color: var(--gnome-button-background);
+}

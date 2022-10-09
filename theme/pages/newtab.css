@@ -17,8 +17,7 @@
   .top-site-outer .tile,
   .ds-card-grid.ds-card-grid-border .ds-card:not(.placeholder),
   .card-outer .card {
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .03),
-                0 1px 3px 1px rgba(0, 0, 0, .07) !important;
+    box-shadow: var(--gnome-card-box-shadow)!important;
     border-radius: 12px !important;
     transition: transform 150ms ease, box-shadow 150ms ease !important;
   }
@@ -28,25 +27,6 @@
   }
   .ds-card .img img {
     box-shadow: none !important;
-  }
-  .search-wrapper.fake-focus:not(.search.disabled) .search-handoff-button,
-  .search-wrapper .search-handoff-button:hover,
-  .search-wrapper input:hover,
-  .top-site-outer .tile:hover,
-  .ds-card-grid.ds-card-grid-border .ds-card:not(.placeholder):hover,
-  .card-outer .card:hover,
-  .search-wrapper.fake-focus:not(.search.disabled) .search-handoff-button {
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .07),
-                0 1px 3px 1px rgba(0, 0, 0, .11),
-                0 2px 6px 2px rgba(0, 0, 0, .07) !important;
-    transition: transform 150ms ease, box-shadow 150ms ease !important;
-  }
-  .top-site-outer .tile:active,
-  .ds-card-grid.ds-card-grid-border .ds-card:not(.placeholder):active,
-  .card-outer .card:active {
-    box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, .07),
-                inset 0 1px 2px 1px rgba(0, 0, 0, .11) !important;
-    transition: transform 150ms ease, box-shadow 150ms ease !important;
   }
   .search-wrapper .search-handoff-button,
   .search-wrapper input {
@@ -58,16 +38,35 @@
   }
   .context-menu {
     border-radius: 12px !important;
-    border: none !important;
+    border: 1px solid var(--gnome-menu-border-color) !important;
     padding: 6px !important;
     background-color: var(--gnome-menu-background) !important;
     box-shadow: 0 1px 5px 1px rgba(0, 0, 0, .09),
-                0 2px 14px 3px rgba(0, 0, 0, .05);
+                0 2px 14px 3px rgba(0, 0, 0, .05) !important;
+  }
+  button[role="menuitem"] {
+    border-radius: 6px !important;
+    padding: 10px !important;
+  }
+  button[role="menuitem"]:hover {
+    background: var(--gnome-button-background) !important;
+  }
+  button[role="menuitem"]:active {
+    background: var(--gnome-button-active-background) !important;
+  }
+  .context-menu-item:not(:last-of-type) {
+    margin-bottom: 2px !important;
+  }
+  .context-menu .separator {
+    margin: 6px 0 6px !important;
+  }
+  .context-menu-list {
+    padding: 0 !important;
   }
 
   /* Customize Menu */
   .customize-menu {
-    background-color: var(--gnome-toolbar-background) !important;
+    background-color: var(--gnome-sidebar-background) !important;
     box-shadow: none !important;
     border-left: 1px solid var(--gnome-toolbar-border-color) !important;
   }
@@ -84,6 +83,12 @@
     border-radius: 6px !important;
     height: 34px !important;
     width: 34px !important;
+  }
+  .personalize-button:hover {
+    background-color: var(--gnome-button-flat-hover-background) !important;
+  }
+  .personalize-button:active {
+    background-color: var(--gnome-button-flat-active-background) !important;
   }
   .customize-menu .close-button,
   #row-selector {
