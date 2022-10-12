@@ -20,6 +20,9 @@
 
 @import "parts/remove-white-flash.css";
 
+/* Extensions support */
+@import "extensions/tab-center-reborn.css";
+
 @import "colors/accent-colors.css";
 @import "colors/light-yaru.css";
 @import "colors/dark-yaru.css";
