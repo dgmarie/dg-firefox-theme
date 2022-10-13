@@ -296,7 +296,7 @@ tab {
   opacity: 0;
   position: absolute;
   right: 0;
-  width: 52px;
+  width: 60px;
   background: transparent;
   transition: opacity 150ms ease-in-out;
   border-radius: 0 4px 4px 0;
@@ -306,7 +306,7 @@ tab {
   z-index: 99;
 }
 .tabbrowser-tab:not([pinned]):is(:hover, [selected="true"]:not(:only-of-type)) .tab-content::before {
-  background: linear-gradient(to left, var(--gnome-toolbar-background) 26px, transparent 52px, transparent);
+  background: linear-gradient(to left, var(--gnome-toolbar-background) 30px, transparent 60px, transparent);
   z-index: 90;
   opacity: 1;
   transition: none;
@@ -317,7 +317,7 @@ tab {
   transition: opacity 200ms ease-out;
 }
 .tabbrowser-tab:not([pinned]):is(:hover, [selected="true"]:not(:only-of-type)):-moz-window-inactive .tab-content {
-  background: linear-gradient(to left, var(--gnome-inactive-toolbar-background) 26px, transparent 52px, transparent);
+  background: linear-gradient(to left, var(--gnome-inactive-toolbar-background) 30px, transparent 60px, transparent);
   z-index: unset;
   border-radius: 0 4px 4px 0;
 }
