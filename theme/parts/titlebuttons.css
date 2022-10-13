@@ -4,7 +4,6 @@
 }
 :root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-button {
   transition: background-color 200ms ease-out, opacity 200ms ease-out !important;
-  opacity: 0.5 !important;
 }
 :root[tabsintitlebar] #titlebar .titlebar-button .toolbarbutton-icon {
   opacity: 0 !important;
@@ -48,6 +47,9 @@
 }
 :root[tabsintitlebar] #titlebar .titlebar-button:is(:hover, :active) .toolbarbutton-icon {
   opacity: 1 !important;
+}
+:root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-button:is(:hover, :active) .toolbarbutton-icon {
+  opacity: 0.5 !important;
 }
 :root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-close,
 :root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-max,

@@ -78,7 +78,17 @@
     --gnome-warning-icon-fill: #F99B11;
 
     /* Tabs */
-    --gnome-tabbar-tab-background: var(--gnome-toolbar-color);
+    --gnome-tabbar-tab-background: var(--gnome-toolbar-color); /* For close button overlay */
+    --gnome-tabbar-tab-separator-color: rgba(255, 255, 255, .15);
+    --gnome-tabbar-tab-hover-background: rgba(255, 255, 255, .07);
+    --gnome-tabbar-tab-active-background: rgba(255, 255, 255, .1);
+    --gnome-tabbar-tab-active-background-contrast: rgba(255, 255, 255, .3);
+    --gnome-tabbar-tab-active-hover-background: rgba(255, 255, 255, .13);
+    --gnome-inactive-tabbar-background: var(--gnome-inactive-headerbar-background);
+    --gnome-tab-button-background: rgba(0, 0, 0, .5);
+    --gnome-tab-button-hover-background: rgba(0, 0, 0, .6);
+    --gnome-tabbar-tab-identity-base-opacity: 0;
+    --gnome-tabbar-tab-needs-attention: #546F8E;
   }
 
   /* Private window colors */

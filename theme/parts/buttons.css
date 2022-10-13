@@ -74,7 +74,6 @@ button.close,
 /* Buttons with margins */
 #nav-bar toolbarbutton:not(#urlbar-zoom-button, .subviewbutton),
 #PlacesToolbar toolbarbutton,
-#TabsToolbar .toolbarbutton-1:not(#hack),
 .notification-button,
 .subviewbutton.panel-subview-footer:not(:only-of-type),
 .panel-footer button:not(:only-of-type) {

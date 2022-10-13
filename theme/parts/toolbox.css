@@ -15,6 +15,8 @@
 /* Toolbox colors */
 #navigator-toolbox {
   border: none !important;
+  padding-bottom: 1px !important;
+  border-bottom: 1px solid var(--gnome-headerbar-border) !important;
 }
 .browser-toolbar:not(.titlebar-color) {
   background: none !important;
@@ -27,7 +29,6 @@ findbar, #toolbar-menubar, #PersonalToolbar {
   border-top: 1px solid var(--gnome-headerbar-border) !important;
 }
 #TabsToolbar {
-  border-bottom: 1px solid var(--gnome-headerbar-border) !important;
   border-top: 1px solid var(--gnome-headerbar-border) !important;
 }
 #navigator-toolbox:-moz-window-inactive {
