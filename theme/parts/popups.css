@@ -162,6 +162,7 @@ menuitem, menupopup menu,
 .protections-popup-category,
 .identity-popup-content-blocking-category,
 #PlacesToolbar .bookmark-item,
+#PersonalToolbar > toolbarbutton,
 #downloadsPanel-mainView .download-state {
   -moz-appearance: none !important;
   border-radius: 6px !important;  

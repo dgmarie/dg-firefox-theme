@@ -38,6 +38,7 @@ findbar, #toolbar-menubar, #PersonalToolbar {
 
 #nav-bar:-moz-window-inactive,
 #PlacesToolbar:-moz-window-inactive,
+#PersonalToolbar > toolbarbutton:-moz-window-inactive,
 #TabsToolbar:-moz-window-inactive .toolbar-items {
   opacity: 0.5 !important;
   transition: opacity 200ms ease-out !important;
