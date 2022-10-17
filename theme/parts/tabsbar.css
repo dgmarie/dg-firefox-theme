@@ -109,9 +109,14 @@ spacer[part=overflow-start-indicator], spacer[part=overflow-end-indicator] {
   top: 44px;
 }
 
+#tabbrowser-tabs[movingtab=true] {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 /* Tab */
 .tabbrowser-tab {
-  border: 0 !important;
+  border-color: transparent !important;
   padding: 5px 3px 5px 2px !important;
   position: relative;
 }
@@ -141,6 +146,7 @@ spacer[part=overflow-start-indicator], spacer[part=overflow-end-indicator] {
   height: 26px;
   position: absolute;
   top: 9px;
+  transition: border-color 150ms ease-in-out;
 }
 .tabbrowser-tab::after {
   right: 0;
