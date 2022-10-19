@@ -36,13 +36,13 @@
     /* Header bar */
     --gnome-headerbar-border: rgba(0, 0, 0, .36);
 
-		/* Buttons */
-		--gnome-button-background: rgba(255, 255, 255, .1);
-		--gnome-button-hover-background: rgba(255, 255, 255, .15);
-		--gnome-button-active-background: rgba(255, 255, 255, .3);
-		--gnome-button-flat-hover-background: rgba(255, 255, 255, .07);
-		--gnome-button-flat-active-background: rgba(255, 255, 255, .1);
-  	--gnome-button-suggested-action-background: var(--gnome-accent-bg);
+    /* Buttons */
+    --gnome-button-background: rgba(255, 255, 255, .1);
+    --gnome-button-hover-background: rgba(255, 255, 255, .15);
+    --gnome-button-active-background: rgba(255, 255, 255, .3);
+    --gnome-button-flat-hover-background: rgba(255, 255, 255, .07);
+    --gnome-button-flat-active-background: rgba(255, 255, 255, .1);
+    --gnome-button-suggested-action-background: var(--gnome-accent-bg);
     --gnome-button-destructive-action-background: #c7162b;
     --gnome-button-close-background: var(--gnome-button-flat-hover-background);
     --gnome-button-hover-close-background:var(--gnome-button-hover-background);
@@ -50,7 +50,7 @@
 
     /* Entries */
     --gnome-entry-background: rgba(255, 255, 255, .1);
-  	--gnome-entry-color: #ffffff;
+    --gnome-entry-color: #ffffff;
     --gnome-focused-urlbar-border-color: rgba(var(--yaru-orange), 0.5); /* Same as --gnome-accent but with opacity*/
 
     /* Switches */
@@ -60,6 +60,9 @@
     --gnome-card-background: rgba(255, 255, 255, .08);
     --gnome-card-hover-background: rgba(255, 255, 255, .11);
     --gnome-card-active-background: rgba(255, 255, 255, .16);
+    --gnome-card-flat-hover-background: rgba(255, 255, 255, .03);
+    --gnome-card-flat-active-background: rgba(255, 255, 255, .08);
+    --gnome-card-border: rgba(0, 0, 0, .36);
     --gnome-card-box-shadow: 0 0 0 1px rgba(0, 0, 0, .03), 0 1px 3px 1px rgba(0, 0, 0, .07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
 
     /* Lists */

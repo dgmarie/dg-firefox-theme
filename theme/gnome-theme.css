@@ -34,6 +34,6 @@
 #customization-footer::before {
   background: url(../icon.svg) no-repeat;
   background-size: contain;
-  content: "dg Firefox theme v105";
+  content: "dg Firefox theme v106";
   padding: 9px 9px 9px 50px;
 }

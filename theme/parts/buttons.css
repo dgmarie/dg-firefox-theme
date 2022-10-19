@@ -73,11 +73,13 @@ button.close,
 
 /* Buttons with margins */
 #nav-bar toolbarbutton:not(#urlbar-zoom-button, .subviewbutton),
-#PersonalToolbar toolbarbutton,
 .notification-button,
 .subviewbutton.panel-subview-footer:not(:only-of-type),
 .panel-footer button:not(:only-of-type) {
   margin: 0 3px !important;
+}
+#PersonalToolbar toolbarbutton {
+  margin: 0 3px 0 2px !important;
 }
 .close-icon:not(.tab-close-button) {
   margin-left: 6px !important;

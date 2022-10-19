@@ -45,7 +45,8 @@ menuitem[type="checkbox"],
 checkbox .checkbox-check,
 menuitem[type="radio"],
 html|input[type="radio"],
-xul|*.radio-check {
+xul|*.radio-check,
+#firefox-view-button:not(#hack) {
   fill: var(--gnome-toolbar-icon-fill) !important;
   -moz-context-properties: fill, fill-opacity;
 }
@@ -447,6 +448,15 @@ button.close::before {
 #star-button[starred] {
   fill: var(--gnome-accent) !important;
 }
+
+/* View Button */
+#firefox-view-button,
+#TabsToolbar #firefox-view-button:not(#hack) {
+  list-style-image: none !important;
+  background-image: url("../assets/yaru-icons/document-open-recent-symbolic.svg") !important;
+  background-repeat: no-repeat !important;
+  background-size: 16px !important;
+  background-position: center !important;}
 
 /* History button */
 #history-panelmenu,

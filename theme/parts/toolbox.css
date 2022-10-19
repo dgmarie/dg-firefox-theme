@@ -48,11 +48,11 @@ findbar, #toolbar-menubar, #PersonalToolbar {
 }
 /* Bookmarks bar */
 #PersonalToolbar {
-  padding: 5px 2px !important;
+  padding: 5px 2px 5px 3px !important;
 }
 @media (prefers-color-scheme: dark) {
   #PersonalToolbar {
-    padding: 5px 1px !important;
+    padding: 5px 1px 5px 2px !important;
   }
 }
 /* Headerbar */
