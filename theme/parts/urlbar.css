@@ -15,6 +15,7 @@ toolbarspring {
 /* URL bar */
 #urlbar-container {
   max-width: 860px !important;
+  min-width: 100px !important;
 }
 #urlbar {
   box-shadow: none !important;
