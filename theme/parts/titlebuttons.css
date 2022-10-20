@@ -18,7 +18,7 @@
   background-color: #3fcd17;
 }
 :root[tabsintitlebar] #titlebar .titlebar-min {
-  background-color: #f1bb2b;
+  background-color: #edb425;
 }
 
 :root[tabsintitlebar] #titlebar .titlebar-close:active {
@@ -30,7 +30,7 @@
   background-color: #78dc5c;
 }
 :root[tabsintitlebar] #titlebar .titlebar-min:active {
-  background-color: #f9d068;
+  background-color: #f2ca66;
 }
 :root[tabsintitlebar] #titlebar .titlebar-close:is(:hover, :active) .toolbarbutton-icon {
   list-style-image: url("../assets/mac-icons/titlebutton-close-icon.svg") !important;
