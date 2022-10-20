@@ -453,7 +453,7 @@ button.close::before {
 #firefox-view-button,
 #TabsToolbar #firefox-view-button:not(#hack) {
   list-style-image: none !important;
-  background-image: url("../assets/yaru-icons/document-open-recent-symbolic.svg") !important;
+  background-image: url("../assets/yaru-icons/firefox-symbolic.svg") !important;
   background-repeat: no-repeat !important;
   background-size: 16px !important;
   background-position: center !important;}
