@@ -507,6 +507,14 @@ tab {
   }
 }
 
+/* Tabs manager menu */
+#alltabs-button {
+	visibility: collapse;
+}
+#tabbrowser-tabs[overflow="true"] ~ #alltabs-button {
+	visibility: visible;
+}
+
 /* OPTIONAL: Hide single tab */
 @supports -moz-bool-pref("gnomeTheme.hideSingleTab") {
   #tabbrowser-tabs tab[first-visible-unpinned-tab][last-visible-tab] {
