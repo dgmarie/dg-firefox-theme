@@ -415,4 +415,13 @@ url("about:preferences#moreFromMozilla") {
   .info-icon {
     list-style-image: url("../assets/yaru-icons/dialog-information-symbolic.svg") !important;
   }
+  .sync-engine-tabs.sync-engine-image {
+    list-style-image: url("../assets/yaru-icons/laptop-symbolic.svg") !important;
+  }
+  .sync-engine-creditcards.sync-engine-image {
+    list-style-image: url("../assets/yaru-icons/auth-smartcard-symbolic.svg") !important;
+  }
+  .sync-engine-addresses.sync-engine-image {
+    list-style-image: url("../assets/yaru-icons/mail-app-symbolic.svg") !important;
+  }
 }

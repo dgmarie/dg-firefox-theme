@@ -76,4 +76,15 @@
   .closed-tab-li:not(:last-of-type)  {
     border-bottom: 1px solid var(--gnome-card-border) !important;
   }
+
+  /* Icons */
+  .twisty {
+    background-image: url("../assets/yaru-icons/pan-down-symbolic.svg") !important;
+  }
+  .synced-tabs {
+    background-image: url("../assets/yaru-icons/laptop-symbolic.svg") !important;
+  }
+  .history {
+    background-image: url("../assets/yaru-icons/preferences-system-time-symbolic.svg") !important;
+  }
 }
