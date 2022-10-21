@@ -58,6 +58,11 @@
   }
 }
 
+/* Force the restore button to appear regardless of maximize button's status */
+:root[tabsintitlebar][inFullscreen] #titlebar .titlebar-buttonbox-container {
+  visibility: visible !important;
+}
+
 /* Hide window controls when navbar is hidden */
 :root[tabsintitlebar][inFullscreen] #navigator-toolbox[style*='margin-top:'] #titlebar .titlebar-buttonbox-container {
   top: -999px;
