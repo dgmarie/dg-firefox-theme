@@ -322,6 +322,7 @@ url("about:preferences#moreFromMozilla") {
   .sync-engine-addons.sync-engine-image,
   xul|*.help-icon,
   .face-sad,
+  .face-smile,
   #trackingProtectionShield,
   .content-blocking-warning-image,
   .geo-icon,
@@ -374,7 +375,7 @@ url("about:preferences#moreFromMozilla") {
     list-style-image: url("../assets/yaru-icons/face-sad-symbolic.svg") !important;
   }
   .face-smile {
-    list-style-image: url("../assets/yaru-icons/face-sad-symbolic.svg") !important;
+    list-style-image: url("../assets/yaru-icons/face-smile-symbolic.svg") !important;
   }
   #trackingProtectionShield {
     list-style-image: url("../assets/yaru-icons/security-high-symbolic.svg") !important;

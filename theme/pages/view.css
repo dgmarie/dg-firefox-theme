@@ -5,6 +5,7 @@
 @-moz-document url("about:firefoxview") {
   body {
     --fxview-background-color: var(--gnome-settings-background) !important;
+    --in-content-zap-gradient: transparent !important;
   }
 
   /* Buttons */
@@ -33,6 +34,7 @@
   }
 
   /* Cards */
+  .card,
   .synced-tab-a,
   #synced-tabs-placeholder,
   .synced-tab-li-placeholder,
@@ -44,6 +46,7 @@
     box-shadow: var(--gnome-card-box-shadow) !important;
     color: var(--gnome-toolbar-color) !important;
   }
+  .card,
   .synced-tab-a,
   #synced-tabs-placeholder,
   .synced-tab-li-placeholder,
@@ -77,6 +80,10 @@
   }
   .closed-tab-li:not(:last-of-type)  {
     border-bottom: 1px solid var(--gnome-card-border) !important;
+  }
+
+  #colorways-collection-expiry-date > span {
+    padding: 0 !important;
   }
 
   /* Icons */
