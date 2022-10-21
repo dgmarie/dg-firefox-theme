@@ -36,7 +36,8 @@
   .synced-tab-a,
   #synced-tabs-placeholder,
   .synced-tab-li-placeholder,
-  #collapsible-tabs-container {
+  #collapsible-tabs-container,
+  #tabpickup-steps-view0 {
     background-color: var(--gnome-card-background) !important;
     border-radius: 12px !important;
     border: none !important;
@@ -46,7 +47,8 @@
   .synced-tab-a,
   #synced-tabs-placeholder,
   .synced-tab-li-placeholder,
-  .closed-tab-li {
+  .closed-tab-li,
+  #tabpickup-steps-view0 {
     padding: 14px !important;
   }
   .synced-tab-a:hover,
@@ -78,6 +80,14 @@
   }
 
   /* Icons */
+  .twisty,
+  .synced-tabs,
+  .history,
+  .info {
+    fill: var(--gnome-toolbar-icon-fill) !important;
+    -moz-context-properties: fill, fill-opacity;
+  }
+
   .twisty {
     background-image: url("../assets/yaru-icons/pan-down-symbolic.svg") !important;
   }
@@ -86,5 +96,8 @@
   }
   .history {
     background-image: url("../assets/yaru-icons/preferences-system-time-symbolic.svg") !important;
+  }
+  .info {
+    background-image: url("../assets/yaru-icons/dialog-information-symbolic.svg") !important;
   }
 }
