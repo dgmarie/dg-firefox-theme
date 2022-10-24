@@ -4,6 +4,8 @@
 
 @-moz-document url("about:firefoxview") {
   body {
+    --newtab-text-primary-color: var(--gnome-toolbar-color) !important;
+    --in-content-page-color: var(--gnome-toolbar-color) !important;
     --fxview-background-color: var(--gnome-settings-background) !important;
     --in-content-zap-gradient: transparent !important;
   }
