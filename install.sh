@@ -49,12 +49,7 @@ function saveProfile(){
 
   cd "$firefoxfolder/$profile_path" || exit
 
-  # If being updated by dg-gnome-theme
-  if [[ "${update_firefox}" == "true" ]]; then
-    echo -e "${green}Updating ${nc}${bold}dg-firefox-theme ${nc}in ${bold}${PWD}${nc}"
-  else
-    echo -e "${green}Installing ${nc}${bold}${color} dg-firefox-theme ${nc}in ${bold}${PWD}${nc}"
-  fi
+  echo -e "${green}Installing ${nc}${bold}${color} dg-firefox-theme ${nc}in ${bold}${PWD}${nc}"
 
   # Create a chrome directory if it doesn't exist.
   mkdir -p chrome
