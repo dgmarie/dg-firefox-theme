@@ -128,9 +128,6 @@ spacer[part=overflow-start-indicator], spacer[part=overflow-end-indicator] {
 #tabbrowser-tabs:first-child .tabbrowser-tab[first-visible-tab="true"] {
   padding-left: 5px !important;
 }
-.tabbrowser-tab[first-visible-tab="true"] {
-  padding-left: 3px !important;
-}
 #tabbrowser-tabs:not([hasadjacentnewtabbutton="true"]) .tabbrowser-tab[last-visible-tab="true"] {
   padding-right: 5px !important;
 }
