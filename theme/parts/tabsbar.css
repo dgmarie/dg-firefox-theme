@@ -44,7 +44,7 @@ tab > stack {
 #scrollbutton-up:not([disabled])::after,
 #scrollbutton-down:not([disabled])::after {
   content: "";
-  height: 44px;
+  height: 35px;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -89,17 +89,19 @@ spacer[part=overflow-start-indicator], spacer[part=overflow-end-indicator] {
 #TabsToolbar .toolbarbutton-1:active, #TabsToolbar .toolbarbutton-1[open] {
   background-color: var(--gnome-tabbar-tab-active-background) !important;
 }
-#TabsToolbar .toolbarbutton-1:not(#hack):first-of-type {
+#TabsToolbar #TabsToolbar-customization-target > .toolbarbutton-1:not(#hack):first-of-type {
   margin-left: 5px !important;
 }
-#TabsToolbar .toolbarbutton-1:not(#hack):last-of-type {
+#TabsToolbar #tabbrowser-arrowscrollbox-periphery > .toolbarbutton-1:not(#hack):last-of-type,
+#TabsToolbar #TabsToolbar-customization-target > #alltabs-button {
   margin-right: 5px !important;
 }
 @media (prefers-color-scheme: dark) {
-  #TabsToolbar .toolbarbutton-1:not(#hack):first-of-type {
+  #TabsToolbar #TabsToolbar-customization-target > .toolbarbutton-1:not(#hack):first-of-type {
     margin-left: 4px !important;
   }
-  #TabsToolbar .toolbarbutton-1:not(#hack):last-of-type {
+  #TabsToolbar #tabbrowser-arrowscrollbox-periphery > .toolbarbutton-1:not(#hack):last-of-type,
+  #TabsToolbar #TabsToolbar-customization-target > #alltabs-button {
     margin-right: 4px !important;
   }
 }
