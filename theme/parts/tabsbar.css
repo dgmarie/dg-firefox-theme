@@ -131,14 +131,14 @@ spacer[part=overflow-start-indicator], spacer[part=overflow-end-indicator] {
 .tabbrowser-tab[first-visible-tab="true"] {
   padding-left: 3px !important;
 }
-#tabbrowser-tabs:last-child .tabbrowser-tabs:not([hasadjacentnewtabbutton="true"]).tabbrowser-tab[last-visible-tab="true"] {
+#tabbrowser-tabs:not([hasadjacentnewtabbutton="true"]) .tabbrowser-tab[last-visible-tab="true"] {
   padding-right: 5px !important;
 }
 @media (prefers-color-scheme: dark) {
   #tabbrowser-tabs:first-child .tabbrowser-tab[first-visible-tab="true"] {
     padding-left: 4px !important;
   }
-  #tabbrowser-tabs:last-child .tabbrowser-tabs:not([hasadjacentnewtabbutton="true"]).tabbrowser-tab[last-visible-tab="true"] {
+  #tabbrowser-tabs:not([hasadjacentnewtabbutton="true"]) .tabbrowser-tab[last-visible-tab="true"] {
     padding-right: 4px !important;
   }
 }
