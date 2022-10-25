@@ -451,7 +451,7 @@ button.close::before {
 
 /* View Button */
 #firefox-view-button,
-#TabsToolbar #firefox-view-button:not(#hack) {
+#navigator-toolbox #firefox-view-button:not(#hack) {
   list-style-image: none !important;
   background-image: url("../assets/yaru-icons/firefox-symbolic.svg") !important;
   background-repeat: no-repeat !important;
