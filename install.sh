@@ -23,7 +23,9 @@ while getopts 'f:p:c:h' flag; do
     echo "OPTIONS:"
     echo "  -f <firefox_folder_path>. Set custom Firefox folder path."
     echo "  -p <profile_name>. Set custom profile name."
-    echo "  -c <color_name>. Specify accent color. [orange|bark|sage|olive|viridian|prussiangreen|lightblue|blue|purple|magenta|pink|red]"
+    echo "  -c <color_name>. Specify accent color."
+    echo "     [orange|bark|sage|olive|viridian|prussiangreen|lightblue|blue|purple|magenta|pink|red]"
+    echo "     (Default: orange)"
     echo "  -h to show this message."
     exit 0
     ;;

@@ -36,7 +36,7 @@ This theme is supposed to be used with [qualia GTK theme](https://github.com/dgs
 	- ` -c <color_name>` *optional*
 		- Specify accent color.
 		- Options: `orange` `bark` `sage` `olive` `viridian` `prussiangreen` `lightblue` `blue` `purple` `magenta` `pink` `red`.
-  - Default: `orange`.
+		- Default: `orange`.
 
 ## Updating
 `git pull` and then run installation script again
@@ -126,10 +126,8 @@ See upstream [bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1408360).
 3. Set it as a `boolean` and click on the add button
 4. Now restart Firefox, and it should look good!
 
-## Credits
-A huge thanks to:
-- [Ubuntu](https://ubuntu.com/) for [Yaru](https://github.com/ubuntu/yaru)
-- [vinceliuice](https://github.com/vinceliuice) for [WhiteSur-gtk-theme](https://github.com/vinceliuice/WhiteSur-gtk-theme)
-- [rafaelmardojai](https://github.com/rafaelmardojai) for [firefox-gnome-theme](https://github.com/rafaelmardojai/firefox-gnome-theme)
+## Credits :)
+### A huge thanks to:
+### [Ubuntu](https://ubuntu.com/) for [Yaru](https://github.com/ubuntu/yaru), [vinceliuice](https://github.com/vinceliuice) for [WhiteSur-gtk-theme](https://github.com/vinceliuice/WhiteSur-gtk-theme), [rafaelmardojai](https://github.com/rafaelmardojai) for [firefox-gnome-theme](https://github.com/rafaelmardojai/firefox-gnome-theme)
 
 The Yaru icon assets are licensed under the terms of the [Creative Commons Attribution-ShareAlike 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/).
