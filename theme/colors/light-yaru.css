@@ -18,7 +18,7 @@
   --gnome-toolbar-border-color: rgba(0, 0, 0, .12);
   --gnome-toolbar-icon-fill: rgba(0, 0, 0, .8);
   --gnome-inactive-toolbar-color: rgba(0, 0, 0, .4);
-  --gnome-inactive-toolbar-background: #fafafa;
+  --gnome-inactive-toolbar-background: #fcfcfc;
   --gnome-inactive-toolbar-icon-fill: rgba(0, 0, 0, .4);
 
   /* Sidebar */

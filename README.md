@@ -1,12 +1,12 @@
 <img src="icon.svg" alt="Firefox GNOME theme" width="128" align="left"/>
 
-# DG Firefox Theme (Forked from [Firefox GNOME theme](https://github.com/rafaelmardojai/firefox-gnome-theme))
+# qualia Firefox theme (Forked from [Firefox GNOME theme](https://github.com/rafaelmardojai/firefox-gnome-theme))
 
 <br>
 
-**A Yaru inspired theme for Firefox**
+**A Yaru and Libadwaita inspired theme for Firefox**
 
-This theme is supposed to be used with [this](https://github.com/dgsasha/dg-gnome-theme).
+This theme is supposed to be used with [qualia GTK theme](https://github.com/dgsasha/dg-gnome-theme).
 
 ## Installation
 
@@ -34,8 +34,9 @@ This theme is supposed to be used with [this](https://github.com/dgsasha/dg-gnom
 		- Default: All the profiles found in the firefox folder
 
 	- ` -c <color_name>` *optional*
-		- Specify yaru accent color variant.
-		- Options: `orange` `bark` `sage` `olive` `viridian` `prussiangreen` `blue` `purple` `magenta` `red`.
+		- Specify accent color.
+		- Options: `orange` `bark` `sage` `olive` `viridian` `prussiangreen` `lightblue` `blue` `purple` `magenta` `pink` `red`.
+  - Default: `orange`.
 
 ## Updating
 `git pull` and then run installation script again
@@ -125,7 +126,10 @@ See upstream [bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1408360).
 3. Set it as a `boolean` and click on the add button
 4. Now restart Firefox, and it should look good!
 
-# Credits
-[Yaru](https://github.com/ubuntu/yaru), [WhiteSur-firefox-theme](https://github.com/vinceliuice/WhiteSur-firefox-theme) and [WhiteSur-gtk-theme](https://github.com/vinceliuice/WhiteSur-gtk-theme)
+## Credits
+A huge thanks to:
+- [Ubuntu](https://ubuntu.com/) for [Yaru](https://github.com/ubuntu/yaru)
+- [vinceliuice](https://github.com/vinceliuice) for [WhiteSur-gtk-theme](https://github.com/vinceliuice/WhiteSur-gtk-theme)
+- [rafaelmardojai](https://github.com/rafaelmardojai) for [firefox-gnome-theme](https://github.com/rafaelmardojai/firefox-gnome-theme)
 
 The Yaru icon assets are licensed under the terms of the [Creative Commons Attribution-ShareAlike 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/).

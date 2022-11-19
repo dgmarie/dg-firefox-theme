@@ -5,10 +5,13 @@ profilename=""
 theme=yaru
 color_variants=('orange' 'bark' 'sage' 'olive' 'viridian' 'prussiangreen' 'lightblue' 'blue' 'purple' 'magenta' 'pink' 'red')
 
+color="orange"
+firefoxfolder="${HOME}/.mozilla/firefox"
+
 nc='\033[0m'
 bold='\033[1m'
 red='\033[0;31m'
-green='\033[0;32m'
+bgreen='\033[1;32m'
 
 # Get options.
 while getopts 'f:p:c:h' flag; do
@@ -20,27 +23,18 @@ while getopts 'f:p:c:h' flag; do
     echo "OPTIONS:"
     echo "  -f <firefox_folder_path>. Set custom Firefox folder path."
     echo "  -p <profile_name>. Set custom profile name."
-    echo "  -c <color_name>. Specify yaru accent color variant [orange|bark|sage|olive|viridian|prussiangreen|blue|purple|magenta|red]"
+    echo "  -c <color_name>. Specify accent color. [orange|bark|sage|olive|viridian|prussiangreen|lightblue|blue|purple|magenta|pink|red]"
     echo "  -h to show this message."
     exit 0
     ;;
   *)
-    echo "ERROR: Unrecognized installation option '$1'."
-    echo "Try '$0 --help' for more information."
     exit 1
     ;;
   esac
 done
 
-if [[ -z "${color}" ]]; then
-  color="orange"
-fi
-if [[ -z "${firefoxfolder}" ]]; then
-  firefoxfolder="${HOME}/.mozilla/firefox"
-fi
-
 if ! printf '%s\0' "${color_variants[@]}" | grep -Fxqz -- "${color}"; then
-  echo "ERROR: Unrecognized accent color variant '${color}'."
+  >&2 echo "ERROR: Unrecognized accent color '${color}'."
   exit 1
 fi
 
@@ -49,19 +43,18 @@ function saveProfile(){
 
   cd "$firefoxfolder/$profile_path" || exit
 
-  echo -e "${green}Installing ${nc}${bold}${color} dg-firefox-theme ${nc}in ${bold}${PWD}${nc}"
+  echo -e "${bgreen}Installing${nc} the ${bold}${color} qualia Firefox theme ${nc}in ${bold}${PWD}${nc}"
 
   # Create a chrome directory if it doesn't exist.
   mkdir -p chrome
   cd chrome || exit
 
+  mkdir -p qualia
   # Copy theme repo inside
-  cp -fR "$themedirectory" "$PWD"
+  cp -fR "$themedirectory"/* "$PWD/qualia"
 
   # Set accent color
-  sed -i "s/--yaru-orange/--yaru-${color}/g" "${PWD}"/dg-firefox-theme/theme/colors/light-yaru.css
-  sed -i "s/--yaru-orange/--yaru-${color}/g" "${PWD}"/dg-firefox-theme/theme/colors/dark-yaru.css
-
+  sed -i "s/--yaru-orange/--yaru-${color}/g" "${PWD}"/qualia/theme/colors/light-yaru.css
   # Create single-line user CSS file
   if [ -s userChrome.css ]; then
     rm -rf userChrome.css
@@ -71,11 +64,11 @@ function saveProfile(){
   fi
 
   # Import this theme at the beginning of the CSS files.
-  sed -i '1s/^/@import "dg-firefox-theme\/userChrome.css";\n/' userChrome.css
+  sed -i '1s/^/@import "qualia\/userChrome.css";\n/' userChrome.css
 
   if [ $theme = "yaru" ]; then
-    echo "@import \"dg-firefox-theme\/theme/colors/light-$theme.css\";" >> userChrome.css
-    echo "@import \"dg-firefox-theme\/theme/colors/dark-$theme.css\";" >> userChrome.css
+    echo "@import \"qualia\/theme/colors/light-$theme.css\";" >> userChrome.css
+    echo "@import \"qualia\/theme/colors/dark-$theme.css\";" >> userChrome.css
   fi
 
   # Create single-line user content CSS file
@@ -87,17 +80,17 @@ function saveProfile(){
   fi
 
   # Import this theme at the beginning of the CSS files.
-  sed -i '1s/^/@import "dg-firefox-theme\/userContent.css";\n/' userContent.css
+  sed -i '1s/^/@import "qualia\/userContent.css";\n/' userContent.css
 
   if [ $theme = "yaru" ]; then
-    echo "@import \"dg-firefox-theme\/theme/colors/light-$theme.css\";" >> userContent.css
-    echo "@import \"dg-firefox-theme\/theme/colors/dark-$theme.css\";" >> userContent.css
+    echo "@import \"qualia\/theme/colors/light-$theme.css\";" >> userContent.css
+    echo "@import \"qualia\/theme/colors/dark-$theme.css\";" >> userContent.css
   fi
 
   cd ..
 
-  # Symlink user.js to dg-firefox-theme one.
-  ln -fs chrome/dg-firefox-theme/configuration/user.js user.js
+  # Symlink user.js to qualia one.
+  ln -fs chrome/qualia/configuration/user.js user.js
 
   cd ..
 }
@@ -114,7 +107,6 @@ profiles_paths+="::"
 profiles_array=()
 if [ "${profilename}" != "" ];
   then
-    echo "Using ${profilename} theme"
     profiles_array+=("${profilename}")
 else
   while [[ $profiles_paths ]]; do
@@ -124,15 +116,11 @@ else
 fi
 
 if [ ${#profiles_array[@]} -eq 0 ]; then
-  echo No Profiles found on "$profiles_file";
-
+  >&2 echo No Profiles found on "$profiles_file"
 else
-  for i in "${profiles_array[@]}"
-  do
-    if [[ -n "$i" ]];
-    then
+  for i in "${profiles_array[@]}"; do
+    if [[ -n "$i" ]]; then
       saveProfile "$(sed 's/SPACECHARACTER/ /g' <<< "$i")"
-    fi;
-  
+    fi
   done
 fi

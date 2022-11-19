@@ -46,14 +46,14 @@
   list-style-image: url("../assets/mac-icons/titlebutton-restore-icon.svg") !important;
 }
 :root[tabsintitlebar] #titlebar .titlebar-button:is(:hover, :active) .toolbarbutton-icon {
-  opacity: 1 !important;
+  opacity: .5 !important;
 }
 :root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-button:is(:hover, :active) .toolbarbutton-icon {
-  opacity: 0.5 !important;
+  opacity: 0.3 !important;
 }
 @media (prefers-color-scheme: dark) {
   :root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-button:is(:hover, :active) .toolbarbutton-icon {
-    opacity: 0.67 !important;
+    opacity: 0.40 !important;
   }
 }
 :root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-close,
