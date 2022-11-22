@@ -68,6 +68,8 @@
   /* Buttons */
   button {
     border-radius: 6px !important;
+    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
+    border-width: 0 !important;
   }
   button:is(.button-toggle, .button-edit) {
     height: 34px !important;
@@ -89,9 +91,11 @@
   }
   #prefs > tr:hover {
     background-color: var(--gnome-row-hover-background) !important;
+    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
   #prefs > tr:active {
     background-color: var(--gnome-row-active-background) !important;
+    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
   /* Entries */
   #about-config-search,
@@ -99,7 +103,7 @@
     background-color: var(--gnome-entry-background) !important;
     border-radius: 6px !important;
     border-width: 0 !important;
-    box-shadow: none !important;
+    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
     height: 34px !important;
     max-height: 34px !important;
     padding-left: 9px !important;

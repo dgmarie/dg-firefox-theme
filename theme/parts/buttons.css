@@ -16,6 +16,7 @@ menulist,
 #PersonalToolbar toolbarbutton,
 #TabsToolbar .toolbarbutton-1:not(#hack),
 .subviewbutton.panel-subview-footer,
+#nav-bar .subviewbutton.webextension-browser-action,
 .panel-footer button,
 #downloadsPanel-mainView .download-state .downloadButton,
 #appMenu-popup .panel-banner-item,
@@ -45,8 +46,8 @@ button.close,
   -moz-appearance: none !important;
   background: var(--gnome-button-background) !important;
   border-radius: 6px !important;
-  border: 0 !important;
-  padding: 0 1px !important;
+  border: 1px solid var(--gnome-button-border) !important;
+  padding: 0 !important;
   height: 34px !important;
   max-height: 34px !important;
   min-height: 34px !important;
@@ -62,17 +63,21 @@ button.close,
 
 /* Flat Buttons */
 #nav-bar toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton),
+#widget-overflow-list toolbarbutton:not(.subviewbutton),
 #PersonalToolbar toolbarbutton,
 #TabsToolbar .toolbarbutton-1:not(#hack),
 .close-icon:not(.tab-close-button),
+#nav-bar .subviewbutton.webextension-browser-action,
 button.close,
 #protections-popup-info-button,
 .permission-popup-permission-remove-button {
   background: transparent !important;
+  border-color: transparent !important;
 }
 
 /* Buttons with margins */
 #nav-bar toolbarbutton:not(#urlbar-zoom-button, .subviewbutton),
+#nav-bar .subviewbutton.webextension-browser-action,
 .notification-button,
 .subviewbutton.panel-subview-footer:not(:only-of-type),
 .panel-footer button:not(:only-of-type) {
@@ -103,7 +108,7 @@ menulist,
 .button.connect-device,
 #item-choose button,
 #editBMPanel_newFolderButton {
-  padding: 2px 16px !important;
+  padding: 1px 15px !important;
 }
 .subviewbutton.panel-subview-footer label,
 .panel-footer button,
@@ -125,7 +130,7 @@ menulist,
 /* Drop down buttons */
 #sidebar-switcher-target,
 #viewButton {
-  padding: 2px 16px !important;
+  padding: 1px 15px !important;
   position: relative;
 }
 #sidebar-switcher-arrow,
@@ -133,7 +138,7 @@ menulist,
   transform: translate(6px, 0)
 }
 .menulist-label-box {
-  padding: 2px 26px 2px 16px !important;
+  padding: 1px 25px 1px 15px !important;
   position: relative;
 }
 .menulist-label-box:after { /* Arrow position */
@@ -176,6 +181,8 @@ menulist:hover .menulist-label-box,
 
 /* Hover flat buttons */
 #nav-bar toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton):not([open]):not([disabled="true"]):not([checked]):hover,
+#widget-overflow-list toolbarbutton:not(.subviewbutton):hover,
+#nav-bar .subviewbutton.webextension-browser-action:hover,
 #PersonalToolbar toolbarbutton:hover,
 #TabsToolbar .toolbarbutton-1:not(#hack):hover,
 .close-icon:not(.tab-close-button):hover,
@@ -186,6 +193,7 @@ button.close:hover,
   outline: 0 !important;
   background: var(--gnome-button-flat-hover-background) !important;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border-color: var(--gnome-button-border) !important;
 }
 
 /* Active buttons */
@@ -219,6 +227,8 @@ menulist[open] .menulist-label-box,
 #nav-bar toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton):not([disabled="true"]):not(#hack):active,
 #nav-bar toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton):not(.subviewbutton):not([disabled="true"])[open],
 #nav-bar toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton):not([disabled="true"])[checked],
+#widget-overflow-list toolbarbutton:not(.subviewbutton):active,
+#nav-bar .subviewbutton.webextension-browser-action[open],
 #PersonalToolbar toolbarbutton[open],
 #PersonalToolbar toolbarbutton:active,
 #TabsToolbar .toolbarbutton-1:not(#hack):active,
@@ -230,10 +240,12 @@ button.close:active,
 #item-choose button:active {
   background: var(--gnome-button-flat-active-background) !important;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border-color: var(--gnome-button-border) !important;
 }
 
 /* Disabled buttons */
 #nav-bar toolbarbutton:not(#urlbar-zoom-button, .subviewbutton)[disabled="true"],
+#nav-bar .subviewbutton.webextension-browser-action[disabled="true"],
 #appMenu-popup .toolbaritem-combined-buttons toolbarbutton[disabled="true"],
 #context-navigation menuitem[disabled="true"],
 .dialog-button-box button[disabled="true"] {
@@ -247,7 +259,7 @@ button.close:active,
 }
 
 /* Combined buttons */
-#nav-bar .toolbaritem-combined-buttons toolbarbutton:not(:last-of-type):not(#hack),
+#nav-bar .toolbaritem-combined-buttons toolbarbutton:not(:last-of-type):not(.subviewbutton.webextension-browser-action):not(#hack),
 #appMenu-popup .toolbaritem-combined-buttons toolbarbutton:not(:last-of-type):not(#appMenu-zoomEnlarge-button),
 #context-navigation menuitem:not(:last-of-type),
 .findbar-container toolbarbutton.findbar-find-previous,
@@ -259,7 +271,7 @@ button.close:active,
   margin-right: 0 !important;
 }
 
-#nav-bar .toolbaritem-combined-buttons toolbarbutton:not(:first-of-type):not(#hack),
+#nav-bar .toolbaritem-combined-buttons toolbarbutton:not(:first-of-type):not(.subviewbutton.webextension-browser-action):not(#hack),
 #appMenu-popup .toolbaritem-combined-buttons toolbarbutton:not(:first-of-type):not(#appMenu-fullscreen-button),
 #context-navigation menuitem:not(:first-of-type),
 .findbar-container toolbarbutton.findbar-find-previous,

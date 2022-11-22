@@ -46,6 +46,7 @@
   --gnome-button-close-background: var(--gnome-button-flat-hover-background);
   --gnome-button-hover-close-background:var(--gnome-button-hover-background);
   --gnome-button-active-close-background: var(--gnome-button-active-background);
+  --gnome-button-border: rgba(0, 0, 0, .04);
 
   /* Entries */
   --gnome-entry-background: rgba(0, 0, 0, .08);

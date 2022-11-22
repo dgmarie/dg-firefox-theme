@@ -17,9 +17,13 @@
   .top-site-outer .tile,
   .ds-card-grid.ds-card-grid-border .ds-card:not(.placeholder),
   .card-outer .card {
-    box-shadow: var(--gnome-card-box-shadow)!important;
+    box-shadow: var(--gnome-card-box-shadow), inset 0 0 0 1px var(--gnome-button-border) !important;
     border-radius: 12px !important;
+    border-width: 0 !important;
     transition: transform 150ms ease, box-shadow 150ms ease !important;
+  }
+  .top-site-outer:hover {
+    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important
   }
   .ds-card-grid.ds-card-grid-border .ds-card:not(.placeholder) .img-wrapper .img img,
   .card-outer .card-preview-image-outer {
@@ -28,13 +32,10 @@
   .ds-card .img img {
     box-shadow: none !important;
   }
-  .search-wrapper .search-handoff-button,
-  .search-wrapper input {
-    border-width: 2px !important;
-  }
   .search-wrapper.fake-focus:not(.search.disabled) .search-handoff-button {
-    border-color: var(--gnome-focused-urlbar-border-color) !important;
-    border-width: 2px !important;
+    outline: 2px solid var(--gnome-focused-urlbar-border-color) !important;
+    outline-offset: -2px !important;
+    -moz-outline-radius: 5px !important;
   }
   .context-menu {
     border-radius: 12px !important;
@@ -47,12 +48,15 @@
   button[role="menuitem"] {
     border-radius: 6px !important;
     padding: 10px !important;
+    border-width: 0 !important;
   }
   button[role="menuitem"]:hover {
     background: var(--gnome-button-background) !important;
+    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
   button[role="menuitem"]:active {
     background: var(--gnome-button-active-background) !important;
+    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
   .context-menu-item:not(:last-of-type) {
     margin-bottom: 2px !important;
@@ -78,17 +82,22 @@
     height: 34px !important;
     max-height: 34px !important;
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
+    border-width: 0 !important;
   }
   .personalize-button {
     border-radius: 6px !important;
     height: 34px !important;
     width: 34px !important;
+    border-width: 0 !important;
   }
   .personalize-button:hover {
     background-color: var(--gnome-button-flat-hover-background) !important;
+    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
   .personalize-button:active {
     background-color: var(--gnome-button-flat-active-background) !important;
+    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
   .customize-menu .close-button,
   #row-selector {

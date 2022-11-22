@@ -18,14 +18,13 @@ html|textarea,
 xul|search-textbox {
   -moz-appearance: none !important;
   background: var(--gnome-entry-background) !important;
-  border: 0 !important;
   border-radius: 6px !important;
-  box-shadow: none !important;
+  border: 1px solid var(--gnome-button-border) !important;
   color: var(--gnome-entry-color) !important;
   height: 34px !important;
   max-height: 34px !important;
   margin: 0 !important;
-  padding: 6px !important;
+  padding: 5px !important;
   box-sizing: border-box;
 }
 
@@ -97,9 +96,14 @@ xul|search-textbox[focused] {
   padding: 0 !important;
   margin: 0 !important;
 }
-#urlbar-input-container {
+#urlbar-input-container,
+#page-action-buttons {
   background: transparent !important;
   border: 0 !important;
+  max-height: 32px !important;
+}
+.urlbar-page-action, #urlbar-go-button, .search-go-button {
+  height: 32px !important;
 }
 #urlbar, #searchbar {
   margin: 0 !important;

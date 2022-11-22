@@ -23,7 +23,7 @@
 #navigator-toolbox, findbar {
   background: var(--gnome-toolbar-background) !important;
 }
-findbar, #toolbar-menubar, #PersonalToolbar {
+findbar, #PersonalToolbar {
   border-bottom: none !important;
   border-top: 1px solid var(--gnome-headerbar-border) !important;
 }
@@ -33,6 +33,9 @@ findbar, #toolbar-menubar, #PersonalToolbar {
 #navigator-toolbox:-moz-window-inactive {
   background: var(--gnome-inactive-toolbar-background) !important;
   transition: background-color 200ms ease-out !important;
+}
+#toolbar-menubar[autohide="false"] {
+  border-bottom: 1px solid var(--gnome-headerbar-border) !important;
 }
 
 /* Remove bottom border on tabsbar when titlebar is enabled */
@@ -118,26 +121,44 @@ findbar, #toolbar-menubar, #PersonalToolbar {
   margin-top: -48px !important;
 }
 
-.container.infobar {
+.container.infobar,
+notification {
   background: var(--gnome-toolbar-background) !important;
   box-shadow: none !important;
   padding: 4px 5px 5px !important;
   align-items: center !important;
   border-radius: 0 !important;
+  border: none !important;
+  height: 42px !important;
 }
 @media (prefers-color-scheme: dark) {
-  .container.infobar {
+  .container.infobar,
+  notification {
     padding: 4px 4px 5px !important;
   }
 }
-.notificationbox-stack:-moz-window-inactive {
+ .notificationbox-stack:-moz-window-inactive {
   background: none !important;
   transition: background-color 200ms ease-out ;
 }
-.container.infobar:-moz-window-inactive {
+.container.infobar:-moz-window-inactive, notification:-moz-window-inactive {
   background: var(--gnome-inactive-toolbar-background) !important;
   opacity: 0.5 !important;
   transition: background-color 200ms ease-out, opacity 200ms ease-out !important;
+}
+notification description {
+  margin: 0 !important;
+  margin-block: 0 !important;
+}
+notification .messageImage,
+notification menulist,
+notification label,
+notification toolbarbutton,
+notification button {
+  margin-block: 0 !important;
+  margin: 0 3px !important;
+  vertical-align: middle !important;
+  max-height: 34px !important;
 }
 .container.infobar::before {
   display: none !important;
@@ -154,10 +175,10 @@ findbar, #toolbar-menubar, #PersonalToolbar {
   background: #c7162b !important;
 }
 
-.notificationbox-stack[notificationside="top"] notification-message {
+.notificationbox-stack[notificationside="top"] {
   border-top: 1px solid var(--gnome-headerbar-border) !important;
 }
-.notificationbox-stack[notificationside="bottom"] notification-message {
+.notificationbox-stack[notificationside="bottom"] {
   border-top: 1px solid var(--gnome-headerbar-border) !important;
 }
 

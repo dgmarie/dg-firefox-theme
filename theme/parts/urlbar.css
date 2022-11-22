@@ -45,7 +45,7 @@ toolbarspring {
   margin-top: 7px !important;
   margin-inline: 0 !important;
   width: 100% !important;
-  padding: 6px !important;
+  padding: 5px !important;
   box-shadow: var(--gnome-menu-shadow) !important;
   border-radius: 12px !important;
   border: 1px solid var(--gnome-menu-border-color) !important;
@@ -81,9 +81,11 @@ toolbarspring {
 .urlbarView-row[selected] .urlbarView-row-inner {
   background: var(--gnome-accent-bg) !important;
   color: white !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05) !important;
 }
 .urlbarView-row:not([selected]):hover .urlbarView-row-inner {
   background: var(--gnome-menu-button-hover-background) !important;
+  box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
 }
 
 .urlbarView-action {
@@ -132,6 +134,7 @@ toolbarspring {
 #urlbar-label-box,
 #urlbar-zoom-button {
   background: var(--gnome-button-background) !important;
+  box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   border: 0 !important;
   border-radius: 26px !important;
   outline: 0 !important;
@@ -152,6 +155,7 @@ toolbarspring {
 }
 #urlbar-search-mode-indicator-close:hover {
   background-color: var(--gnome-button-hover-background) !important;
+  box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
 }
 #urlbar-zoom-button {
   opacity: 0.8;
@@ -172,6 +176,7 @@ toolbarspring {
 #identity-box[pageproxystate="valid"].chromeUI > .identity-box-button:hover:not([open]),
 #identity-box[pageproxystate="valid"].extensionPage > .identity-box-button:hover:not([open]) {
   background-color: hsla(0,0%,70%,.2) !important;
+  box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
 }
 
 #identity-box[pageproxystate="valid"].notSecureText > .identity-box-button:hover:active,
@@ -181,4 +186,5 @@ toolbarspring {
 #identity-box[pageproxystate="valid"].extensionPage > .identity-box-button:hover:active,
 #identity-box[pageproxystate="valid"].extensionPage > .identity-box-button[open=true] {
   background-color: hsla(0,0%,70%,.3) !important;
+  box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
 }
