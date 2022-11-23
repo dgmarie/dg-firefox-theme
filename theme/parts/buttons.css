@@ -298,6 +298,7 @@ button.popup-notification-primary-button,
 #PanelUI-panic-view-button {
   color: white !important;
   font-weight: bold !important;
+  border-color: var(--gnome-opaque-button-border) !important;
 }
 
 /* Buttons with suggested action */
