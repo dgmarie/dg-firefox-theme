@@ -26,7 +26,7 @@
 
   /* Menus */
   --gnome-menu-background: #f7f7f7;
-  --gnome-menu-border-color: rgba(0, 0, 0, .14);
+  --gnome-menu-border-color: rgba(0, 0, 0, .5);
   --gnome-menu-shadow: 0 1px 5px 1px rgba(0,0,0, .09), 0 2px 14px 3px rgba(0,0,0, .05);
   --gnome-menu-button-hover-background: var(--gnome-button-background);
   --gnome-menu-separator-color: rgba(0, 0, 0, .12);

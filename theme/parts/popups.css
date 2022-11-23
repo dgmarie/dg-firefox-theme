@@ -13,7 +13,7 @@ menu menupopup, panel {
   margin-top: -16px !important;
 }
 menupopup, panel {
-  --panel-border-color: transparent !important;
+  --panel-border-color: var(--gnome-menu-border-color) !important;
 }
 .menupopup-arrowscrollbox {
   -moz-appearance: none !important;
@@ -23,6 +23,7 @@ menupopup, panel {
   padding: 6px !important;
   margin: 0 !important;
   border: 1px solid var(--gnome-menu-border-color) !important;
+  background-clip: border-box !important;
 }
 
 menuitem[type="checkbox"] image, menuitem[type="radio"] image {

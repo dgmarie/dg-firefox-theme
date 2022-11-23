@@ -49,7 +49,7 @@ toolbarspring {
   box-shadow: var(--gnome-menu-shadow) !important;
   border-radius: 12px !important;
   border: 1px solid var(--gnome-menu-border-color) !important;
-  background-clip: padding-box !important;
+  background-clip: border-box !important;
 }
 #PopupSearchAutoComplete {
   margin-top: 6px !important;
