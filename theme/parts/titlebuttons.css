@@ -56,10 +56,10 @@
     opacity: 0.40 !important;
   }
 }
-:root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-close,
-:root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-max,
-:root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-min,
-:root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-restore,
-:root[tabsintitlebar][sizemode="maximized"] #titlebar:-moz-window-inactive .titlebar-max {
+:root[tabsintitlebar] #titlebar:-moz-window-inactive .titlebar-button {
   background-color: var(--gnome-button-background);
+  box-shadow: inset 0 0 0 1px var(--gnome-button-border);
+}
+:root[tabsintitlebar] #titlebar .titlebar-button {
+  box-shadow: inset 0 0 0 1px var(--gnome-opaque-button-border);
 }
