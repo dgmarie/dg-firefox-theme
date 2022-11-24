@@ -558,9 +558,6 @@ button.close::before {
 #reader-mode-button-icon {
   list-style-image: url("../assets/yaru-icons/view-dual-symbolic.svg") !important;
 }
-.urlbar-icon {
-  margin: 2px 0 !important;
-}
 
 /* Fix for extensions icons */
 @media (prefers-color-scheme: dark) {
