@@ -57,6 +57,8 @@ function saveProfile(){
 
   # Set accent color
   sed -i "s/--yaru-orange/--yaru-${color}/g" "${PWD}"/qualia/theme/colors/light-yaru.css
+  sed -i "s/--yaru-orange/--yaru-${color}/g" "${PWD}"/qualia/theme/colors/dark-yaru.css
+
   # Create single-line user CSS file
   if [ -s userChrome.css ]; then
     rm -rf userChrome.css
