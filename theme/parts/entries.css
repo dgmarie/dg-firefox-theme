@@ -102,7 +102,7 @@ xul|search-textbox[focused] {
   border: 0 !important;
   max-height: 32px !important;
 }
-.urlbar-page-action, #urlbar-go-button, .search-go-button {
+#urlbar-go-button, .search-go-button {
   height: 32px !important;
 }
 #urlbar, #searchbar {
