@@ -12,7 +12,6 @@
     /* Accent */
     --gnome-accent-bg: rgb(var(--yaru-orange));
     --gnome-accent: rgb(var(--yaru-orange));
-    --gnome-accent-border: rgba(var(--yaru-orange), 0.15);
 
     /* Toolbars */
     --gnome-toolbar-background: #212121;

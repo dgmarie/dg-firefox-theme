@@ -69,9 +69,6 @@ dialog {
   border-right: 1px solid var(--gnome-toolbar-border-color) !important;
   border-top: 1px solid var(--gnome-toolbar-border-color) !important;
 }
-.dialog-button-box button:not(#hack)[default="true"] {
-  border-color: var(--gnome-accent-border) !important;
-}
 .dialog-button-box button:not(#hack):last-of-type {
   border-right: none !important;
 }
