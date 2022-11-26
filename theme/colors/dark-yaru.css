@@ -12,6 +12,7 @@
     /* Accent */
     --gnome-accent-bg: rgb(var(--yaru-orange));
     --gnome-accent: rgb(var(--yaru-orange));
+    --gnome-accent-border: rgba(var(--yaru-orange), 0.15);
 
     /* Toolbars */
     --gnome-toolbar-background: #212121;
@@ -49,6 +50,8 @@
     --gnome-button-active-close-background: var(--gnome-button-active-background);
     --gnome-button-border: rgba(255, 255, 255, .05);
     --gnome-opaque-button-border: rgba(255, 255, 255, .15);
+    --gnome-button-suggested-flat-hover-background: rgba(var(--yaru-orange), .07);
+    --gnome-button-suggested-flat-active-background: rgba(var(--yaru-orange), .1);
 
     /* Entries */
     --gnome-entry-background: rgba(255, 255, 255, .1);

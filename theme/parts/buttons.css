@@ -65,6 +65,7 @@ button.close,
 #nav-bar toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton),
 #widget-overflow-list toolbarbutton:not(.subviewbutton),
 #PersonalToolbar toolbarbutton,
+.dialog-button-box button,
 #TabsToolbar .toolbarbutton-1:not(#hack),
 .close-icon:not(.tab-close-button),
 #nav-bar .subviewbutton.webextension-browser-action,
@@ -170,7 +171,6 @@ menulist:hover .menulist-label-box,
 .tracking-protection-button:hover,
 .dialog-button:hover,
 .autocomplete-richlistitem[type="loginsFooter"]:hover,
-.dialog-button-box button:not([disabled="true"]):hover,
 .searchbar-engine-one-off-item:hover,
 .button.connect-device:hover,
 #editBMPanel_newFolderButton:hover {
@@ -187,6 +187,7 @@ menulist:hover .menulist-label-box,
 #TabsToolbar .toolbarbutton-1:not(#hack):hover,
 .close-icon:not(.tab-close-button):hover,
 button.close:hover,
+.dialog-button-box button:not([disabled="true"]):hover,
 #protections-popup-info-button:hover,
 .permission-popup-permission-remove-button:hover,
 #item-choose button:hover {
@@ -216,7 +217,6 @@ menulist[open] .menulist-label-box,
 .tracking-protection-button:active,
 .dialog-button:active,
 .autocomplete-richlistitem[type="loginsFooter"]:active,
-.dialog-button-box button:not([disabled="true"]):active,
 .button.connect-device:active,
 #editBMPanel_newFolderButton:active {
   background: var(--gnome-button-active-background) !important;
@@ -234,6 +234,7 @@ menulist[open] .menulist-label-box,
 #TabsToolbar .toolbarbutton-1:not(#hack):active,
 .close-icon:not(.tab-close-button):active,
 button.close:active,
+.dialog-button-box button:not([disabled="true"]):active,
 #protections-popup-info-button:not(#hack):active,
 #protections-popup-info-button:not(#hack)[checked],
 .permission-popup-permission-remove-button:active,
@@ -308,6 +309,22 @@ button.popup-notification-primary-button:not(#hack),
 #tracking-action-block,
 .button.connect-device {
   background-color: var(--gnome-button-suggested-action-background) !important;
+}
+
+/* Flat suggested action */
+.dialog-button-box button:not([disabled="true"])[default="true"] {
+  background-color: transparent !important;
+  color: var(--gnome-button-suggested-action-background) !important;
+}
+
+/* Flat suggested action hover */
+.dialog-button-box button:not([disabled="true"])[default="true"]:hover {
+  background-color: var(--gnome-button-suggested-flat-hover-background) !important;
+}
+
+/* Flat suggested action active */
+.dialog-button-box button:not([disabled="true"])[default="true"]:active {
+  background-color: var(--gnome-button-suggested-flat-active-background) !important;
 }
 
 /* Buttons with destructive action */
