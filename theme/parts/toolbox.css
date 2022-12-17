@@ -34,7 +34,7 @@ findbar, #PersonalToolbar {
   background: var(--gnome-inactive-toolbar-background) !important;
   transition: background-color 200ms ease-out !important;
 }
-#toolbar-menubar[autohide="false"] {
+#toolbar-menubar[autohide="false"]:not([inactive=true]) {
   border-bottom: 1px solid var(--gnome-headerbar-border) !important;
 }
 
@@ -175,10 +175,10 @@ notification button {
   background: #c7162b !important;
 }
 
-.notificationbox-stack[notificationside="top"] {
+.notificationbox-stack[notificationside="top"] notification-message {
   border-top: 1px solid var(--gnome-headerbar-border) !important;
 }
-.notificationbox-stack[notificationside="bottom"] {
+.notificationbox-stack[notificationside="bottom"] notification-message {
   border-top: 1px solid var(--gnome-headerbar-border) !important;
 }
 

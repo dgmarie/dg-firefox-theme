@@ -34,6 +34,11 @@
 #customization-footer::before {
   background: url(../icon.svg) no-repeat;
   background-size: contain;
-  content: "dg Firefox theme v106";
+  content: "qualia Firefox theme v108";
   padding: 9px 9px 9px 50px;
+}
+
+/* Increase min width of browser so things don't break */
+:root:not([chromehidden~="toolbar"]) {
+  min-width: 575px !important;
 }
