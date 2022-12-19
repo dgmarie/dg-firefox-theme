@@ -183,7 +183,6 @@ url("about:preferences#moreFromMozilla") {
     box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
     border-width: 0 !important;
   }
-
   /* Policy container */
   #policies-container {
     border-radius: 6px !important;
@@ -281,10 +280,12 @@ url("about:preferences#moreFromMozilla") {
     margin-bottom: 2px !important;
   }
   xul|menuitem:hover {
-    background: var(--gnome-button-background) !important;
+    background-color: var(--gnome-menu-button-hover-background) !important;
+    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
   xul|menuitem:active {
-    background: var(--gnome-button-active-background) !important;
+    background-color: var(--gnome-menu-button-active-background) !important;
+    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
 
   /* Entries */

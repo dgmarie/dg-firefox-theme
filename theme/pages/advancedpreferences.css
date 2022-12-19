@@ -84,6 +84,9 @@
     height: 34px !important;
     max-height: 34px !important;
   }
+  #show-all:not(:hover, :active) {
+    box-shadow: none !important;
+  }
   /* Cards */
   #prefs {
     border-radius: 12px !important;

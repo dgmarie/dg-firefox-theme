@@ -30,6 +30,7 @@
     --gnome-menu-border-color: rgba(255, 255, 255, .05);
     --gnome-menu-shadow: 0 1px 5px 1px rgba(0,0,0, .09), 0 2px 14px 3px rgba(0,0,0, .05);
     --gnome-menu-button-hover-background: var(--gnome-button-background);
+    --gnome-menu-button-active-background: rgba(0, 0, 0, .19);
     --gnome-menu-separator-color: rgba(255, 255, 255, .15);
     --gnome-menu-radio-border-color: rgba(255, 255, 255, .3);
 
@@ -51,6 +52,9 @@
     --gnome-opaque-button-border: rgba(255, 255, 255, .15);
     --gnome-button-suggested-flat-hover-background: rgba(var(--yaru-orange), .07);
     --gnome-button-suggested-flat-active-background: rgba(var(--yaru-orange), .1);
+
+    /* Dialogs */
+    --gnome-dialog-outer-border: rgba(255, 255, 255, .1);
 
     /* Entries */
     --gnome-entry-background: rgba(255, 255, 255, .1);

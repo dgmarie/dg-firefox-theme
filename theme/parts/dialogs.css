@@ -6,6 +6,10 @@ window {
   padding: 0 !important;
 }
 
+window[dialogroot="true"][role="dialog"] {
+  box-shadow: inset 0 0 0 1px var(--gnome-dialog-outer-border) !important;
+  border-radius: 12px;
+}
 /* Browser dialog prompts center */
 .dialogOverlay {
   display: grid;
