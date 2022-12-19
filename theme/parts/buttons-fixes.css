@@ -285,3 +285,10 @@ button.close {
   min-height: 24px !important;
   width: 24px !important;
 }
+
+/* Extension overflow list */
+#unified-extensions-panel toolbarbutton:not(#unified-extensions-manage-extensions):not(#hack) {
+  height: 40px !important;
+  max-height: 40px !important;
+  margin-inline-end: 0 !important;
+}

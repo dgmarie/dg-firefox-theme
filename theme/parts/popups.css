@@ -157,7 +157,7 @@ panel  {
 
 /* Menu buttons */
 menuitem, menupopup menu,
-.subviewbutton:not(#appMenu-fxa-label2, .webextension-browser-action),
+.subviewbutton:not(#appMenu-fxa-label2, .webextension-browser-action, .unified-extensions-item-menu-button),
 .toolbarbutton-1:not(.webextension-browser-action),
 .protections-popup-footer-button,
 .protections-popup-category,
@@ -192,7 +192,7 @@ menuitem, menupopup menu,
 
 /* Menu buttons disabled */
 menuitem[disabled="true"], menupopup menu[disabled="true"],
-.subviewbutton[disabled="true"]:not(.webextension-browser-action),
+.subviewbutton[disabled="true"]:not(.webextension-browser-action, .unified-extensions-item-menu-button),
 .toolbarbutton-1[disabled="true"]:not(.webextension-browser-action),
 .protections-popup-category[disabled="true"],
 #widget-overflow-list toolbarbutton[disabled="true"],
@@ -207,7 +207,7 @@ menuitem[disabled="true"][_moz-menuactive], menupopup menu[disabled="true"][_moz
 menuitem:not([disabled="true"]):is(:hover, [_moz-menuactive]),
 menupopup menu:not([disabled="true"]):is(:hover, [_moz-menuactive]),
 #widget-overflow-list toolbarbutton:hover,
-.subviewbutton:not([disabled="true"], #appMenu-zoom-controls2, #appMenu-fxa-label2):not(.webextension-browser-action):hover,
+.subviewbutton:not([disabled="true"], #appMenu-zoom-controls2, #appMenu-fxa-label2):not(.webextension-browser-action, .unified-extensions-item-menu-button):hover,
 .protections-popup-footer-button:not([disabled="true"]):hover,
 #protections-popup-show-report-stack:hover .protections-popup-footer-button,
 .protections-popup-category:not([disabled="true"]):hover,
@@ -282,4 +282,9 @@ panelview > toolbarseparator:not([orient="vertical"]),
 }
 #identity-popup-clear-sitedata-footer toolbarseparator:not([orient="vertical"]) {
   margin-top: 0 !important;
+}
+
+/* Extension overflow list */
+#unified-extensions-panel toolbaritem {
+  margin: 0 !important;
 }
