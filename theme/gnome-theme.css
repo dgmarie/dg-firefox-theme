@@ -40,5 +40,5 @@
 
 /* Increase min width of browser so things don't break */
 :root:not([chromehidden~="toolbar"]) {
-  min-width: 575px !important;
+  min-width: 600px !important;
 }
