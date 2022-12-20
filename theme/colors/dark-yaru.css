@@ -83,7 +83,8 @@
 
     /* Settings */
     --gnome-settings-background: #292929;
-    --gnome-settings-info-background: rgba(var(--yaru-orange), 0.1); /* Same as --gnome-accent but with opacity*/
+    --gnome-settings-info-background: rgba(var(--yaru-orange), 0.15); /* Same as --gnome-accent but with opacity*/
+    --gnome-settings-info-selected-background: rgba(var(--yaru-orange), 0.2); /* Same as --gnome-accent but with opacity*/
 
     /* Advanced Preferences */
     --gnome-warning-icon-fill: #F99B11;
