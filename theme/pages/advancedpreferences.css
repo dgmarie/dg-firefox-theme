@@ -6,19 +6,19 @@
 @-moz-document url("about:config") {
   :root {
     --in-content-page-background: var(--gnome-settings-background) !important;
-    --in-content-page-color: var(--gnome-toolbar-color) !important;
+    --in-content-page-color: var(--gnome-view-fg-color) !important;
     --in-content-box-background: var(--gnome-menu-background) !important;
     --in-content-box-background-odd: transparent !important;
-    --in-content-box-border-color: var(--gnome-menu-separator-color) !important;
+    --in-content-box-border-color: var(--gnome-border-color) !important;
     --in-content-box-info-background: var(--gnome-settings-info-background) !important;
-    --in-content-border-color: var(--gnome-menu-separator-color) !important;
-    --in-content-border-hover: var(--gnome-menu-separator-color) !important;
+    --in-content-border-color: var(--gnome-border-color) !important;
+    --in-content-border-hover: var(--gnome-border-color) !important;
     --in-content-border-invalid: var(--gnome-button-destructive-action-background) !important;
     --in-content-error-text-color: var(--gnome-button-destructive-action-background) !important;
     --in-content-button-background: var(--gnome-button-background) !important;
     --in-content-button-background-hover: var(--gnome-button-hover-background) !important;
     --in-content-button-background-active: var(--gnome-button-active-background) !important;
-    --in-content-icon-color: var(--gnome-toolbar-icon-fill) !important;
+    --in-content-icon-color: var(--gnome-view-fg-color) !important;
     --in-content-accent-color: var(--gnome-accent) !important;
     --in-content-accent-color-active: var(--gnome-accent) !important;
     --in-content-link-color: var(--gnome-accent) !important;
@@ -84,20 +84,29 @@
     height: 34px !important;
     max-height: 34px !important;
   }
-  #show-all:not(:hover, :active) {
+  #show-all:not(:hover, :active),
+  .button-reset:not(:hover, :active) {
     box-shadow: none !important;
+  }
+  #show-all:hover,
+  .button-reset:hover {
+    background-color: var(--gnome-view-hover-background) !important;
+  }
+  #show-all:active,
+  .button-reset:active {
+    background-color: var(--gnome-view-active-background) !important;
   }
   /* Cards */
   #prefs {
     border-radius: 12px !important;
-    border: 1px solid var(--gnome-toolbar-border-color) !important;
+    border: 1px solid var(--gnome-border-color) !important;
   }
   #prefs > tr:hover {
-    background-color: var(--gnome-row-hover-background) !important;
+    background-color: var(--gnome-view-hover-background) !important;
     box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
   #prefs > tr:active {
-    background-color: var(--gnome-row-active-background) !important;
+    background-color: var(--gnome-view-active-background) !important;
     box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
   /* Entries */
@@ -129,7 +138,7 @@
   .button-edit,
   .button-reset,
   .button-delete {
-    fill: var(--gnome-toolbar-icon-fill) !important;
+    fill: var(--gnome-view-fg-color) !important;
     -moz-context-properties: fill, fill-opacity;
   }
   .title {

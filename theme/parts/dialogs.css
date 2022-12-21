@@ -70,8 +70,8 @@ dialog {
   flex: 1;
   border-bottom: 0 !important;
   border: none !important;
-  border-right: 1px solid var(--gnome-toolbar-border-color) !important;
-  border-top: 1px solid var(--gnome-toolbar-border-color) !important;
+  border-right: 1px solid var(--gnome-border-color) !important;
+  border-top: 1px solid var(--gnome-border-color) !important;
 }
 .dialog-button-box button:not(#hack):last-of-type {
   border-right: none !important;

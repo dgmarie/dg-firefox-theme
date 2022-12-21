@@ -2,7 +2,6 @@
 dir="$(dirname -- "$0")"
 themedirectory="$(realpath "${dir}")"
 profilename=""
-theme=yaru
 color_variants=('orange' 'bark' 'sage' 'olive' 'viridian' 'prussiangreen' 'lightblue' 'blue' 'purple' 'magenta' 'pink' 'red')
 
 color="orange"
@@ -56,8 +55,8 @@ function saveProfile(){
   cp -fR "$themedirectory"/* "$PWD/qualia"
 
   # Set accent color
-  sed -i "s/--yaru-orange/--yaru-${color}/g" "${PWD}"/qualia/theme/colors/light-yaru.css
-  sed -i "s/--yaru-orange/--yaru-${color}/g" "${PWD}"/qualia/theme/colors/dark-yaru.css
+  sed -i "s/--yaru-orange/--yaru-${color}/g" "${PWD}"/qualia/theme/colors/colors.css
+  sed -i "s/--yaru-orange/--yaru-${color}/g" "${PWD}"/qualia/theme/colors/colors.css
 
   # Create single-line user CSS file
   if [ -s userChrome.css ]; then
@@ -70,10 +69,7 @@ function saveProfile(){
   # Import this theme at the beginning of the CSS files.
   sed -i '1s/^/@import "qualia\/userChrome.css";\n/' userChrome.css
 
-  if [ $theme = "yaru" ]; then
-    echo "@import \"qualia\/theme/colors/light-$theme.css\";" >> userChrome.css
-    echo "@import \"qualia\/theme/colors/dark-$theme.css\";" >> userChrome.css
-  fi
+  echo "@import \"qualia\/theme/colors/colors.css\";" >> userChrome.css
 
   # Create single-line user content CSS file
   if [ -s userContent.css ]; then
@@ -86,10 +82,7 @@ function saveProfile(){
   # Import this theme at the beginning of the CSS files.
   sed -i '1s/^/@import "qualia\/userContent.css";\n/' userContent.css
 
-  if [ $theme = "yaru" ]; then
-    echo "@import \"qualia\/theme/colors/light-$theme.css\";" >> userContent.css
-    echo "@import \"qualia\/theme/colors/dark-$theme.css\";" >> userContent.css
-  fi
+  echo "@import \"qualia\/theme/colors/colors.css\";" >> userContent.css
 
   cd ..
 

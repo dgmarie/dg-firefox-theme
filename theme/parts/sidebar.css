@@ -8,14 +8,17 @@
 #sidebar-splitter {
   background: var(--gnome-toolbar-background) !important;
   border: 0 !important;
-  border-right: 1px solid var(--gnome-toolbar-border-color) !important;
+  border-right: 1px solid var(--gnome-border-color) !important;
   width: 0 !important;
 }
 #sidebar-header {
   padding: 6px !important;
-  border-bottom: 1px solid var(--gnome-toolbar-border-color) !important;
+  border-bottom: 1px solid var(--gnome-border-color) !important;
 }
 #sidebar-search-container {
   padding: 6px !important;
 }
 
+#sidebar-box .sidebar-panel:not(#hack) {
+  min-width: 0 !important;
+}

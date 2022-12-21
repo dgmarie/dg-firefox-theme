@@ -229,7 +229,7 @@
 }
 
 #protections-popup-mainView-panel-header {
-  color: var(--gnome-toolbar-color) !important;
+  color: var(--gnome-fg-color) !important;
   padding: 0 !important;
 }
 #protections-popup[hasException] #protections-popup-mainView-panel-header {
@@ -263,12 +263,12 @@
 #protections-popup-message {
   background: none !important;
   border: 0 !important;
-  color: var(--gnome-toolbar-color) !important;
+  color: var(--gnome-fg-color) !important;
   height: 100% !important;
   margin: 0 !important;
 }
 #protections-popup-message .text-link {
-  color: var(--gnome-toolbar-color) !important;
+  color: var(--gnome-fg-color) !important;
 }
 
 #protections-popup-tp-switch-section {

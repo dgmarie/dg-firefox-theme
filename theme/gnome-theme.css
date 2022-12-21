@@ -39,6 +39,6 @@
 }
 
 /* Increase min width of browser so things don't break */
-:root:not([chromehidden~="toolbar"]) {
+:root:not([chromehidden~="toolbar"], .sidebar-panel) {
   min-width: 600px !important;
 }

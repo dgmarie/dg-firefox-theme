@@ -2,20 +2,20 @@
 
 @-moz-document url("about:privatebrowsing") {
   html.private {
-    --in-content-page-background: var(--gnome-browser-before-load-background) !important;
-    --in-content-page-color: var(--gnome-toolbar-color) !important;
+    --in-content-page-background: var(--gnome-view-background) !important;
+    --in-content-page-color: var(--gnome-view-fg-color) !important;
     --in-content-box-background: var(--gnome-menu-background) !important;
     --in-content-box-background-odd: var(--gnome-menu-background) !important;
-    --in-content-box-border-color: var(--gnome-menu-separator-color) !important;
+    --in-content-box-border-color: var(--gnome-border-color) !important;
     --in-content-box-info-background: var(--gnome-settings-info-background) !important;
-    --in-content-border-color: var(--gnome-menu-separator-color) !important;
-    --in-content-border-hover: var(--gnome-menu-separator-color) !important;
+    --in-content-border-color: var(--gnome-border-color) !important;
+    --in-content-border-hover: var(--gnome-border-color) !important;
     --in-content-border-invalid: var(--gnome-button-destructive-action-background) !important;
     --in-content-error-text-color: var(--gnome-button-destructive-action-background) !important;
     --in-content-button-background: var(--gnome-button-background) !important;
     --in-content-button-background-hover: var(--gnome-button-hover-background) !important;
     --in-content-button-background-active: var(--gnome-button-active-background) !important;
-    --in-content-icon-color: var(--gnome-toolbar-icon-fill) !important;
+    --in-content-icon-color: var(--gnome-view-fg-color) !important;
     --in-content-accent-color: var(--gnome-accent) !important;
     --in-content-accent-color-active: var(--gnome-accent) !important;
     --in-content-link-color: var(--gnome-accent) !important;
@@ -54,7 +54,7 @@
     color: var(--in-content-page-color) !important;
   }
   .fake-caret {
-    background-color: var(--gnome-toolbar-color) !important;
+    background-color: var(--gnome-view-fg-color) !important;
   }
 
   /* Info box */

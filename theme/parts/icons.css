@@ -47,7 +47,7 @@ menuitem[type="radio"],
 html|input[type="radio"],
 xul|*.radio-check,
 #firefox-view-button:not(#hack) {
-  fill: var(--gnome-toolbar-icon-fill) !important;
+  fill: var(--gnome-fg-color) !important;
   -moz-context-properties: fill, fill-opacity;
 }
 

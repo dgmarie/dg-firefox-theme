@@ -226,7 +226,7 @@ button.close {
 
 /* Downloads button */
 #downloads-indicator-progress-inner {
-  background: conic-gradient(var(--gnome-toolbar-icon-fill) var(--download-progress-pcent), transparent var(--download-progress-pcent)) !important;
+  background: conic-gradient(var(--gnome-fg-color) var(--download-progress-pcent), transparent var(--download-progress-pcent)) !important;
 }
 #downloads-indicator-progress-outer,
 #downloads-indicator-start-image,
@@ -237,10 +237,10 @@ button.close {
 }
 #downloads-indicator-progress-outer,
 #downloads-indicator-start-image {
-  background: var(--gnome-toolbar-border-color) !important;
+  background: var(--gnome-border-color) !important;
 }
 #downloads-indicator-finish-image {
-  background: var(--gnome-toolbar-icon-fill) !important;
+  background: var(--gnome-fg-color) !important;
 }
 #downloads-button .toolbarbutton-animatable-box {
   top: 8px !important;

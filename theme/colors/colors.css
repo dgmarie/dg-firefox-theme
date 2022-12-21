@@ -1,0 +1,161 @@
+@namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Variables that start with --gnome- are added by me and are assigned
+ * to elements somewhere in this code. The rest of the variables are
+ * built-in in Firefox, so you need to add an !important if you wanna
+ * override them. */
+
+ /* Light Colors */
+:root {
+  /* Accent */
+  --gnome-accent: rgb(var(--yaru-orange));
+
+  /* General colors */
+  --gnome-background: #f7f7f7;
+  --gnome-fg-color: rgba(0, 0, 0, .8);
+  --gnome-view-background: #fcfcfc;
+  --gnome-view-fg-color: #323232;
+  --gnome-view-hover-background: rgba(0, 0, 0, .052);
+  --gnome-view-active-background: rgba(0, 0, 0, .128);
+  --gnome-view-selected-background: rgba(0, 0, 0, .08);
+  --gnome-view-selected-hover-background: rgba(0, 0, 0, .104);
+  --gnome-view-selected-active-background: rgba(0, 0, 0, .152);
+  --gnome-border-color: rgba(0, 0, 0, .12);
+
+  /* Toolbars */
+  --gnome-toolbar-background: #eaeaea;
+  --gnome-inactive-toolbar-background: var(--gnome-background);
+  --gnome-toolbar-border: rgba(0, 0, 0, .08);
+
+  /* Sidebar */
+  --gnome-sidebar-background: var(--gnome-background);
+
+  /* Menus */
+  --gnome-menu-background: #f7f7f7;
+  --gnome-menu-button-hover-background: var(--gnome-view-selected-background);
+  --gnome-menu-button-active-background: var(--gnome-view-selected-active-background);
+  --gnome-menu-border-color: rgba(0, 0, 0, .07);
+  --gnome-menu-radio-border-color: rgba(0, 0, 0, .24);
+  --gnome-menu-shadow: 0 1px 5px 1px rgba(0,0,0, .09), 0 2px 14px 3px rgba(0,0,0, .05);
+
+  /* Buttons */
+  --gnome-button-background: rgba(0, 0, 0, .08);
+  --gnome-button-hover-background: rgba(0, 0, 0, .12);
+  --gnome-button-active-background: rgba(0, 0, 0, .24);
+  --gnome-button-suggested-flat-hover-background: rgba(var(--yaru-orange), .07);
+  --gnome-button-suggested-flat-active-background: rgba(var(--yaru-orange), .1);
+  --gnome-button-suggested-action-background: var(--gnome-accent-bg);
+  --gnome-button-destructive-action-background: #c7162b;
+  --gnome-button-border: rgba(0, 0, 0, .04);
+  --gnome-opaque-button-border: rgba(255, 255, 255, .15);
+
+  /* Dialogs */
+  --gnome-dialog-outer-border: rgba(0, 0, 0, .08);
+
+  /* Entries */
+  --gnome-entry-background: rgba(0, 0, 0, .08);
+  --gnome-focused-urlbar-border-color: rgba(var(--yaru-orange), 0.5); /* Same as --gnome-accent but with opacity*/
+
+  /* Switches */
+  --gnome-switch-border-color: rgba(0, 0, 0, .12);
+
+  /* Cards */
+  --gnome-card-background: #ffffff;
+  --gnome-card-hover-background: #f9f9f9;
+  --gnome-card-active-background: #efefef;
+  --gnome-card-flat-hover-background: #f9f9f9;
+  --gnome-card-flat-active-background: #efefef;
+  --gnome-card-border: rgba(0, 0, 0, .07);
+  --gnome-card-box-shadow: 0 0 0 1px rgba(0, 0, 0, .03), 0 1px 3px 1px rgba(0, 0, 0, .07), 0 2px 6px 2px rgba(0, 0, 0, 0.03);
+
+  /* Lists */
+  --gnome-list-background: var(--gnome-background);
+
+  /* Settings */
+  --gnome-settings-background: var(--gnome-view-background);
+  --gnome-settings-info-background: rgba(var(--yaru-orange), 0.15); /* Same as --gnome-accent but with opacity*/
+  --gnome-settings-info-selected-background: rgba(var(--yaru-orange), 0.2); /* Same as --gnome-accent but with opacity*/
+
+  /* Advanced Preferences */
+  --gnome-warning-icon-fill: #F99B11;
+
+  /* Tabs */
+  --gnome-tab-button-background: rgba(0, 0, 0, .5);
+  --gnome-tab-button-fg: #ffffff;
+  --gnome-tab-button-hover-background: rgba(0, 0, 0, .6);
+  --gnome-tabbar-tab-needs-attention: var(--gnome-accent);
+}
+
+/* Private window colors */
+:root {
+  /* Toolbars */
+  --gnome-private-toolbar-background: #d7e3f0;
+  --gnome-private-inactive-toolbar-background: #eaf0f7;
+}
+
+/* Dark Colors */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* General colors */
+    --gnome-background: #292929;
+    --gnome-fg-color: #ffffff;
+    --gnome-view-background: #252525;
+    --gnome-view-fg-color: #ffffff;
+    --gnome-view-hover-background: rgba(255, 255, 255, .07);
+    --gnome-view-active-background: rgba(255, 255, 255, .16);
+    --gnome-view-selected-background: rgba(255, 255, 255, .1);
+    --gnome-view-selected-hover-background: rgba(255, 255, 255, .13);
+    --gnome-view-selected-active-background: rgba(255, 255, 255, .19);
+    --gnome-border-color: rgba(255, 255, 255, .15);
+
+    /* Toolbars */
+    --gnome-toolbar-background: #212121;
+    --gnome-toolbar-border: rgba(0, 0, 0, .36);
+
+    /* Sidebar */
+    --gnome-sidebar-background: var(--gnome-view-background);
+
+    /* Menus */
+    --gnome-menu-background: #1c1c1c;
+    --gnome-menu-border-color: rgba(255, 255, 255, .07);
+    --gnome-menu-radio-border-color: rgba(255, 255, 255, .3);
+
+    /* Buttons */
+    --gnome-button-background: rgba(255, 255, 255, .1);
+    --gnome-button-hover-background: rgba(255, 255, 255, .15);
+    --gnome-button-active-background: rgba(255, 255, 255, .3);
+    --gnome-button-border: rgba(255, 255, 255, .05);
+    --gnome-opaque-button-border: rgba(255, 255, 255, .15);
+
+    /* Dialogs */
+    --gnome-dialog-outer-border: rgba(255, 255, 255, .1);
+
+    /* Entries */
+    --gnome-entry-background: rgba(255, 255, 255, .1);
+
+    /* Switches */
+    --gnome-switch-border-color: rgba(255, 255, 255, .15);
+
+    /* Cards */
+    --gnome-card-background: rgba(255, 255, 255, .08);
+    --gnome-card-hover-background: rgba(255, 255, 255, .11);
+    --gnome-card-active-background: rgba(255, 255, 255, .16);
+    --gnome-card-flat-hover-background: rgba(255, 255, 255, .03);
+    --gnome-card-flat-active-background: rgba(255, 255, 255, .08);
+    --gnome-card-border: rgba(0, 0, 0, .36);
+
+    /* Lists */
+    --gnome-list-background: var(--gnome-view-background);
+
+    /* Settings */
+    --gnome-settings-background: var(--gnome-background);
+  }
+
+  /* Private window colors */
+  :root {
+    /* Toolbars */
+    --gnome-private-toolbar-background: #252F49;
+    --gnome-private-inactive-toolbar-background: #1c2438;
+  }
+}
+

@@ -6,7 +6,7 @@
 /* List container */
 #permission-popup-permission-list,
 richlistbox#items {
-  --in-content-item-selected: var(--gnome-accent-bg) !important;
+  --in-content-item-selected: var(--gnome-accent) !important;
   --in-content-item-selected-text: #fff !important;
   background: var(--gnome-menu-background) !important;
   border: 1px solid var(--gnome-button-border-color) !important;
@@ -29,7 +29,7 @@ richlistbox#items richlistitem {
 }
 .permission-popup-permission-list-anchor:not(:last-child),
 richlistbox#items richlistitem:not(:last-child) {
-  border-bottom: 1px solid var(--gnome-menu-separator-color);
+  border-bottom: 1px solid var(--gnome-border-color);
 }
 
 /* Fix list buttons on selected state */

@@ -4,9 +4,9 @@
 
 @-moz-document url("about:firefoxview") {
   body {
-    --newtab-text-primary-color: var(--gnome-toolbar-color) !important;
-    --in-content-page-color: var(--gnome-toolbar-color) !important;
-    --fxview-background-color: var(--gnome-settings-background) !important;
+    --newtab-text-primary-color: var(--gnome-view-fg-color) !important;
+    --in-content-page-color: var(--gnome-view-fg-color) !important;
+    --fxview-background-color: var(--gnome-view-background) !important;
     --in-content-zap-gradient: transparent !important;
   }
 
@@ -20,7 +20,7 @@
     box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
     border-width: 0 !important;
     background-color: var(--gnome-button-background) !important;
-    color: var(--gnome-toolbar-color) !important;
+    color: var(--gnome-view-fg-color) !important;
   }
   html|button {
     padding: 2px 16px !important;
@@ -47,7 +47,7 @@
     background-color: var(--gnome-card-background) !important;
     border-radius: 12px !important;
     box-shadow: var(--gnome-card-box-shadow), inset 0 0 0 1px var(--gnome-button-border) !important;
-    color: var(--gnome-toolbar-color) !important;
+    color: var(--gnome-view-fg-color) !important;
     border: none !important;
   }
   .card,
@@ -95,7 +95,7 @@
   .synced-tabs,
   .history,
   .info {
-    fill: var(--gnome-toolbar-icon-fill) !important;
+    fill: var(--gnome-view-fg-color) !important;
     -moz-context-properties: fill, fill-opacity;
   }
 

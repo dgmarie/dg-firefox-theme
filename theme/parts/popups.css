@@ -5,7 +5,7 @@
 /* Style menus */
 menupopup, panel {
   -moz-appearance: none !important;  
-  color: var(--gnome-toolbar-color) !important;
+  color: var(--gnome-fg-color) !important;
   padding: 8px !important;
   margin: -8px !important;
 }
@@ -112,7 +112,7 @@ panel  {
   background-color: var(--arrowpanel-background) !important;
   border: none !important;
   border-radius: 12px !important;
-  color: var(--gnome-toolbar-color) !important;
+  color: var(--gnome-fg-color) !important;
 }
 .panel-arrow {    
   fill: var(--arrowpanel-background) !important;
@@ -170,7 +170,7 @@ menuitem, menupopup menu,
 #widget-overflow-list .toolbarbutton-1:not(#hack) {
   -moz-appearance: none !important;
   border-radius: 6px !important;  
-  color: var(--gnome-toolbar-color) !important;
+  color: var(--gnome-fg-color) !important;
   font: menu !important;
   padding: 3px 11px !important;
   min-height: 32px !important;
@@ -276,7 +276,7 @@ toolbarseparator, menuseparator {
 }
 
 #PlacesToolbar menupopup[placespopup="true"] menuseparator {
-  border-top: 1px solid var(--gnome-menu-separator-color) !important;
+  border-top: 1px solid var(--gnome-border-color) !important;
   padding: 0 !important;
   margin: 6px 0 !important;
 }
@@ -285,7 +285,7 @@ toolbarseparator, menuseparator {
 }
 
 toolbarseparator:not([orient="vertical"]), menupopup menuseparator {
-  border-top: 1px solid var(--gnome-menu-separator-color) !important;
+  border-top: 1px solid var(--gnome-border-color) !important;
   margin: 6px 0 !important;
 }
 toolbarseparator[orient="vertical"] {
