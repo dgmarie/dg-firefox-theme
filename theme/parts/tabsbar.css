@@ -84,10 +84,10 @@ spacer[part=overflow-start-indicator], spacer[part=overflow-end-indicator] {
   padding: 0 9px !important;
 }
 #TabsToolbar .toolbarbutton-1:not([disabled]):not(:active):not([open]):hover {
-  background-color: var(--gnome-view-hover-background) !important;
+  background-color: var(--gnome-hover-background) !important;
 }
 #TabsToolbar .toolbarbutton-1:active, #TabsToolbar .toolbarbutton-1[open] {
-  background-color: var(--gnome-view-selected-background) !important;
+  background-color: var(--gnome-selected-background) !important;
 }
 #TabsToolbar #TabsToolbar-customization-target > .toolbarbutton-1:not(#hack):first-of-type {
   margin-left: 5px !important;
@@ -255,7 +255,7 @@ tab {
 }
 .tab-icon-overlay:hover,
 .tab-close-button:hover {
-  background: var(--gnome-view-hover-background) !important;
+  background: var(--gnome-hover-background) !important;
   box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
 }
 
@@ -416,15 +416,15 @@ tab {
   transition: background-color 150ms ease-in-out, opacity 150ms ease-in-out !important;
 }
 .tabbrowser-tab:hover:is([first-visible-unpinned-tab][last-visible-tab], :not([selected="true"])) .tab-background { /* Hover */
-  background-color: var(--gnome-view-hover-background) !important;
+  background-color: var(--gnome-hover-background) !important;
   box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
 }
 .tabbrowser-tab[selected="true"]:not(:hover, [first-visible-unpinned-tab][last-visible-tab]) .tab-background { /* Active */
-  background-color: var(--gnome-view-selected-background) !important;
+  background-color: var(--gnome-selected-background) !important;
   box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
 }
 .tabbrowser-tab[selected="true"]:not([first-visible-unpinned-tab][last-visible-tab]):hover .tab-background { /* Active + Hover */
-  background-color: var(--gnome-view-selected-hover-background) !important;
+  background-color: var(--gnome-selected-hover-background) !important;
   box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
 }
 

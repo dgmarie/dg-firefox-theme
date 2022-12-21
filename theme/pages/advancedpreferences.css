@@ -10,7 +10,7 @@
     --in-content-box-background: var(--gnome-menu-background) !important;
     --in-content-box-background-odd: transparent !important;
     --in-content-box-border-color: var(--gnome-border-color) !important;
-    --in-content-box-info-background: var(--gnome-settings-info-background) !important;
+    --in-content-box-info-background: var(--gnome-view-selected-background) !important;
     --in-content-border-color: var(--gnome-border-color) !important;
     --in-content-border-hover: var(--gnome-border-color) !important;
     --in-content-border-invalid: var(--gnome-button-destructive-action-background) !important;
@@ -90,11 +90,11 @@
   }
   #show-all:hover,
   .button-reset:hover {
-    background-color: var(--gnome-view-hover-background) !important;
+    background-color: var(--gnome-hover-background) !important;
   }
   #show-all:active,
   .button-reset:active {
-    background-color: var(--gnome-view-active-background) !important;
+    background-color: var(--gnome-active-background) !important;
   }
   /* Cards */
   #prefs {
@@ -102,11 +102,11 @@
     border: 1px solid var(--gnome-border-color) !important;
   }
   #prefs > tr:hover {
-    background-color: var(--gnome-view-hover-background) !important;
+    background-color: var(--gnome-hover-background) !important;
     box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
   #prefs > tr:active {
-    background-color: var(--gnome-view-active-background) !important;
+    background-color: var(--gnome-active-background) !important;
     box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
   /* Entries */

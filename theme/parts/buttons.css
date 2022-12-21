@@ -203,7 +203,7 @@ button.close:hover,
 .permission-popup-permission-remove-button:hover,
 #item-choose button:hover {
   outline: 0 !important;
-  background: var(--gnome-view-hover-background) !important;
+  background: var(--gnome-hover-background) !important;
   border: 1px solid var(--gnome-button-border) !important;
 }
 
@@ -248,7 +248,7 @@ button.close:active,
 #protections-popup-info-button:not(#hack):active,
 .permission-popup-permission-remove-button:active,
 #item-choose button:active {
-  background: var(--gnome-view-active-background) !important;
+  background: var(--gnome-active-background) !important;
   border: 1px solid var(--gnome-button-border) !important;
 }
 
@@ -257,7 +257,7 @@ button.close:active,
 #nav-bar toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton):not(.subviewbutton):not([disabled="true"])[open],
 #nav-bar toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton):not([disabled="true"])[checked],
 #protections-popup-info-button:not(#hack)[checked] {
-  background: var(--gnome-view-selected-background) !important;
+  background: var(--gnome-selected-background) !important;
   border: 1px solid var(--gnome-button-border) !important;
 }
 
@@ -266,7 +266,7 @@ button.close:active,
 #nav-bar toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton):not(.subviewbutton):not([disabled="true"])[open]:hover,
 #nav-bar toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton):not([disabled="true"])[checked]:hover,
 #protections-popup-info-button:not(#hack)[checked]:hover {
-  background: var(--gnome-view-selected-hover-background) !important;
+  background: var(--gnome-selected-hover-background) !important;
 }
 
 /* Selected hover active buttons */
@@ -274,7 +274,7 @@ button.close:active,
 #nav-bar toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton):not(.subviewbutton):not([disabled="true"])[open]:active,
 #nav-bar toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton):not([disabled="true"])[checked]:active,
 #protections-popup-info-button:not(#hack)[checked]:active {
-  background: var(--gnome-view-selected-active-background) !important;
+  background: var(--gnome-selected-active-background) !important;
 }
 
 /* Disabled buttons */
@@ -409,11 +409,11 @@ button.popup-notification-primary-button:active,
 }
 #print input[type="number"].photon-number::-moz-number-spin-up:hover,
 #print input[type="number"].photon-number::-moz-number-spin-down:hover {
-  background-color: var(--gnome-view-hover-background) !important;
+  background-color: var(--gnome-hover-background) !important;
 }
 #print input[type="number"].photon-number::-moz-number-spin-up:active,
 #print input[type="number"].photon-number::-moz-number-spin-down:active {
-  background-color: var(--gnome-view-active-background) !important;
+  background-color: var(--gnome-active-background) !important;
 }
 #print input[type="number"].photon-number::-moz-number-spin-box {
   border-inline-start: 1px solid var(--gnome-border-color) !important;

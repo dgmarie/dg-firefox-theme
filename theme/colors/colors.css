@@ -13,14 +13,21 @@
   /* General colors */
   --gnome-background: #f7f7f7;
   --gnome-fg-color: rgba(0, 0, 0, .8);
+  --gnome-hover-background: rgba(0, 0, 0, .052);
+  --gnome-active-background: rgba(0, 0, 0, .128);
+  --gnome-selected-background: rgba(0, 0, 0, .08);
+  --gnome-selected-hover-background: rgba(0, 0, 0, .104);
+  --gnome-selected-active-background: rgba(0, 0, 0, .152);
+  --gnome-border-color: rgba(0, 0, 0, .12);
+
+  /* Views */
   --gnome-view-background: #fcfcfc;
   --gnome-view-fg-color: #323232;
-  --gnome-view-hover-background: rgba(0, 0, 0, .052);
-  --gnome-view-active-background: rgba(0, 0, 0, .128);
-  --gnome-view-selected-background: rgba(0, 0, 0, .08);
-  --gnome-view-selected-hover-background: rgba(0, 0, 0, .104);
-  --gnome-view-selected-active-background: rgba(0, 0, 0, .152);
-  --gnome-border-color: rgba(0, 0, 0, .12);
+  --gnome-view-hover-background: rgba(0, 0, 0, .032);
+  --gnome-view-active-background: rgba(0, 0, 0, .064);
+  --gnome-view-selected-background: rgba(var(--yaru-orange), .15);
+  --gnome-view-selected-hover-background: rgba(var(--yaru-orange), .20);
+  --gnome-view-selected-active-background: rgba(var(--yaru-orange), .25);
 
   /* Toolbars */
   --gnome-toolbar-background: #eaeaea;
@@ -32,8 +39,8 @@
 
   /* Menus */
   --gnome-menu-background: #f7f7f7;
-  --gnome-menu-button-hover-background: var(--gnome-view-selected-background);
-  --gnome-menu-button-active-background: var(--gnome-view-selected-active-background);
+  --gnome-menu-button-hover-background: var(--gnome-selected-background);
+  --gnome-menu-button-active-background: var(--gnome-selected-active-background);
   --gnome-menu-border-color: rgba(0, 0, 0, .07);
   --gnome-menu-radio-border-color: rgba(0, 0, 0, .24);
   --gnome-menu-shadow: 0 1px 5px 1px rgba(0,0,0, .09), 0 2px 14px 3px rgba(0,0,0, .05);
@@ -99,14 +106,18 @@
     /* General colors */
     --gnome-background: #292929;
     --gnome-fg-color: #ffffff;
+    --gnome-hover-background: rgba(255, 255, 255, .07);
+    --gnome-active-background: rgba(255, 255, 255, .16);
+    --gnome-selected-background: rgba(255, 255, 255, .1);
+    --gnome-selected-hover-background: rgba(255, 255, 255, .13);
+    --gnome-selected-active-background: rgba(255, 255, 255, .19);
+    --gnome-border-color: rgba(255, 255, 255, .15);
+
+    /* Views */
     --gnome-view-background: #252525;
     --gnome-view-fg-color: #ffffff;
-    --gnome-view-hover-background: rgba(255, 255, 255, .07);
-    --gnome-view-active-background: rgba(255, 255, 255, .16);
-    --gnome-view-selected-background: rgba(255, 255, 255, .1);
-    --gnome-view-selected-hover-background: rgba(255, 255, 255, .13);
-    --gnome-view-selected-active-background: rgba(255, 255, 255, .19);
-    --gnome-border-color: rgba(255, 255, 255, .15);
+    --gnome-view-hover-background: rgba(255, 255, 255, .04);
+    --gnome-view-active-background: rgba(255, 255, 255, .08);
 
     /* Toolbars */
     --gnome-toolbar-background: #212121;

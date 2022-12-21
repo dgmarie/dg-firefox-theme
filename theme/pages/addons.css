@@ -10,7 +10,7 @@
     --in-content-box-background: var(--gnome-menu-background) !important;
     --in-content-box-background-odd: transparent !important;
     --in-content-box-border-color: var(--gnome-border-color) !important;
-    --in-content-box-info-background: var(--gnome-settings-info-background) !important;
+    --in-content-box-info-background: var(--gnome-view-selected-background) !important;
     --in-content-border-color: var(--gnome-border-color) !important;
     --in-content-border-hover: var(--gnome-border-color) !important;
     --in-content-border-invalid: var(--gnome-button-destructive-action-background) !important;
@@ -72,26 +72,26 @@
     height: 44px !important;
   }
   #categories > .category[selected] {
-    background-color: var(--gnome-view-selected-background) !important;
+    background-color: var(--gnome-selected-background) !important;
     color: var(--in-content-page-color) !important;
     box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
   #categories > .category[selected]:hover {
-    background-color: var(--gnome-view-selected-hover-background) !important;
+    background-color: var(--gnome-selected-hover-background) !important;
     box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
   #categories > .category[selected]:active {
-    background-color: var(--gnome-view-selected-active-background) !important;
+    background-color: var(--gnome-selected-active-background) !important;
     box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
   #categories > .category:not([selected]):hover,
   .sidebar-footer-link:hover {
-    background-color: var(--gnome-view-hover-background) !important;
+    background-color: var(--gnome-hover-background) !important;
     box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
   #categories > .category:not([selected]):active,
   .sidebar-footer-link:active {
-    background-color: var(--gnome-view-active-background) !important;
+    background-color: var(--gnome-active-background) !important;
     box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
   .sidebar-footer-list {
@@ -162,10 +162,10 @@
     box-shadow: none !important;
   }
   button.close:hover {
-    background-color: var(--gnome-view-hover-background) !important;
+    background-color: var(--gnome-hover-background) !important;
   }
   button.close:active {
-    background-color: var(--gnome-view-active-background) !important;
+    background-color: var(--gnome-active-background) !important;
   }
 
   /* Cards */

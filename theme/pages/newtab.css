@@ -6,7 +6,7 @@
     --newtab-background-color-secondary: var(--gnome-card-background) !important;
     --newtab-text-primary-color: var(--gnome-view-fg-color) !important;
     --newtab-primary-action-background: var(--gnome-accent) !important;
-    --newtab-element-hover-color: var(--gnome-view-hover-background) !important;
+    --newtab-element-hover-color: var(--gnome-hover-background) !important;
     --newtab-border-color: var(--gnome-border-color) !important;
     --newtab-primary-element-text-color: #ffffff !important;
   }
@@ -93,11 +93,11 @@
     border-width: 0 !important;
   }
   .personalize-button:hover {
-    background-color: var(--gnome-view-hover-background) !important;
+    background-color: var(--gnome-hover-background) !important;
     box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
   .personalize-button:active {
-    background-color: var(--gnome-view-active-background) !important;
+    background-color: var(--gnome-active-background) !important;
     box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
   }
   .customize-menu .close-button,
