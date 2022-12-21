@@ -43,10 +43,12 @@ button.close::before,
 .textbox-search-clear,
 menuitem[type="checkbox"],
 checkbox .checkbox-check,
+html|input[type="checkbox"],
 menuitem[type="radio"],
 html|input[type="radio"],
 xul|*.radio-check,
-#firefox-view-button:not(#hack) {
+#firefox-view-button:not(#hack),
+#print html|select:not([size], [multiple]) {
   fill: var(--gnome-fg-color) !important;
   -moz-context-properties: fill, fill-opacity;
 }
@@ -167,6 +169,24 @@ arrowscrollbox[orient="horizontal"] {
 .menulist-label-box:after {
   content: url("../assets/yaru-icons/pan-down-symbolic.svg") !important;
 }
+#print html|select:not([size], [multiple]):not(#hack) {
+  background-image: url("../assets/yaru-icons/pan-down-symbolic.svg") !important;
+  background-size: 16px !important;
+  background-position: right 8px center !important;
+  background-repeat: no-repeat !important;
+}
+#print #destination #printer-picker:not(#hack) {
+  background-size: 16px, 16px !important;
+  background-position: right 8px center, left 8px center !important;
+  padding-left: 31px !important;
+  background-repeat: no-repeat !important;
+}
+#print #destination #printer-picker:not(#hack) {
+  background-image: url("../assets/yaru-icons/pan-down-symbolic.svg"), url("../assets/yaru-icons/printer-symbolic.svg") !important;
+}
+#print #destination #printer-picker[output="pdf"]:not(#hack) {
+  background-image: url("../assets/yaru-icons/pan-down-symbolic.svg"), url("../assets/yaru-icons/printer-symbolic.svg") !important;
+}
 
 /* Arrow up buttons */
 .expander-up > .button-box {
@@ -240,20 +260,23 @@ menuitem[type="checkbox"][disabled="true"] .menu-iconic-icon {
 }
 
 /* Checkbox */
-checkbox .checkbox-check {
+checkbox .checkbox-check,
+html|input[type="checkbox"] {
   background-size: 12px !important;
   background-image: none !important;
   border-radius: 5px !important;
   border: 2px solid var(--gnome-switch-border-color) !important;
   background-color: transparent !important;
 }
-checkbox .checkbox-check[checked="true"] {
+checkbox .checkbox-check[checked="true"],
+html|input[type="checkbox"]:checked {
   background-image: url("../assets/adw-icons/check-symbolic.svg") !important;
   border-color: var(--gnome-accent) !important;
   background-color: var(--gnome-accent) !important;
   fill: white !important;
 }
-checkbox .checkbox-check[disabled="true"] {
+checkbox .checkbox-check[disabled="true"],
+html|input[type="checkbox"]:disabled {
   opacity: 0.5;
 }
 
@@ -412,10 +435,12 @@ button.close::before {
 #email-link-button {
   list-style-image: url("../assets/yaru-icons/mail-unread-symbolic.svg") !important;
 }
+
 /* Print button */
 #print-button {
   list-style-image: url("../assets/yaru-icons/printer-symbolic.svg") !important;
 }
+
 /* Addons button */
 #add-ons-button,
 #addons-notification-icon,

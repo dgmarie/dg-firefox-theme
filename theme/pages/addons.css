@@ -142,7 +142,7 @@
     border-width: 0 !important;
   }
   button:not(.tab-button, .more-options-button, .category) {
-    padding: 2px 16px !important;
+    padding: 2px 8px !important;
     height: 34px !important;
     max-height: 34px !important;
   }

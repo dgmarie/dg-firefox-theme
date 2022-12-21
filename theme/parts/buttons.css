@@ -1,6 +1,7 @@
 /* Buttons */
 
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+@namespace html "http://www.w3.org/1999/xhtml";
 
 /* Hide buttons separator */
 #nav-bar .toolbaritem-combined-buttons separator {
@@ -42,7 +43,10 @@ button.close,
 .permission-popup-permission-remove-button,
 .button.connect-device,
 #item-choose button,
-#editBMPanel_newFolderButton {
+#editBMPanel_newFolderButton,
+#print html|select:not([size], [multiple]),
+#orientation .toggle-group-label,
+#print-footer button {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
   -moz-appearance: none !important;
   background: var(--gnome-button-background) !important;
@@ -109,8 +113,11 @@ menulist,
 .toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > #appMenu-fxa-label2:not(#hack),
 .button.connect-device,
 #item-choose button,
-#editBMPanel_newFolderButton {
-  padding: 1px 15px !important;
+#editBMPanel_newFolderButton,
+#orientation .toggle-group-label,
+#print html|select:not([size], [multiple]),
+#print-footer button {
+  padding: 1px 8px !important;
 }
 .subviewbutton.panel-subview-footer label,
 .panel-footer button,
@@ -125,14 +132,15 @@ menulist,
 .autocomplete-richlistitem[type="loginsFooter"],
 .dialog-button-box button,
 .button.connect-device,
-#item-choose button {
+#item-choose button,
+#print-footer button {
   text-align: center !important;
 }
 
 /* Drop down buttons */
 #sidebar-switcher-target,
 #viewButton {
-  padding: 1px 15px !important;
+  padding: 1px 8px !important;
   position: relative;
 }
 #sidebar-switcher-arrow,
@@ -140,7 +148,7 @@ menulist,
   transform: translate(6px, 0)
 }
 .menulist-label-box {
-  padding: 1px 25px 1px 15px !important;
+  padding: 1px 18px 1px 8px !important;
   position: relative;
 }
 .menulist-label-box:after { /* Arrow position */
@@ -174,7 +182,10 @@ menulist:hover .menulist-label-box,
 .autocomplete-richlistitem[type="loginsFooter"]:hover,
 .searchbar-engine-one-off-item:hover,
 .button.connect-device:hover,
-#editBMPanel_newFolderButton:hover {
+#editBMPanel_newFolderButton:hover,
+#orientation .toggle-group-label:hover,
+#print html|select:not([size], [multiple], :disabled):hover,
+#print-footer button:hover {
   outline: 0 !important;
   background: var(--gnome-button-hover-background) !important;
 }
@@ -217,7 +228,10 @@ menulist[open] .menulist-label-box,
 .dialog-button:active,
 .autocomplete-richlistitem[type="loginsFooter"]:active,
 .button.connect-device:active,
-#editBMPanel_newFolderButton:active {
+#editBMPanel_newFolderButton:active,
+#orientation .toggle-group-label:active,
+#print html|select:not([size], [multiple], :disabled):active,
+#print-footer button:active {
   background: var(--gnome-button-active-background) !important;
 }
 
@@ -267,7 +281,8 @@ button.close:active,
 #nav-bar toolbarbutton:not(#urlbar-zoom-button, .subviewbutton)[disabled="true"],
 #appMenu-popup .toolbaritem-combined-buttons toolbarbutton[disabled="true"],
 #context-navigation menuitem[disabled="true"],
-.dialog-button-box button[disabled="true"] {
+.dialog-button-box button[disabled="true"],
+#print html|select:not([size], [multiple]):disabled {
   opacity: .5 !important;
 }
 
@@ -283,7 +298,8 @@ button.close:active,
 #context-navigation menuitem:not(:last-of-type),
 .findbar-container toolbarbutton.findbar-find-previous,
 .findbar-button:not(:last-of-type),
-.search-panel-one-offs .searchbar-engine-one-off-item:not(:last-child) {
+.search-panel-one-offs .searchbar-engine-one-off-item:not(:last-child),
+#orientation .toggle-group-label:first-of-type {
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
   border-right-width: 0 !important;
@@ -296,10 +312,12 @@ button.close:active,
 .findbar-container toolbarbutton.findbar-find-previous,
 .findbar-container toolbarbutton.findbar-find-next,
 .findbar-button:not(:first-of-type),
-.search-panel-one-offs .searchbar-engine-one-off-item:not(:first-child) {
+.search-panel-one-offs .searchbar-engine-one-off-item:not(:first-child),
+#orientation .toggle-group-label:last-of-type {
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
   margin-left: 0 !important;
+  border-left-color: var(--gnome-border-color) !important;
 }
 
 #nav-bar .toolbaritem-combined-buttons {
@@ -314,7 +332,9 @@ button.popup-notification-primary-button,
 #tracking-action-block,
 .button.connect-device,
 #editBookmarkPanelRemoveButton,
-#PanelUI-panic-view-button {
+#PanelUI-panic-view-button,
+#print #print-button:not(#hack),
+#print #cancel-button:not(#hack) {
   color: white !important;
   font-weight: bold !important;
   border-color: var(--gnome-opaque-button-border) !important;
@@ -325,7 +345,8 @@ button.popup-notification-primary-button,
 button.popup-notification-primary-button:not(#hack),
 #editBookmarkPanelDoneButton,
 #tracking-action-block,
-.button.connect-device {
+.button.connect-device,
+#print #print-button:not(#hack) {
   background-color: var(--gnome-button-suggested-action-background) !important;
 }
 
@@ -347,7 +368,8 @@ button.popup-notification-primary-button:not(#hack),
 
 /* Buttons with destructive action */
 #editBookmarkPanelRemoveButton,
-#PanelUI-panic-view-button {
+#PanelUI-panic-view-button,
+#print #cancel-button:not(#hack) {
   background-color: var(--gnome-button-destructive-action-background) !important;
 }
 
@@ -358,7 +380,9 @@ button.popup-notification-primary-button:hover,
 #tracking-action-block:hover,
 .button.connect-device:hover,
 #editBookmarkPanelRemoveButton:hover,
-#PanelUI-panic-view-button:hover {
+#PanelUI-panic-view-button:hover,
+#print #print-button:not(#hack):hover,
+#print #cancel-button:not(#hack):hover {
   background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)) !important;
 }
 
@@ -369,6 +393,28 @@ button.popup-notification-primary-button:active,
 #tracking-action-block:active,
 .button.connect-device:active,
 #editBookmarkPanelRemoveButton:active,
-#PanelUI-panic-view-button:active {
+#PanelUI-panic-view-button:active,
+#print #print-button:not(#hack):active,
+#print #cancel-button:not(#hack):active {
   background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)) !important;
+}
+
+/* Spinbutton */
+#print input[type="number"].photon-number {
+  padding: 0 0 0 8px !important;
+}
+#print input[type="number"].photon-number::-moz-number-spin-up,
+#print input[type="number"].photon-number::-moz-number-spin-down {
+  background-color: transparent !important;
+}
+#print input[type="number"].photon-number::-moz-number-spin-up:hover,
+#print input[type="number"].photon-number::-moz-number-spin-down:hover {
+  background-color: var(--gnome-view-hover-background) !important;
+}
+#print input[type="number"].photon-number::-moz-number-spin-up:active,
+#print input[type="number"].photon-number::-moz-number-spin-down:active {
+  background-color: var(--gnome-view-active-background) !important;
+}
+#print input[type="number"].photon-number::-moz-number-spin-box {
+  border-inline-start: 1px solid var(--gnome-border-color) !important;
 }

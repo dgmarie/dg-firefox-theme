@@ -1,6 +1,7 @@
 /* Dialogs */
 
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+@namespace html "http://www.w3.org/1999/xhtml";
 
 window {
   padding: 0 !important;
@@ -35,8 +36,9 @@ window[dialogroot="true"][role="dialog"] {
   margin-top: 0 !important;
 }
 
-window[role="dialog"] {
-  background: var(--gnome-toolbar-background) !important;
+window[role="dialog"],
+:root[dialogroot] {
+  background: var(--gnome-background) !important;
   border: 0 !important;
   box-shadow: var(--gnome-menu-shadow) !important;
   padding: 0 !important;
@@ -88,4 +90,31 @@ dialog {
 /* Add bookmark fix */
 #editBookmarkPanelRows vbox {
   margin: 1px !important
+}
+
+/* Print Dialog */
+:root[dialogroot] body[role="dialog"] {
+  width: 250px !important;
+}
+
+#open-dialog-link {
+  color: var(--gnome-accent) !important;
+}
+
+html|hr {
+  border-color: var(--gnome-border-color) !important;
+}
+
+.printDialogBox .printSettingsBrowser {
+  border: 1px solid var(--gnome-dialog-outer-border) !important;
+  border-top-right-radius: 12px !important;
+  border-bottom-right-radius: 12px !important;
+  border-left: none !important;
+}
+
+.printDialogBox print-preview {
+  border: 1px solid var(--gnome-dialog-outer-border) !important;
+  border-top-left-radius: 12px !important;
+  border-bottom-left-radius: 12px !important;
+  border-right: none !important;
 }

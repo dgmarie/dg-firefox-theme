@@ -23,7 +23,7 @@
     color: var(--gnome-view-fg-color) !important;
   }
   html|button {
-    padding: 2px 16px !important;
+    padding: 2px 8px !important;
   }
   .twisty {
     padding: 0 !important;
