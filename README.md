@@ -38,6 +38,9 @@ This theme is supposed to be used with [qualia GTK theme](https://github.com/dgs
 		- Options: `orange` `bark` `sage` `olive` `viridian` `prussiangreen` `lightblue` `blue` `purple` `magenta` `pink` `red`.
 		- Default: `orange`.
 
+	- `-n` *optional*
+		- Don't apply theme to the settings pages in Firefox.
+
 ## Updating
 `git pull` and then run installation script again
 
@@ -85,10 +88,6 @@ Optional features can be enabled by creating new `boolean` preferences in `about
 - **Bookmarks toolbar under tabs** `gnomeTheme.bookmarksToolbarUnderTabs`
 
 	Move Bookmarks toolbar under tabs.
-
-- **Active tab contrast** `gnomeTheme.activeTabContrast`
-
-	Add more contrast to the active tab.
 
 - **Symbolic tab icons** `gnomeTheme.symbolicTabIcons`
 

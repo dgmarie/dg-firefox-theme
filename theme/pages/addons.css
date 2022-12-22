@@ -3,328 +3,339 @@
 @namespace html "http://www.w3.org/1999/xhtml";
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
-@-moz-document url("about:addons") {
-  :host, :root {
-    --in-content-page-background: var(--gnome-settings-background) !important;
-    --in-content-page-color: var(--gnome-view-fg-color) !important;
-    --in-content-box-background: var(--gnome-menu-background) !important;
-    --in-content-box-background-odd: transparent !important;
-    --in-content-box-border-color: var(--gnome-border-color) !important;
-    --in-content-box-info-background: var(--gnome-view-selected-background) !important;
-    --in-content-border-color: var(--gnome-border-color) !important;
-    --in-content-border-hover: var(--gnome-border-color) !important;
-    --in-content-border-invalid: var(--gnome-button-destructive-action-background) !important;
-    --in-content-error-text-color: var(--gnome-button-destructive-action-background) !important;
-    --in-content-button-background: var(--gnome-button-background) !important;
-    --in-content-button-background-hover: var(--gnome-button-hover-background) !important;
-    --in-content-button-background-active: var(--gnome-button-active-background) !important;
-    --in-content-icon-color: var(--gnome-view-fg-color) !important;
-    --in-content-accent-color: var(--gnome-accent) !important;
-    --in-content-accent-color-active: var(--gnome-accent) !important;
-    --in-content-link-color: var(--gnome-accent) !important;
-    --in-content-link-color-hover: var(--gnome-accent) !important;
-    --in-content-link-color-active: var(--gnome-accent) !important;
-    --in-content-link-color-visited: var(--gnome-accent) !important;
-    --in-content-primary-button-text-color: #ffffff !important;
-    --in-content-primary-button-background: var(--gnome-accent) !important;
-    --in-content-primary-button-background-hover: var(--gnome-accent) !important;
-    --in-content-primary-button-background-active: var(--gnome-accent) !important;
-    --in-content-danger-button-background: var(--gnome-button-destructive-action-background) !important;
-    --in-content-danger-button-background-hover: var(--gnome-button-destructive-action-background) !important;
-    --in-content-danger-button-background-active: var(--gnome-button-destructive-action-background) !important;
-    --in-content-table-background: var(--gnome-menu-background) !important;
-    --dialog-warning-text-color: var(--gnome-button-destructive-action-background) !important;
-    --main-margin-start: 24px !important;
-  }
-
-  /* Sidebar */
-  #sidebar {
-    background: var(--gnome-sidebar-background) !important;
-    border-right: 1px solid var(--gnome-border-color) !important;
-  }
-  #categories {
-    margin: 6px 0 !important;
-    padding-inline-end: 3px !important;
-    padding: 0 !important;
-  }
-  #categories > .category,
-  .sidebar-footer-link {
-    border-width: 0 !important;
-  }
-  #categories > .category {
-    padding: 0 14px !important;
-    min-height: 44px !important;
-    background-size: 16px !important;
-    background-position-x: 14px !important;
-    background-position-y: center !important;
-    padding-inline-start: 34px !important;
-    margin-inline-start: 6px !important;
-    margin-bottom: 2px !important;
-    margin-inline-end: 6px !important;
-  }
-  #categories .category-name,
-  .sidebar-footer-label {
-    font-size: 1em !important;
-    line-height: normal !important;
-    margin-left: 0 !important;
-  }
-  .sidebar-footer-link {
-    height: 44px !important;
-  }
-  #categories > .category[selected] {
-    background-color: var(--gnome-selected-background) !important;
-    color: var(--in-content-page-color) !important;
-    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
-  }
-  #categories > .category[selected]:hover {
-    background-color: var(--gnome-selected-hover-background) !important;
-    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
-  }
-  #categories > .category[selected]:active {
-    background-color: var(--gnome-selected-active-background) !important;
-    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
-  }
-  #categories > .category:not([selected]):hover,
-  .sidebar-footer-link:hover {
-    background-color: var(--gnome-hover-background) !important;
-    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
-  }
-  #categories > .category:not([selected]):active,
-  .sidebar-footer-link:active {
-    background-color: var(--gnome-active-background) !important;
-    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
-  }
-  .sidebar-footer-list {
-    margin-block: 0 6px !important;
-    margin-inline: 6px !important;
-  }
-  #categories .category-name {
-    padding-inline-start: 4px !important;
-  }
-  .sidebar-footer-icon {
-    margin-inline-start: 14px !important;
-    margin-right: 8px !important;
-  }
-  @media (max-width: 830px) {
-    :root {
-      --sidebar-width: 56px !important;
+@supports -moz-bool-pref("qualia.themeSettingsPages") {
+  @-moz-document url("about:addons") {
+    :host, :root {
+      --in-content-page-background: var(--gnome-settings-background) !important;
+      --in-content-page-color: var(--gnome-view-fg-color) !important;
+      --in-content-box-background: var(--gnome-menu-background) !important;
+      --in-content-box-background-odd: transparent !important;
+      --in-content-box-border-color: var(--gnome-border-color) !important;
+      --in-content-box-info-background: var(--gnome-view-selected-background) !important;
+      --in-content-border-color: var(--gnome-border-color) !important;
+      --in-content-border-hover: var(--gnome-border-color) !important;
+      --in-content-border-invalid: var(--gnome-button-destructive-action-background) !important;
+      --in-content-error-text-color: var(--gnome-button-destructive-action-background) !important;
+      --in-content-button-background: var(--gnome-button-background) !important;
+      --in-content-button-background-hover: var(--gnome-button-hover-background) !important;
+      --in-content-button-background-active: var(--gnome-button-active-background) !important;
+      --in-content-icon-color: var(--gnome-view-fg-color) !important;
+      --in-content-accent-color: var(--gnome-accent) !important;
+      --in-content-accent-color-active: var(--gnome-accent) !important;
+      --in-content-link-color: var(--gnome-accent) !important;
+      --in-content-link-color-hover: var(--gnome-accent) !important;
+      --in-content-link-color-active: var(--gnome-accent) !important;
+      --in-content-link-color-visited: var(--gnome-accent) !important;
+      --in-content-primary-button-text-color: #ffffff !important;
+      --in-content-primary-button-background: var(--gnome-accent) !important;
+      --in-content-primary-button-background-hover: var(--gnome-accent) !important;
+      --in-content-primary-button-background-active: var(--gnome-accent) !important;
+      --in-content-danger-button-background: var(--gnome-button-destructive-action-background) !important;
+      --in-content-danger-button-background-hover: var(--gnome-button-destructive-action-background) !important;
+      --in-content-danger-button-background-active: var(--gnome-button-destructive-action-background) !important;
+      --in-content-table-background: var(--gnome-menu-background) !important;
+      --dialog-warning-text-color: var(--gnome-button-destructive-action-background) !important;
+      --main-margin-start: 24px !important;
     }
+
+    /* Sidebar */
+    #sidebar {
+      background: var(--gnome-sidebar-background) !important;
+      border-right: 1px solid var(--gnome-border-color) !important;
+    }
+    #categories {
+      margin: 6px 0 !important;
+      padding-inline-end: 3px !important;
+      padding: 0 !important;
+    }
+    #categories > .category,
     .sidebar-footer-link {
-      width: 44px !important;
-      margin-inline-start: 0 !important;
+      border-width: 0 !important;
     }
     #categories > .category {
-      padding-inline-start: 0 !important;
-      width: 44px !important;
+      padding: 0 14px !important;
+      min-height: 44px !important;
+      background-size: 16px !important;
+      background-position-x: 14px !important;
+      background-position-y: center !important;
+      padding-inline-start: 34px !important;
+      margin-inline-start: 6px !important;
+      margin-bottom: 2px !important;
+      margin-inline-end: 6px !important;
     }
-  }
+    #categories .category-name,
+    .sidebar-footer-label {
+      font-size: 1em !important;
+      line-height: normal !important;
+      margin-left: 0 !important;
+    }
+    .sidebar-footer-link {
+      height: 44px !important;
+    }
+    #categories > .category[selected] {
+      background-color: var(--gnome-selected-background) !important;
+      color: var(--in-content-page-color) !important;
+      box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
+    }
+    #categories > .category[selected]:hover {
+      background-color: var(--gnome-selected-hover-background) !important;
+      box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
+    }
+    #categories > .category[selected]:active {
+      background-color: var(--gnome-selected-active-background) !important;
+      box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
+    }
+    #categories > .category:not([selected]):hover,
+    .sidebar-footer-link:hover {
+      background-color: var(--gnome-hover-background) !important;
+      box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
+    }
+    #categories > .category:not([selected]):active,
+    .sidebar-footer-link:active {
+      background-color: var(--gnome-active-background) !important;
+      box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
+    }
+    .sidebar-footer-list {
+      margin-block: 0 6px !important;
+      margin-inline: 6px !important;
+    }
+    #categories .category-name {
+      padding-inline-start: 4px !important;
+    }
+    .sidebar-footer-icon {
+      margin-inline-start: 14px !important;
+      margin-right: 8px !important;
+    }
+    @media (max-width: 830px) {
+      :root {
+        --sidebar-width: 56px !important;
+      }
+      .sidebar-footer-link {
+        width: 44px !important;
+        margin-inline-start: 0 !important;
+      }
+      #categories > .category {
+        padding-inline-start: 0 !important;
+        width: 44px !important;
+      }
+    }
 
-  /* Page content */
-  .main-search {
-    padding-bottom: 20px !important;
-    padding-inline-start: 24px !important;
-  }
-  #main,
-  .main-search,
-  .main-heading {
-    margin-right: 24px !important;
-  }
-  html|a[is="support-link"] {
-    color: var(--gnome-accent) !important;
-  }
-  /* Buttons */
-  button:not(.tab-button),
-  .sidebar-footer-link {
-    border-radius: 6px !important;
-  }
-  button:not(.category) {
-    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
-    border-width: 0 !important;
-  }
-  button:not(.tab-button, .more-options-button, .category) {
-    padding: 2px 8px !important;
-    height: 34px !important;
-    max-height: 34px !important;
-  }
-  .more-options-button {
-    height: 34px !important;
-    width: 34px !important;
-  }
-  button,
-  .sidebar-footer-link,
-  .addon.card {
-    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
-  .container {
-    border-radius: 6px !important;
-  }
-  button.close:not(:hover, :active) {
-    box-shadow: none !important;
-  }
-  button.close:hover {
-    background-color: var(--gnome-hover-background) !important;
-  }
-  button.close:active {
-    background-color: var(--gnome-active-background) !important;
-  }
+    /* Page content */
+    .main-search {
+      padding-bottom: 20px !important;
+      padding-inline-start: 24px !important;
+    }
+    #main,
+    .main-search,
+    .main-heading {
+      margin-right: 24px !important;
+    }
+    html|a[is="support-link"] {
+      color: var(--gnome-accent) !important;
+    }
+    /* Buttons */
+    button:not(.tab-button),
+    .sidebar-footer-link {
+      border-radius: 6px !important;
+    }
+    button:not(.category, .button-link) {
+      box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
+      border-width: 0 !important;
+    }
+    button:not(.tab-button, .more-options-button, .category, .button-link) {
+      padding: 2px 8px !important;
+      height: 34px !important;
+      max-height: 34px !important;
+    }
+    .more-options-button {
+      height: 34px !important;
+      width: 34px !important;
+    }
+    button,
+    .sidebar-footer-link,
+    .addon.card {
+      transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .container {
+      border-radius: 6px !important;
+    }
+    button:is(.tab-button, .close):not(:hover, :active) {
+      box-shadow: none !important;
+    }
+    button:is(.tab-button, .close):hover {
+      background-color: var(--gnome-hover-background) !important;
+    }
+    button:is(.tab-button, .close):active {
+      background-color: var(--gnome-active-background) !important;
+    }
 
-  /* Cards */
-  .card-heading-image {
-    border-top-left-radius: 12px !important;
-    border-top-right-radius: 12px !important;
-  }
-  .addon.card,
-  .container {
-    background-color: var(--gnome-card-background) !important;
-    border-radius: 12px !important;
-    box-shadow: var(--gnome-card-box-shadow) !important;
-    border: 1px solid var(--gnome-button-border) !important;
-  }
-  addon-card:not([expanded]) > .addon.card:hover {
-    background-color: var(--gnome-card-hover-background) !important;
-  }
-  addon-card:not([expanded]) > .addon.card:active {
-    background-color: var(--gnome-card-active-background) !important;
-  }
+    /* Cards */
+    .card-heading-image {
+      border-top-left-radius: 12px !important;
+      border-top-right-radius: 12px !important;
+    }
+    .addon.card,
+    .container {
+      background-color: var(--gnome-card-background) !important;
+      border-radius: 12px !important;
+      box-shadow: var(--gnome-card-box-shadow) !important;
+      border: 1px solid var(--gnome-button-border) !important;
+    }
+    addon-card:not([expanded]) > .addon.card:hover {
+      background-color: var(--gnome-card-hover-background) !important;
+    }
+    addon-card:not([expanded]) > .addon.card:active {
+      background-color: var(--gnome-card-active-background) !important;
+    }
+    .tab-group {
+      border-bottom: 1px solid var(--gnome-card-border) !important;
+      border-top: 1px solid var(--gnome-card-border) !important;
+    }
+    .addon-detail-sitepermissions, .addon-detail-row {
+      border-top: 1px solid var(--gnome-card-border) !important;
+    }
+    .addon-detail-row.addon-detail-help-row {
+      border: none !important;
+    }
+    /* Menus */
+    panel-list {
+      border-radius: 12px !important;
+      border: 1px solid var(--gnome-menu-border-color) !important;
+      background-clip: border-box !important;
+      padding: 6px !important;
+      box-shadow: 0 1px 5px 1px rgba(0, 0, 0, .09),
+                  0 2px 14px 3px rgba(0, 0, 0, .05);
+    }
+    panel-item-separator {
+      margin: 4px 0 6px !important;
+    }
+    button[role="menuitem"] {
+      padding-left: 30px !important;
+    }
+    button[role="menuitem"]:hover {
+      background-color: var(--gnome-menu-button-hover-background) !important;
+    }
+    button[role="menuitem"]:active {
+      background-color: var(--gnome-menu-button-active-background) !important;
+    }
+    button[role="menuitem"]:not(:last-of-type) {
+      margin-bottom: 2px !important;
+    }
+    button[role="menuitem"]:not(:hover, :active) {
+      box-shadow: none !important;
+    }
 
-  /* Menus */
-  panel-list {
-    border-radius: 12px !important;
-    border: 1px solid var(--gnome-menu-border-color) !important;
-    background-clip: border-box !important;
-    padding: 6px !important;
-    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, .09),
-                0 2px 14px 3px rgba(0, 0, 0, .05);
-  }
-  panel-item-separator {
-    margin: 4px 0 6px !important;
-  }
-  button[role="menuitem"] {
-    padding-left: 30px !important;
-  }
-  button[role="menuitem"]:hover {
-    background-color: var(--gnome-menu-button-hover-background) !important;
-  }
-  button[role="menuitem"]:active {
-    background-color: var(--gnome-menu-button-active-background) !important;
-  }
-  button[role="menuitem"]:not(:last-of-type) {
-    margin-bottom: 2px !important;
-  }
-  button[role="menuitem"]:not(:hover, :active) {
-    box-shadow: none !important;
-  }
+    /* Entries */
+    xul|search-textbox {
+      background-color: var(--gnome-entry-background) !important;
+      border-radius: 6px !important;
+      border-width: 0 !important;
+      box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
+      height: 34px !important;
+      max-height: 34px !important;
+      padding-left: 9px !important;
+      padding-right: 9px !important;
+    }
+    xul|search-textbox[focused] {
+      outline: 2px solid var(--gnome-focused-urlbar-border-color) !important;
+      outline-offset: -2px !important;
+      -moz-outline-radius: 5px;
+    }
+    addon-card[expanded] .addon.card {
+      margin-top: 6px !important;
+    }
 
-  /* Entries */
-  xul|search-textbox {
-    background-color: var(--gnome-entry-background) !important;
-    border-radius: 6px !important;
-    border-width: 0 !important;
-    box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
-    height: 34px !important;
-    max-height: 34px !important;
-    padding-left: 9px !important;
-    padding-right: 9px !important;
-  }
-  xul|search-textbox[focused] {
-    outline: 2px solid var(--gnome-focused-urlbar-border-color) !important;
-    outline-offset: -2px !important;
-    -moz-outline-radius: 5px;
-  }
-  addon-card[expanded] .addon.card {
-    margin-top: 6px !important;
-  }
+    /* Radio */
+    html|input[type="radio"],
+    xul|*.radio-check {
+      outline: none !important;
+      background-size: 12px !important;
+      background-image: none !important;
+      border-radius: 100% !important;
+      border: 2px solid var(--gnome-switch-border-color) !important;
+      background-color: transparent !important;
+    }
+    html|input[type="radio"]:checked,
+    xul|*.radio-check[selected] {
+      background-image: url("../assets/adw-icons/bullet-symbolic.svg") !important;
+      fill: white !important;
+      -moz-context-properties: fill, fill-opacity;
+      border-color: var(--gnome-accent) !important;
+      background-color: var(--gnome-accent) !important;
+      transition: 400ms !important;
+    }
+    html|input[type="radio"][disabled="true"],
+    xul|*.radio-check[disabled="true"] {
+      opacity: 0.5;
+    }
 
-  /* Radio */
-  html|input[type="radio"],
-  xul|*.radio-check {
-    outline: none !important;
-    background-size: 12px !important;
-    background-image: none !important;
-    border-radius: 100% !important;
-    border: 2px solid var(--gnome-switch-border-color) !important;
-    background-color: transparent !important;
-  }
-  html|input[type="radio"]:checked,
-  xul|*.radio-check[selected] {
-    background-image: url("../assets/adw-icons/bullet-symbolic.svg") !important;
-    fill: white !important;
-    -moz-context-properties: fill, fill-opacity;
-    border-color: var(--gnome-accent) !important;
-    background-color: var(--gnome-accent) !important;
-    transition: 400ms !important;
-  }
-  html|input[type="radio"][disabled="true"],
-  xul|*.radio-check[disabled="true"] {
-    opacity: 0.5;
-  }
+    /* Toggle */
+    input[type="checkbox"].toggle-button {
+      --button-height: 20px !important;
+      --button-half-height: 10px !important;
+      --button-width: 37px !important;
+      --button-border-width: 0px !important;
+      --dot-size: 16px !important;
+      --dot-margin: 2px !important;
+      --dot-transform-x: 17px !important;
+    }
 
-  /* Toggle */
-  input[type="checkbox"].toggle-button {
-    --button-height: 20px !important;
-    --button-half-height: 10px !important;
-    --button-width: 37px !important;
-    --button-border-width: 0px !important;
-    --dot-size: 16px !important;
-    --dot-margin: 2px !important;
-    --dot-transform-x: 17px !important;
-  }
-
-  /* Icons color */
-  #category-home > .category-icon,
-  .page-options-menu > .more-options-button,
-  .more-options-button,
-  .category[name="discover"],
-  .category[name="extension"],
-  .category[name="theme"],
-  .category[name="plugin"],
-  .category[name="locale"],
-  #preferencesButton > .sidebar-footer-icon,
-  #help-button > .sidebar-footer-icon {
-    fill: var(--gnome-view-fg-color) !important;
-    -moz-context-properties: fill, fill-opacity;
-  }
-  
-  /* Icons */
-  :host([searchbutton]) .textbox-search-icon {
-    list-style-image: url("../assets/yaru-icons/edit-find-symbolic.svg") !important;
-  }
-  #category-home > .category-icon {
-    list-style-image: url("../assets/yaru-icons/user-home-symbolic.svg") !important;
-  }
-  .page-options-menu > .more-options-button {
-    background-image: url("../assets/yaru-icons/settings-app-symbolic.svg") !important;
-  }
-  .more-options-button {
-    background-image: url("../assets/yaru-icons/view-more-horizontal-symbolic.svg") !important;
-  }
-  .category[name="discover"] {
-    background-image: url("../assets/yaru-icons/non-starred-symbolic.svg") !important;
-  }
-  .category[name="extension"] {
-    background-image: url("../assets/yaru-icons/application-x-addon-symbolic.svg") !important;
-  }
-  .category[name="theme"] {
-    background-image: url("../assets/yaru-icons/preferences-desktop-appearance-symbolic.svg") !important;
-  }
-  .category[name="plugin"] {
-    background-image: url("../assets/yaru-icons/applications-electronics-symbolic.svg") !important;
-  }
-  .category[name="locale"] {
-    background-image: url("../assets/yaru-icons/preferences-desktop-locale-symbolic.svg") !important;
-  }
-  #preferencesButton > .sidebar-footer-icon {
-    padding: 0 0 16px 16px;
-    background-size: 16px !important;
-    background-image: url("../assets/yaru-icons/settings-app-symbolic.svg") !important;
-    width: 0px !important;
-    height: 0px !important;
-  }
-  #help-button > .sidebar-footer-icon {
-    padding: 0 0 16px 16px;
-    background-size: 16px !important;
-    background-image: url("../assets/yaru-icons/help-app-symbolic.svg") !important;
-    width: 0px !important;
-    height: 0px !important;
+    /* Icons color */
+    #category-home > .category-icon,
+    .page-options-menu > .more-options-button,
+    .more-options-button,
+    .category[name="discover"],
+    .category[name="extension"],
+    .category[name="theme"],
+    .category[name="plugin"],
+    .category[name="locale"],
+    #preferencesButton > .sidebar-footer-icon,
+    #help-button > .sidebar-footer-icon {
+      fill: var(--gnome-view-fg-color) !important;
+      -moz-context-properties: fill, fill-opacity;
+    }
+    
+    /* Icons */
+    :host([searchbutton]) .textbox-search-icon {
+      list-style-image: url("../assets/yaru-icons/edit-find-symbolic.svg") !important;
+    }
+    #category-home > .category-icon {
+      list-style-image: url("../assets/yaru-icons/user-home-symbolic.svg") !important;
+    }
+    .page-options-menu > .more-options-button {
+      background-image: url("../assets/yaru-icons/settings-app-symbolic.svg") !important;
+    }
+    .more-options-button {
+      background-image: url("../assets/yaru-icons/view-more-horizontal-symbolic.svg") !important;
+    }
+    .category[name="discover"] {
+      background-image: url("../assets/yaru-icons/non-starred-symbolic.svg") !important;
+    }
+    .category[name="extension"] {
+      background-image: url("../assets/yaru-icons/application-x-addon-symbolic.svg") !important;
+    }
+    .category[name="theme"] {
+      background-image: url("../assets/yaru-icons/preferences-desktop-appearance-symbolic.svg") !important;
+    }
+    .category[name="plugin"] {
+      background-image: url("../assets/yaru-icons/applications-electronics-symbolic.svg") !important;
+    }
+    .category[name="locale"] {
+      background-image: url("../assets/yaru-icons/preferences-desktop-locale-symbolic.svg") !important;
+    }
+    #preferencesButton > .sidebar-footer-icon {
+      padding: 0 0 16px 16px;
+      background-size: 16px !important;
+      background-image: url("../assets/yaru-icons/settings-app-symbolic.svg") !important;
+      width: 0px !important;
+      height: 0px !important;
+    }
+    #help-button > .sidebar-footer-icon {
+      padding: 0 0 16px 16px;
+      background-size: 16px !important;
+      background-image: url("../assets/yaru-icons/help-app-symbolic.svg") !important;
+      width: 0px !important;
+      height: 0px !important;
+    }
   }
 }

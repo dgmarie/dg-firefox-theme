@@ -58,6 +58,10 @@
   #tabpickup-steps-view0 {
     padding: 14px !important;
   }
+  .closed-tab-li {
+    border-radius: 0px !important;
+    margin: 0 !important
+  }
   .synced-tab-a:hover,
   .closed-tab-li:hover {
     background-color: var(--gnome-card-hover-background) !important;
@@ -84,6 +88,9 @@
   }
   .closed-tab-li:not(:last-of-type)  {
     border-bottom: 1px solid var(--gnome-card-border) !important;
+  }
+  .closed-tab-li-main {
+    background-color: transparent !important;
   }
 
   #colorways-collection-expiry-date > span {

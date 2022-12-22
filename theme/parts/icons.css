@@ -477,11 +477,11 @@ button.close::before {
 /* View Button */
 #firefox-view-button,
 #navigator-toolbox #firefox-view-button:not(#hack) {
-  list-style-image: none !important;
-  background-image: url("../assets/yaru-icons/firefox-symbolic.svg") !important;
+  list-style-image: url("../assets/yaru-icons/firefox-symbolic.svg") !important;
   background-repeat: no-repeat !important;
   background-size: 16px !important;
-  background-position: center !important;}
+  background-position: center !important;
+}
 
 /* History button */
 #history-panelmenu,

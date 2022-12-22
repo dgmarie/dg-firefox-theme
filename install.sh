@@ -7,17 +7,20 @@ color_variants=('orange' 'bark' 'sage' 'olive' 'viridian' 'prussiangreen' 'light
 color="orange"
 firefoxfolder="${HOME}/.mozilla/firefox"
 
+no_settings=false
+
 nc='\033[0m'
 bold='\033[1m'
 red='\033[0;31m'
 bgreen='\033[1;32m'
 
 # Get options.
-while getopts 'f:p:c:h' flag; do
+while getopts 'f:p:c:nh' flag; do
   case "${flag}" in
   f) firefoxfolder="${OPTARG}" ;;
   p) profilename="${OPTARG}" ;;
   c) color="${OPTARG}" ;;
+  n) no_settings=true ;;
   h)
     echo "OPTIONS:"
     echo "  -f <firefox_folder_path>. Set custom Firefox folder path."
@@ -25,6 +28,7 @@ while getopts 'f:p:c:h' flag; do
     echo "  -c <color_name>. Specify accent color."
     echo "     [orange|bark|sage|olive|viridian|prussiangreen|lightblue|blue|purple|magenta|pink|red]"
     echo "     (Default: orange)"
+    echo "  -n Don't apply theme to the settings pages in Firefox."
     echo "  -h to show this message."
     exit 0
     ;;
@@ -85,6 +89,10 @@ function saveProfile(){
   echo "@import \"qualia\/theme/colors/colors.css\";" >> userContent.css
 
   cd ..
+
+  if $no_settings; then
+    sed -i 's/^user_pref("qualia.themeSettingsPages", true);/user_pref("qualia.themeSettingsPages", false);/g' chrome/qualia/configuration/user.js
+  fi
 
   # Symlink user.js to qualia one.
   ln -fs chrome/qualia/configuration/user.js user.js
