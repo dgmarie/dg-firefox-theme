@@ -19,16 +19,10 @@ This theme is supposed to be used with [qualia GTK theme](https://github.com/dgs
 2. Run installation script
 	#### Install script
 	```sh
-	./install.sh # Standard
-	./install.sh -f ~/snap/firefox/common/.mozilla/firefox # Snap
-	./install.sh -f ~/.var/app/org.mozilla.firefox/.mozilla/firefox # Flatpak
+	./install.sh
 	```
 
 	##### Script options
-	- `-f <firefox_folder_path>` *optional*
-		- Set custom Firefox folder path, for example `~/.mozilla/icecat/`.
-		- Default: `~/.mozilla/firefox/`
-
 	- `-p <profile_name>` *optional*
 		- Set custom profile name, for example `e0j6yb0p.default-nightly`.
 		- Default: All the profiles found in the firefox folder
