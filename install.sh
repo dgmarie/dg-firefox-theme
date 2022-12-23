@@ -104,6 +104,9 @@ function saveProfile(){
 }
 
 for firefoxfolder in "${firefoxfolders[@]}"; do
+  if [[ ! -d "${firefoxfolder}" ]]; then
+    continue
+  fi
   profiles_file="${firefoxfolder}/profiles.ini"
   if [ ! -f "${profiles_file}" ]; then
     >&2 echo -e "${red}Failed${nc}, please check Firefox installation, unable to find profiles.ini at ${firefoxfolder}"
