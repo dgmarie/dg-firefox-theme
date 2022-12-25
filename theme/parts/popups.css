@@ -211,7 +211,7 @@ menuitem[disabled="true"][_moz-menuactive], menupopup menu[disabled="true"][_moz
 menuitem:not([disabled="true"]):is(:hover, [_moz-menuactive]),
 menupopup menu:not([disabled="true"]):is(:hover, [_moz-menuactive]),
 #widget-overflow-list .toolbarbutton-1:not(#hack):hover,
-.subviewbutton:not([disabled="true"], #appMenu-zoom-controls2, #appMenu-fxa-label2):hover,
+.subviewbutton:not([disabled="true"], #appMenu-zoom-controls, #appMenu-zoom-controls2, #appMenu-fxa-label2):hover,
 .protections-popup-footer-button:not([disabled="true"]):hover,
 #protections-popup-show-report-stack:hover .protections-popup-footer-button,
 .protections-popup-category:not([disabled="true"]):hover,
@@ -226,7 +226,7 @@ menupopup menu:not([disabled="true"]):is(:hover, [_moz-menuactive]),
 menuitem:not([disabled="true"]):active,
 menupopup menu:not([disabled="true"]):active,
 #widget-overflow-list .toolbarbutton-1:not(#hack):active,
-.subviewbutton:not([disabled="true"], #appMenu-zoom-controls2, #appMenu-fxa-label2):active,
+.subviewbutton:not([disabled="true"], #appMenu-zoom-controls, #appMenu-zoom-controls2, #appMenu-fxa-label2):active,
 .protections-popup-footer-button:not([disabled="true"]):active,
 #protections-popup-show-report-stack:active .protections-popup-footer-button,
 .protections-popup-category:not([disabled="true"]):active,
@@ -258,8 +258,9 @@ menupopup menu:not([disabled="true"]):active,
   padding: 0 !important;
   pointer-events: none;
   position: absolute !important;
-  top: 8px !important;
+  top: 10px !important;
   width: 100%;
+  margin: 4px 0 !important;
 }
 
 /* Menu headers */

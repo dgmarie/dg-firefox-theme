@@ -36,6 +36,7 @@ while getopts 'f:p:c:nh' flag; do
     exit 0
     ;;
   *)
+    >&2 echo "ERROR: Unrecognized option '${flag}'."
     exit 1
     ;;
   esac

@@ -316,7 +316,7 @@ button.close:active,
 #orientation .toggle-group-label:last-of-type {
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
-  margin-left: 0 !important;
+  margin-left: -1px !important;
   border-left-color: var(--gnome-border-color) !important;
 }
 
