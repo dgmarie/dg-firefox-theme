@@ -1,6 +1,6 @@
 @import "parts/toolbox.css";
 @import "parts/headerbar-private-window.css";
-@import "parts/csd.css";
+@import "parts/csd-symbolic.css";
 @import "parts/urlbar.css";
 @import "parts/tabsbar.css";
 @import "parts/findbar.css";
@@ -12,7 +12,7 @@
 @import "parts/entries.css";
 @import "parts/controls.css";
 @import "parts/icons.css";
-@import "parts/titlebuttons.css";
+@import "parts/titlebuttons-symbolic.css";
 
 @import "parts/popups.css";
 @import "parts/popups-contents.css";

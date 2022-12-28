@@ -11,6 +11,7 @@ firefoxfolders=(
 )
 
 color="orange"
+variant="macos"
 
 no_settings=false
 
@@ -20,10 +21,11 @@ red='\033[0;31m'
 bgreen='\033[1;32m'
 
 # Get options.
-while getopts 'f:p:c:nh' flag; do
+while getopts 'f:p:c:snh' flag; do
   case "${flag}" in
   p) profilename="${OPTARG}" ;;
   c) color="${OPTARG}" ;;
+  s) variant="symbolic" ;;
   n) no_settings=true ;;
   h)
     echo "OPTIONS:"
@@ -31,6 +33,7 @@ while getopts 'f:p:c:nh' flag; do
     echo "  -c <color_name>. Specify accent color."
     echo "     [orange|bark|sage|olive|viridian|prussiangreen|lightblue|blue|purple|magenta|pink|red]"
     echo "     (Default: orange)"
+    echo "  -s Enable symbolic libadwaita style window controls."
     echo "  -n Don't apply theme to the settings pages in Firefox."
     echo "  -h to show this message."
     exit 0
@@ -65,6 +68,10 @@ function saveProfile(){
   # Set accent color
   sed -i "s/--yaru-orange/--yaru-${color}/g" "${PWD}"/qualia/theme/colors/colors.css
   sed -i "s/--yaru-orange/--yaru-${color}/g" "${PWD}"/qualia/theme/colors/colors.css
+
+  if [[ ${variant} == 'macos' ]]; then
+    sed -i "s/-symbolic//g" "${PWD}"/qualia/theme/gnome-theme.css
+  fi
 
   # Create single-line user CSS file
   if [ -s userChrome.css ]; then

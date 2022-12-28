@@ -32,6 +32,9 @@ This theme is supposed to be used with [qualia GTK theme](https://github.com/dgs
 		- Options: `orange` `bark` `sage` `olive` `viridian` `prussiangreen` `lightblue` `blue` `purple` `magenta` `pink` `red`.
 		- Default: `orange`.
 
+	- ` -s` *optional*
+		- Enable symbolic libadwaita style window controls.
+
 	- `-n` *optional*
 		- Don't apply theme to the settings pages in Firefox.
 

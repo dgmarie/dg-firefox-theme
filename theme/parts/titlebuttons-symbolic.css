@@ -1,0 +1,29 @@
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-close .toolbarbutton-icon,
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-max .toolbarbutton-icon,
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-restore .toolbarbutton-icon,
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-min .toolbarbutton-icon,
+:root[tabsintitlebar][inFullscreen] #window-controls #restore-button .toolbarbutton-icon {
+  fill: var(--gnome-fg-color) !important;
+	-moz-context-properties: fill, fill-opacity;
+}
+
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-close:-moz-window-inactive,
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-max:-moz-window-inactive,
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-restore:-moz-window-inactive,
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-min:-moz-window-inactive {
+	opacity: 0.5;
+}
+
+/* Window buttons */
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-close .toolbarbutton-icon {
+	list-style-image: url("../assets/yaru-icons/window-close-symbolic.svg") !important;
+}
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-max .toolbarbutton-icon {
+	list-style-image: url("../assets/yaru-icons/window-maximize-symbolic.svg") !important;
+}
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-restore .toolbarbutton-icon {
+	list-style-image: url("../assets/yaru-icons/window-restore-symbolic.svg") !important;
+}
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-min .toolbarbutton-icon {
+	list-style-image: url("../assets/yaru-icons/window-minimize-symbolic.svg") !important;
+}
