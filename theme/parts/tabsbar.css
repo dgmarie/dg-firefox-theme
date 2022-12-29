@@ -96,15 +96,6 @@ spacer[part=overflow-start-indicator], spacer[part=overflow-end-indicator] {
 #TabsToolbar #TabsToolbar-customization-target > #alltabs-button {
   margin-right: 5px !important;
 }
-@media (prefers-color-scheme: dark) {
-  #TabsToolbar #TabsToolbar-customization-target > .toolbarbutton-1:not(#hack):first-of-type {
-    margin-left: 4px !important;
-  }
-  #TabsToolbar #tabbrowser-arrowscrollbox-periphery > .toolbarbutton-1:not(#hack):last-of-type,
-  #TabsToolbar #TabsToolbar-customization-target > #alltabs-button {
-    margin-right: 4px !important;
-  }
-}
 #tabbrowser-tabs[movingtab=true] #tabbrowser-arrowscrollbox::after  {
   bottom: unset;
   top: 44px;
@@ -130,14 +121,6 @@ spacer[part=overflow-start-indicator], spacer[part=overflow-end-indicator] {
 }
 #tabbrowser-tabs:not([hasadjacentnewtabbutton="true"]) .tabbrowser-tab[last-visible-tab="true"] {
   padding-right: 5px !important;
-}
-@media (prefers-color-scheme: dark) {
-  #tabbrowser-tabs:first-child .tabbrowser-tab[first-visible-tab="true"] {
-    padding-left: 4px !important;
-  }
-  #tabbrowser-tabs:not([hasadjacentnewtabbutton="true"]) .tabbrowser-tab[last-visible-tab="true"] {
-    padding-right: 4px !important;
-  }
 }
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
   margin-inline-start: 0 !important;
