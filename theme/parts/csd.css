@@ -40,11 +40,21 @@
     padding-left: var(--gnome-navbar-csd-offset) !important;
     padding-right: 3px !important;
   }
+  @media (prefers-color-scheme: dark) {
+    :root[tabsintitlebar] #nav-bar {
+      padding-right: 2px !important;
+    }
+  }
 
   /* Window buttons box */
   :root[tabsintitlebar] #titlebar .titlebar-buttonbox-container {
     left: 11px;
     right: auto !important;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root[tabsintitlebar] #titlebar .titlebar-buttonbox-container {
+      left: 10px;
+    }
   }
 }
 
@@ -87,6 +97,12 @@
   right: 11px;
   top: 14px;
   display: block !important;
+}
+@media (prefers-color-scheme: dark) {
+  :root[tabsintitlebar] #titlebar .titlebar-buttonbox-container {
+    right: 10px;
+    top: 13px;
+  }
 }
 :root[tabsintitlebar] #titlebar .titlebar-buttonbox {
   -moz-appearance: none !important;

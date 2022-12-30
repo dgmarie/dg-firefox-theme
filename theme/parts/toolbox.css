@@ -57,9 +57,19 @@ findbar, #PersonalToolbar {
 #PersonalToolbar {
   padding: 5px 2px 5px 3px !important;
 }
+@media (prefers-color-scheme: dark) {
+  #PersonalToolbar {
+    padding: 5px 1px 5px 2px !important;
+  }
+}
 /* Headerbar */
 #nav-bar {
   padding: 6px 3px !important;
+}
+@media (prefers-color-scheme: dark) {
+  #nav-bar {
+    padding: 5px 2px 6px !important;
+  }
 }
 
 /* Overrides: Remove border below the menu bar / above the header bar */
@@ -121,7 +131,13 @@ notification {
   border: none !important;
   height: 42px !important;
 }
-.notificationbox-stack:-moz-window-inactive {
+@media (prefers-color-scheme: dark) {
+  .container.infobar,
+  notification {
+    padding: 4px 4px 5px !important;
+  }
+}
+ .notificationbox-stack:-moz-window-inactive {
   background: none !important;
   transition: background-color 200ms ease-out ;
 }
