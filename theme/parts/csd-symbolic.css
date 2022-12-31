@@ -32,17 +32,22 @@
   padding-left: 3px !important;
   padding-right: var(--gnome-navbar-csd-offset) !important;
 }
+@media (prefers-color-scheme: dark) {
+  :root[tabsintitlebar] #nav-bar {
+    padding-left: 2px !important;
+  }
+}
 
 /* Left window buttons */
 @media (-moz-gtk-csd-reversed-placement) {
    /* Window controls offset by button count */
   :root[tabsintitlebar] #nav-bar {
     padding-left: var(--gnome-navbar-csd-offset) !important;
-    padding-right: 5px !important;
+    padding-right: 3px !important;
   }
   @media (prefers-color-scheme: dark) {
     :root[tabsintitlebar] #nav-bar {
-      padding-right: 4px !important;
+      padding-right: 2px !important;
     }
   }
 
