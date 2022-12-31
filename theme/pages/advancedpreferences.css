@@ -104,11 +104,9 @@
     }
     #prefs > tr:hover {
       background-color: var(--gnome-hover-background) !important;
-      box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
     }
     #prefs > tr:active {
       background-color: var(--gnome-active-background) !important;
-      box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
     }
     /* Entries */
     #about-config-search,
