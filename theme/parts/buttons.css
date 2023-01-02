@@ -317,7 +317,6 @@ button.close:active,
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
   margin-left: -1px !important;
-  border-left-color: var(--gnome-border-color) !important;
 }
 
 #nav-bar .toolbaritem-combined-buttons {
