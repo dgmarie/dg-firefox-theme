@@ -9,6 +9,7 @@
 :root {
   /* Accent */
   --gnome-accent: rgb(var(--yaru-orange));
+  --focus-outline-color: rgba(var(--yaru-orange), 0.5) !important; /* Same as --gnome-accent but with opacity*/
 
   /* General colors */
   --gnome-background: #f7f7f7;
