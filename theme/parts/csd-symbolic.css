@@ -78,12 +78,6 @@
   display: none !important;
 }
 
-/* Prevent menubar from breaking */
-:root[tabsintitlebar] #toolbar-menubar:not([inactive=true]) {
-  height: 30px !important;
-  margin-bottom: 8px;
-}
-
 /* Remove default style of titlebar */
 :root[tabsintitlebar] #titlebar {
   -moz-appearance: none !important;
