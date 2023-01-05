@@ -30,7 +30,7 @@ findbar, #PersonalToolbar {
 #titlebar {
   border-top: 1px solid var(--gnome-toolbar-border) !important;
 }
-#navigator-toolbox:-moz-window-inactive {
+#navigator-toolbox:-moz-window-inactive, findbar:-moz-window-inactive {
   background: var(--gnome-inactive-toolbar-background) !important;
   transition: background-color 200ms ease-out !important;
 }
@@ -43,6 +43,8 @@ findbar, #PersonalToolbar {
   appearance: none !important;
 }
 
+.findbar-container:-moz-window-inactive,
+.findbar-closebutton:-moz-window-inactive,
 #nav-bar:-moz-window-inactive,
 #PlacesToolbar:-moz-window-inactive,
 #PersonalToolbar > toolbarbutton:-moz-window-inactive,
