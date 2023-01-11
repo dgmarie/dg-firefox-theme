@@ -42,7 +42,7 @@
   --gnome-menu-background: #f7f7f7;
   --gnome-menu-button-hover-background: var(--gnome-selected-background);
   --gnome-menu-button-active-background: var(--gnome-selected-active-background);
-  --gnome-menu-border-color: rgba(0, 0, 0, .07);
+  --gnome-menu-border-color: rgba(0, 0, 0, .08);
   --gnome-menu-radio-border-color: rgba(0, 0, 0, .24);
   --gnome-menu-shadow: 0 1px 5px 1px rgba(0,0,0, .09), 0 2px 14px 3px rgba(0,0,0, .05);
 
@@ -129,7 +129,7 @@
 
     /* Menus */
     --gnome-menu-background: #1c1c1c;
-    --gnome-menu-border-color: rgba(255, 255, 255, .07);
+    --gnome-menu-border-color: rgba(255, 255, 255, .08);
     --gnome-menu-radio-border-color: rgba(255, 255, 255, .3);
 
     /* Buttons */
