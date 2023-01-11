@@ -413,7 +413,7 @@ tab {
 .tab-background {
   background-color: transparent !important;
   background-image: none !important;
-  transition: background-color 150ms ease-in-out, opacity 150ms ease-in-out !important;
+  transition: background-color 150ms ease-in-out, opacity 150ms ease-in-out, box-shadow 150ms ease-in-out !important;
 }
 .tabbrowser-tab:hover:is([first-visible-unpinned-tab][last-visible-tab], :not([selected="true"])) .tab-background { /* Hover */
   background-color: var(--gnome-hover-background) !important;
