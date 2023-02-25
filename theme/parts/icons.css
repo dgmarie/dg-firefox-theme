@@ -48,7 +48,8 @@ menuitem[type="radio"],
 html|input[type="radio"],
 xul|*.radio-check,
 #firefox-view-button:not(#hack),
-#print html|select:not([size], [multiple]) {
+#print html|select:not([size], [multiple]),
+.urlbarView-button-menu {
   fill: var(--gnome-fg-color) !important;
   -moz-context-properties: fill, fill-opacity;
 }
@@ -600,4 +601,12 @@ button.close::before {
 /* Text clear */
 .textbox-search-clear {
   content: url("../assets/yaru-icons/edit-clear-symbolic.svg") !important;
+}
+
+/* Urlbar result menu */
+.urlbarView-button-menu:not(#hack) {
+  background-image: url("../assets/yaru-icons/view-more-horizontal-symbolic.svg") !important;
+  background-repeat: no-repeat !important;
+  background-size: 16px !important;
+  background-position: center !important;
 }

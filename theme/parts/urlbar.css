@@ -72,26 +72,30 @@ toolbarspring {
 
 .urlbarView-body-inner {
   border: 0 !important;
+  width: unset !important;
+  margin-inline: unset !important;
 }
 
-.urlbarView-row-inner, .urlbarView-no-wrap  {
+.urlbarView-row, .urlbarView-no-wrap  {
   align-items: center !important;
 }
-.urlbarView-row-inner {
-  padding: 0 12px !important;
-  padding-block: 7px !important;
-  border-radius: 6px !important;
-}
 .urlbarView-row {
+  padding: 0 12px !important;
   padding-block: 0 !important;
+  border-radius: 6px !important;
+  border: 0 !important;
+}
+.urlbarView-row-inner {
+  padding-inline: 0 !important;
+  background: transparent !important;
 }
 
-.urlbarView-row[selected] .urlbarView-row-inner {
+.urlbarView-row[selected] {
   background: var(--gnome-accent) !important;
   color: white !important;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05) !important;
 }
-.urlbarView-row:not([selected]):hover .urlbarView-row-inner {
+.urlbarView-row:not([selected]):hover {
   background: var(--gnome-menu-button-hover-background) !important;
   box-shadow: inset 0 0 0 1px var(--gnome-button-border) !important;
 }

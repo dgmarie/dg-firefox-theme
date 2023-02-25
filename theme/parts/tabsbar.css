@@ -156,8 +156,8 @@ spacer[part=overflow-start-indicator], spacer[part=overflow-end-indicator] {
 .tabbrowser-tab::before {
   left: -1px;
 }
-.tabbrowser-tab:is([selected], :hover, :first-of-type)::before,
-.tabbrowser-tab:is([selected], :hover) + .tabbrowser-tab::before {
+.tabbrowser-tab:is([selected], :hover, :first-of-type, [class*="identity-color-"])::before,
+.tabbrowser-tab:is([selected], :hover, [class*="identity-color-"]) + .tabbrowser-tab::before {
   border-left-color: transparent !important;
 }
 

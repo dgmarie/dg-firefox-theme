@@ -34,7 +34,7 @@
 #customization-footer::before {
   background: url(../icon.svg) no-repeat;
   background-size: contain;
-  content: "qualia Firefox theme v110";
+  content: "qualia Firefox theme v111";
   padding: 9px 9px 9px 50px;
 }
 
