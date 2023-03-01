@@ -85,7 +85,6 @@
 /* Downloads popover */
 #downloadsPanel-mainView .download-state {
   padding: 12px !important;
-  border: 0 !important;
   display: flex;
   align-items: center;
   height: 64px !important;
